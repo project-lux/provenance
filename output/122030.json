@@ -1,0 +1,206 @@
+{
+    "output": [
+        {
+            "movements": [
+                {
+                    "source": "Unknown",
+                    "target": {
+                        "name": "Baron Kawada Koichir\u014d (H\u014dgaian)",
+                        "location": "Tokyo",
+                        "birth_date": "1836",
+                        "death_date": "1896",
+                        "type": "Collector"
+                    },
+                    "start_time": "Unknown",
+                    "end_time": "1896",
+                    "location": "Tokyo",
+                    "method": "purchased by/acquired by (from/through/in)"
+                },
+                {
+                    "source": {
+                        "name": "Baron Kawada Koichir\u014d (H\u014dgaian)",
+                        "location": "Tokyo",
+                        "birth_date": "1836",
+                        "death_date": "1896",
+                        "type": "Collector"
+                    },
+                    "target": {
+                        "name": "Baron Kawada Ry\u014dkichi",
+                        "location": "Tokyo",
+                        "birth_date": "1856",
+                        "death_date": "1951",
+                        "type": "Collector"
+                    },
+                    "start_time": "1896",
+                    "end_time": "1933-02-20",
+                    "location": "Tokyo",
+                    "method": "by descent to"
+                },
+                {
+                    "source": {
+                        "name": "Baron Kawada Ry\u014dkichi",
+                        "location": "Tokyo",
+                        "birth_date": "1856",
+                        "death_date": "1951",
+                        "type": "Collector"
+                    },
+                    "target": {
+                        "name": "Unknown",
+                        "location": "Tokyo",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Unknown"
+                    },
+                    "start_time": "1933-02-20",
+                    "end_time": "1933-02-20",
+                    "location": "Tokyo Bijutsu Kurabu, Tokyo",
+                    "method": "sale (lot 96, possibly acquired by Motoyama Toyozane)"
+                },
+                {
+                    "source": {
+                        "name": "Unknown",
+                        "location": "Tokyo",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Unknown"
+                    },
+                    "target": {
+                        "name": "Unknown",
+                        "location": "Tokyo",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Unknown"
+                    },
+                    "start_time": "1933-02-20",
+                    "end_time": "late 1947 (possibly)",
+                    "location": "Tokyo",
+                    "method": "Unknown"
+                },
+                {
+                    "source": {
+                        "name": "Unknown",
+                        "location": "Tokyo",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Unknown"
+                    },
+                    "target": {
+                        "name": "Mr. Stanley Jerome Love",
+                        "location": "New York",
+                        "birth_date": "1926",
+                        "death_date": "1994",
+                        "type": "Collector"
+                    },
+                    "start_time": "late 1947 (possibly)",
+                    "end_time": "late 1947 (possibly)",
+                    "location": "Tokyo Bijutsu Kurabu, Tokyo",
+                    "method": "sold to / purchased by/acquired by (from/through/in)"
+                },
+                {
+                    "source": {
+                        "name": "Mr. Stanley Jerome Love",
+                        "location": "New York",
+                        "birth_date": "1926",
+                        "death_date": "1994",
+                        "type": "Collector"
+                    },
+                    "target": {
+                        "name": "William K. Love and Victoria Love",
+                        "location": "Mill Valley, Calif. and Larkspur, Calif.",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Group"
+                    },
+                    "start_time": "1994",
+                    "end_time": "1994",
+                    "location": "New York / Mill Valley, Calif. / Larkspur, Calif.",
+                    "method": "by descent to"
+                },
+                {
+                    "source": {
+                        "name": "William K. Love and Victoria Love",
+                        "location": "Mill Valley, Calif. and Larkspur, Calif.",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Group"
+                    },
+                    "target": {
+                        "name": "Christies, New York",
+                        "location": "New York",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Institution"
+                    },
+                    "start_time": "1994",
+                    "end_time": "1994-10-25",
+                    "location": "New York",
+                    "method": "consigned to (sale, lot 201, withdrawn, unsold)"
+                },
+                {
+                    "source": {
+                        "name": "Christies, New York",
+                        "location": "New York",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Institution"
+                    },
+                    "target": {
+                        "name": "William K. Love and Victoria Love",
+                        "location": "Mill Valley, Calif. and Larkspur, Calif.",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Group"
+                    },
+                    "start_time": "1994-10-25",
+                    "end_time": "2007",
+                    "location": "New York / Mill Valley, Calif. / Larkspur, Calif.",
+                    "method": "Unknown"
+                },
+                {
+                    "source": {
+                        "name": "William K. Love and Victoria Love",
+                        "location": "Mill Valley, Calif. and Larkspur, Calif.",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Group"
+                    },
+                    "target": {
+                        "name": "Yale University Art Gallery",
+                        "location": "New Haven, Conn.",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Institution"
+                    },
+                    "start_time": "2007",
+                    "end_time": "2021",
+                    "location": "New Haven, Conn.",
+                    "method": "on loan to"
+                },
+                {
+                    "source": {
+                        "name": "William K. Love and Victoria Love",
+                        "location": "Mill Valley, Calif. and Larkspur, Calif.",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Group"
+                    },
+                    "target": {
+                        "name": "Yale University Art Gallery",
+                        "location": "New Haven, Conn.",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Institution"
+                    },
+                    "start_time": "2021",
+                    "end_time": "Unknown",
+                    "location": "New Haven, Conn.",
+                    "method": "given to"
+                }
+            ],
+            "model": "google/gemini-2.5-pro-preview-03-25"
+        }
+    ],
+    "provenance": "H\u014dgaian collection (Baron Kawada Koichir\u014d, 1836\u20131896), Tokyo [see note 1]; by descent to his son Baron Kawada Ry\u014dkichi (1856\u20131951), Tokyo; sale, Tokyo Bijutsu Kurabu (Tokyo Art Club), Tokyo, February 20, 1933, lot 96 [see note 2]; possibly acquired by Motoyama Toyozane, (1877\u2013 ), Tokyo. Sale, Tokyo Bijutsu Kurabu (Tokyo Art Club), Tokyo, possibly late 1947 [see note 3]; sold to Mr. Stanley Jerome Love (1926\u20131994), New York, possibly late 1947 [see note 4]; by descent to his son, William K. Love, Mill Valley, Calif., and to his daughter, Victoria Love, Larkspur, Calif., [sale, Christies, New York, October 25, 1994, lot 201 (withdrawn, unsold)] (on loan to the Yale University Art Gallery, New Haven, Conn., 2007\u201321); given to the Yale University Art Gallery, New Haven, Conn., 2021\r\n\r\nNote 1: H\u014dgaian was the collecting name of Baron Kawada Koichir\u014d, a native of Tosa province, and pioneering entrepreneur, who served as the third Governor of the Bank of Japan from 1889\u201396.\r\n\r\nNote 2: While the Tokyo Art Club was the venue, the dealers for the H\u014dgaian collection sale were Hashimoto Motosuke representing the Tsuboya Main Store, and Motoyama Toyozane (1877-?) of Y\u016bk\u014dd\u014d, a gallery he owned in Shiba, Tokyo, that specialized in Japanese antiques. Motoyama Toyozane was a powerful art dealer in the late Taisho to early Showa periods and was originally from Niigata Prefecture. \r\n\r\nNote 3: Possibly in response to a new wealth tax imposed in 1946, and following the aftermath of the Second World War and bombing of Tokyo, the Tokyo Bijutsu Club began holding sales between 1947 and 1949; however, the sales between 1948 and 1949 were only tea-related, so it is likely the screens were sold in 1947.\r\n\r\nNote 4: Mr. Love was a West Point graduate, stationed in Yokohama, Japan, from June 4, 1947 to November 14, 1949. According to his son, William K. Love, his father acquired the screens from the Tokyo Bijutsu Club while he was stationed in Yokohama (email  from William K. Love to Sadako Ohki, September 29, 2021, curatorial object file) Following Love\u2019s return to the United States, he continued collecting Chinese and Japanese art, much of which he donated to New York institutions\r\n",
+    "object_id": 122030,
+    "date": "2025-04-23 15:53:51"
+}

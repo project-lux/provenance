@@ -1,0 +1,552 @@
+{
+    "output": [
+        {
+            "movements": [
+                {
+                    "source": {
+                        "name": "Hendrik de Winter and Jan Ijver",
+                        "location": "Amsterdam",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Group"
+                    },
+                    "target": {
+                        "name": "Jan de Neufville",
+                        "location": "Amsterdam",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Person"
+                    },
+                    "start_time": "1773-09-08",
+                    "end_time": "1773-09-08",
+                    "location": "Amsterdam",
+                    "method": "sale"
+                },
+                {
+                    "source": {
+                        "name": "Jan de Neufville",
+                        "location": "Amsterdam",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Person"
+                    },
+                    "target": {
+                        "name": "Gerrit van der Pot",
+                        "location": "Rotterdam",
+                        "birth_date": "1732",
+                        "death_date": "1807",
+                        "type": "Collector"
+                    },
+                    "start_time": "1782",
+                    "end_time": "1782",
+                    "location": "Unknown",
+                    "method": "sold to"
+                },
+                {
+                    "source": {
+                        "name": "Gerrit van der Pot",
+                        "location": "Rotterdam",
+                        "birth_date": "1732",
+                        "death_date": "1807",
+                        "type": "Collector"
+                    },
+                    "target": {
+                        "name": "Pieter Roelfsema",
+                        "location": "Groningen, the Netherlands",
+                        "birth_date": "1745",
+                        "death_date": "1826",
+                        "type": "Collector"
+                    },
+                    "start_time": "1808-06-06",
+                    "end_time": "1808-06-06",
+                    "location": "Rotterdam",
+                    "method": "sale"
+                },
+                {
+                    "source": {
+                        "name": "Pieter Roelfsema",
+                        "location": "Groningen, the Netherlands",
+                        "birth_date": "1745",
+                        "death_date": "1826",
+                        "type": "Collector"
+                    },
+                    "target": {
+                        "name": "Unknown",
+                        "location": "Unknown",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Unknown"
+                    },
+                    "start_time": "1826",
+                    "end_time": "Unknown",
+                    "location": "Unknown",
+                    "method": "Unknown"
+                },
+                {
+                    "source": {
+                        "name": "Unknown",
+                        "location": "Unknown",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Unknown"
+                    },
+                    "target": {
+                        "name": "John Smith",
+                        "location": "Unknown",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Dealer"
+                    },
+                    "start_time": "Unknown",
+                    "end_time": "Unknown",
+                    "location": "Unknown",
+                    "method": "with"
+                },
+                {
+                    "source": {
+                        "name": "John Smith",
+                        "location": "Unknown",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Dealer"
+                    },
+                    "target": {
+                        "name": "P. O\u2019Rial",
+                        "location": "Paris",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Person"
+                    },
+                    "start_time": "19TH century",
+                    "end_time": "19TH century",
+                    "location": "Unknown",
+                    "method": "sold to"
+                },
+                {
+                    "source": {
+                        "name": "P. O\u2019Rial",
+                        "location": "Paris",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Person"
+                    },
+                    "target": {
+                        "name": "Unknown",
+                        "location": "Unknown",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Unknown"
+                    },
+                    "start_time": "19TH century",
+                    "end_time": "Unknown",
+                    "location": "Unknown",
+                    "method": "Unknown"
+                },
+                {
+                    "source": {
+                        "name": "Unknown",
+                        "location": "Unknown",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Unknown"
+                    },
+                    "target": {
+                        "name": "Baron Jules Edmond Louis Renouard de Bussi\u00e8re",
+                        "location": "Paris",
+                        "birth_date": "1804",
+                        "death_date": "1888",
+                        "type": "Collector"
+                    },
+                    "start_time": "Unknown",
+                    "end_time": "1888",
+                    "location": "Paris",
+                    "method": "purchased by/acquired by (from/through/in)"
+                },
+                {
+                    "source": {
+                        "name": "Baron Jules Edmond Louis Renouard de Bussi\u00e8re",
+                        "location": "Paris",
+                        "birth_date": "1804",
+                        "death_date": "1888",
+                        "type": "Collector"
+                    },
+                    "target": {
+                        "name": "Pourtales collection",
+                        "location": "London",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Collector"
+                    },
+                    "start_time": "1888",
+                    "end_time": "Unknown",
+                    "location": "London",
+                    "method": "by descent to"
+                },
+                {
+                    "source": {
+                        "name": "Pourtales collection",
+                        "location": "London",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Collector"
+                    },
+                    "target": {
+                        "name": "Unknown",
+                        "location": "Unknown",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Unknown"
+                    },
+                    "start_time": "Unknown",
+                    "end_time": "Unknown",
+                    "location": "Unknown",
+                    "method": "Unknown"
+                },
+                {
+                    "source": {
+                        "name": "Unknown",
+                        "location": "Unknown",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Unknown"
+                    },
+                    "target": {
+                        "name": "F. Kleinberger Galleries (Franz Kleinberger, dealer)",
+                        "location": "Paris",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Dealer"
+                    },
+                    "start_time": "Unknown",
+                    "end_time": "Unknown",
+                    "location": "Paris",
+                    "method": "with"
+                },
+                {
+                    "source": {
+                        "name": "F. Kleinberger Galleries (Franz Kleinberger, dealer)",
+                        "location": "Paris",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Dealer"
+                    },
+                    "target": {
+                        "name": "August de Ridder",
+                        "location": "Sch\u00f6nberg, Kronberg-im-Tanus, Germany",
+                        "birth_date": "1837",
+                        "death_date": "1911",
+                        "type": "Collector"
+                    },
+                    "start_time": "Unknown",
+                    "end_time": "1911",
+                    "location": "Sch\u00f6nberg, Kronberg-im-Tanus, Germany",
+                    "method": "purchased by/acquired by (from/through/in)"
+                },
+                {
+                    "source": {
+                        "name": "August de Ridder",
+                        "location": "Sch\u00f6nberg, Kronberg-im-Tanus, Germany",
+                        "birth_date": "1837",
+                        "death_date": "1911",
+                        "type": "Collector"
+                    },
+                    "target": {
+                        "name": "Unknown",
+                        "location": "Unknown",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Unknown"
+                    },
+                    "start_time": "1911",
+                    "end_time": "Unknown",
+                    "location": "Unknown",
+                    "method": "Unknown"
+                },
+                {
+                    "source": {
+                        "name": "Unknown",
+                        "location": "Unknown",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Unknown"
+                    },
+                    "target": {
+                        "name": "Adolf Mayer",
+                        "location": "The Hague and New York",
+                        "birth_date": "1872",
+                        "death_date": "1941",
+                        "type": "Collector"
+                    },
+                    "start_time": "Unknown",
+                    "end_time": "1936",
+                    "location": "The Hague and New York",
+                    "method": "purchased by/acquired by (from/through/in)"
+                },
+                {
+                    "source": {
+                        "name": "Adolf Mayer",
+                        "location": "The Hague and New York",
+                        "birth_date": "1872",
+                        "death_date": "1941",
+                        "type": "Collector"
+                    },
+                    "target": {
+                        "name": "Adolf Ivan Mayer and Herbert Henry Mayer",
+                        "location": "possibly New York",
+                        "birth_date": "1918/1907",
+                        "death_date": "2006/2003",
+                        "type": "Group"
+                    },
+                    "start_time": "1941",
+                    "end_time": "Unknown",
+                    "location": "possibly New York",
+                    "method": "by descent to"
+                },
+                {
+                    "source": {
+                        "name": "Adolf Ivan Mayer and Herbert Henry Mayer",
+                        "location": "possibly New York",
+                        "birth_date": "1918/1907",
+                        "death_date": "2006/2003",
+                        "type": "Group"
+                    },
+                    "target": {
+                        "name": "Unknown",
+                        "location": "Unknown",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Unknown"
+                    },
+                    "start_time": "Unknown",
+                    "end_time": "1955",
+                    "location": "Unknown",
+                    "method": "Unknown"
+                },
+                {
+                    "source": {
+                        "name": "Unknown",
+                        "location": "Unknown",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Unknown"
+                    },
+                    "target": {
+                        "name": "Edward Speelman (Speelman, Ltd.)",
+                        "location": "London",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Dealer"
+                    },
+                    "start_time": "1955",
+                    "end_time": "1955",
+                    "location": "London",
+                    "method": "with"
+                },
+                {
+                    "source": {
+                        "name": "Edward Speelman (Speelman, Ltd.)",
+                        "location": "London",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Dealer"
+                    },
+                    "target": {
+                        "name": "Alfred Brod (Alfred Brod Gallery)",
+                        "location": "London",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Dealer"
+                    },
+                    "start_time": "1955",
+                    "end_time": "1956",
+                    "location": "London",
+                    "method": "Unknown"
+                },
+                {
+                    "source": {
+                        "name": "Alfred Brod (Alfred Brod Gallery)",
+                        "location": "London",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Dealer"
+                    },
+                    "target": {
+                        "name": "Dr. Herbert Girardet",
+                        "location": "Kettwig, Essen, Germany",
+                        "birth_date": "1910",
+                        "death_date": "1972",
+                        "type": "Collector"
+                    },
+                    "start_time": "1959",
+                    "end_time": "1959",
+                    "location": "London",
+                    "method": "purchased by/acquired by (from/through/in)"
+                },
+                {
+                    "source": {
+                        "name": "Dr. Herbert Girardet",
+                        "location": "Kettwig, Essen, Germany",
+                        "birth_date": "1910",
+                        "death_date": "1972",
+                        "type": "Collector"
+                    },
+                    "target": {
+                        "name": "private collection",
+                        "location": "Kettwig, Essen, Germany",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Collector"
+                    },
+                    "start_time": "1972",
+                    "end_time": "Unknown",
+                    "location": "Kettwig, Essen, Germany",
+                    "method": "by descent to"
+                },
+                {
+                    "source": {
+                        "name": "private collection",
+                        "location": "Kettwig, Essen, Germany",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Collector"
+                    },
+                    "target": {
+                        "name": "Unknown",
+                        "location": "Unknown",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Unknown"
+                    },
+                    "start_time": "Unknown",
+                    "end_time": "2002",
+                    "location": "Unknown",
+                    "method": "Unknown"
+                },
+                {
+                    "source": {
+                        "name": "Unknown",
+                        "location": "Unknown",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Unknown"
+                    },
+                    "target": {
+                        "name": "Charles Roelofsz (Kunsthandel Charles Roelofsz)",
+                        "location": "Amsterdam",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Dealer"
+                    },
+                    "start_time": "Unknown",
+                    "end_time": "2002-03",
+                    "location": "Amsterdam",
+                    "method": "with"
+                },
+                {
+                    "source": {
+                        "name": "Charles Roelofsz (Kunsthandel Charles Roelofsz)",
+                        "location": "Amsterdam",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Dealer"
+                    },
+                    "target": {
+                        "name": "Sotheby's",
+                        "location": "New York",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Institution"
+                    },
+                    "start_time": "Unknown",
+                    "end_time": "2004-01-22",
+                    "location": "New York",
+                    "method": "consigned to"
+                },
+                {
+                    "source": {
+                        "name": "Sotheby's",
+                        "location": "New York",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Institution"
+                    },
+                    "target": {
+                        "name": "Suzanne Vertun Hascoe and Norman Hascoe",
+                        "location": "Greenwich, Conn.",
+                        "birth_date": "1931/1929",
+                        "death_date": "2010/2007",
+                        "type": "Collector"
+                    },
+                    "start_time": "2004",
+                    "end_time": "2004",
+                    "location": "New York",
+                    "method": "sold to"
+                },
+                {
+                    "source": {
+                        "name": "Suzanne Vertun Hascoe and Norman Hascoe",
+                        "location": "Greenwich, Conn.",
+                        "birth_date": "1931/1929",
+                        "death_date": "2010/2007",
+                        "type": "Collector"
+                    },
+                    "target": {
+                        "name": "Christie's",
+                        "location": "New York",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Institution"
+                    },
+                    "start_time": "Unknown",
+                    "end_time": "2014-06-04",
+                    "location": "New York",
+                    "method": "consigned to"
+                },
+                {
+                    "source": {
+                        "name": "Christie's",
+                        "location": "New York",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Institution"
+                    },
+                    "target": {
+                        "name": "private collection",
+                        "location": "Rhode Island",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Collector"
+                    },
+                    "start_time": "2014-06-04",
+                    "end_time": "2014-06-04",
+                    "location": "New York",
+                    "method": "sold to"
+                },
+                {
+                    "source": {
+                        "name": "private collection",
+                        "location": "Rhode Island",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Collector"
+                    },
+                    "target": {
+                        "name": "Koetser Gallery",
+                        "location": "Zurich",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Dealer"
+                    },
+                    "start_time": "2023",
+                    "end_time": "Unknown",
+                    "location": "Zurich",
+                    "method": "consigned to"
+                }
+            ],
+            "model": "google/gemini-2.5-pro-preview-03-25"
+        }
+    ],
+    "provenance": "Sale, Hendrik de Winter and Jan Ijver, Amsterdam, September 8, 1773, lot 33; sold to Jan de Neufville, Amsterdam, September 8, 1773; sold to Gerrit van der Pot (1732\u20131807), Rotterdam, 1782; sale, Gebroeders van Rijp, Rotterdam, June 6, 1808, lot 124; sold to Pieter Roelfsema (1745\u20131826), Groningen, the Netherlands. Possibly with John Smith [see note 1]; sold to P. O\u2019Rial , Paris, 19TH century. Baron Jules Edmond Louis Renouard de Bussi\u00e8re (1804\u20131888), Paris; probably by descent to Pourtales collection, London [see note 2]. Reportedly with F. Kleinberger Galleries (Franz Kleinberger, dealer), Paris; reportedly August de Ridder (1837\u20131911), Sch\u00f6nberg, Kronberg-im-Tanus, Germany [see note 3]. Adolf Mayer (1872\u20131941), The Hague and New York, by 1936; by descent to his nephews, Adolf Ivan Mayer (1918\u20132006) and Herbert Henry Mayer (1907\u20132003), possibly New York. With Edward Speelman (Speelman, Ltd.), London, 1955. With Alfred Brod (Alfred Brod Gallery), London, 1956. Acquired by Dr. Herbert Girardet (1910\u20131972), Kettwig, Essen, Germany, 1959; by descent to private collection, Kettwig, Essen, Germany. With Charles Roelofsz (Kunsthandel Charles Roelofsz), Amsterdam, by March 2002. [Sale, Sotheby's, New York, January 22, 2004, lot 33 (unsold)]; sold in an after-sale to Suzanne Vertun Hascoe (1931\u20132010) and Norman Hascoe (1929\u20132007), Greenwich, Conn., 2004; sale, Christie\u2019s, New York, June 4, 2014, lot 29; sold to private collection, Rhode Island, June 4, 2014 (consigned to Koetser Gallery, Zurich, 2023)\r\n\r\nNote 1: According to Peter Sutton, Old Master Paintings from the Hascoe Collection, Greenwich: Bruce Museum of Arts and Sciences, 2005, p. 22.\r\n\r\nNote 2: According to Gudlauggson (1960), the painting was in the collection of Baron Edmond de Bussi\u00e8re, Paris. This almost certainly refers to Baron Jules Edmond Louis Renouard de Bussi\u00e8re (1804\u20131888), Paris. An unpublished manuscript catalogue of the Mayer collection at the RKD in the Hague notes that the painting was in the Collection Pourtal\u00e8s, London. (\u201cVerzameling A. Mayer, Den Haag\u201d by Horst Gerson, 1936, RKD-Nederlands Instituut voor Kunstgeschiedenis, The Hague, copy in accession file) This may refer to the collection of Melanie Renouard de Bussi\u00e8re (1836-1914), daughter of Baron Jules Edmond Louis Renouard de Bussi\u00e8re, and her husband, Auguste de Pourtal\u00e8s (1828-1895), son of James-Alexandre de Pourtal\u00e8s (1776-1855), who was a major collector of European art. (For more on the Pourtal\u00e8s collection, see A. de Faniez, \u201cGaleries et cabinets: Galerie Pourtal\u00e8s,\u201d Revue de Paris 9 (1865), pp. 396\u2013403; and Laurent Langer, \u201cLe comte de Pourtal\u00e8s et les premiers collectionneurs d'Ingres,\u201d Ingres, un homme \u00e0 part? Entre carri\u00e8re et mythe, la fabrique du personnage: actes du colloque, E\u0301cole du Louvre, 25-28 avril 2006, Paris: E\u0301cole du Louvre, 2009, pp. 111\u2013120)\r\n\r\nNote 3: According to Gudlaugsson (1960), the painting was formerly with the Kleinberger Galleries, and then in the collection of August de Ridder (1837\u20131911). De Ridder owned nearly ninety paintings by 17th\u2013century Dutch and Flemish artists. After De Ridder\u2019s death, the St\u00e4delsches Kunstinstitut in Frankfurt initially took over the collection on loan, and then the collection was \u2013 per De Ridder\u2019s will \u2013 transferred via Paris to the New York branch of Kleinberger Galleries for sale. The Kleinberger Galleries in New York presented the collection to potential buyers in the United States between November 24 and December 15, 1913. After the unsold collection returned to Paris, it was confiscated as enemy property upon the start of World War I; a foreclosure auction of the De Ridder collection took place at the Galerie Georges Petit, Paris, on June 2, 1924. Research conducted by the Gallery between 2023\u201324 has been unable to confirm the painting\u2019s inclusion in either the Kleinberger or de Ridder collections.\r\n",
+    "object_id": 324945,
+    "date": "2025-04-23 15:53:49"
+}

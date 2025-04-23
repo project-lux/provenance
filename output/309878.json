@@ -1,0 +1,206 @@
+{
+    "output": [
+        {
+            "movements": [
+                {
+                    "source": "Unknown",
+                    "target": {
+                        "name": "Art Market",
+                        "location": "Lucerne",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Dealer"
+                    },
+                    "start_time": "Unknown",
+                    "end_time": "by 1925",
+                    "location": "Lucerne",
+                    "method": "Unknown"
+                },
+                {
+                    "source": {
+                        "name": "Art Market",
+                        "location": "Lucerne",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Dealer"
+                    },
+                    "target": {
+                        "name": "Unknown",
+                        "location": "Unknown",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Unknown"
+                    },
+                    "start_time": "by 1925",
+                    "end_time": "Unknown",
+                    "location": "Unknown",
+                    "method": "Unknown"
+                },
+                {
+                    "source": {
+                        "name": "Unknown",
+                        "location": "Unknown",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Unknown"
+                    },
+                    "target": {
+                        "name": "Jakob Goldschmidt",
+                        "location": "Berlin",
+                        "birth_date": "1882",
+                        "death_date": "1955",
+                        "type": "Collector"
+                    },
+                    "start_time": "Unknown",
+                    "end_time": "by 1933",
+                    "location": "Berlin",
+                    "method": "purchased by/acquired by (from/through/in)"
+                },
+                {
+                    "source": {
+                        "name": "Jakob Goldschmidt",
+                        "location": "Berlin",
+                        "birth_date": "1882",
+                        "death_date": "1955",
+                        "type": "Collector"
+                    },
+                    "target": {
+                        "name": "Hugo Helbing",
+                        "location": "Frankfurt am Main",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Dealer"
+                    },
+                    "start_time": "June 1936",
+                    "end_time": "June 23, 1936",
+                    "location": "Frankfurt am Main",
+                    "method": "consigned to"
+                },
+                {
+                    "source": {
+                        "name": "Hugo Helbing",
+                        "location": "Frankfurt am Main",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Dealer"
+                    },
+                    "target": {
+                        "name": "Dr. Irmgard Freein von Lemmers Danforth",
+                        "location": "Wetzlar, Germany",
+                        "birth_date": "1892",
+                        "death_date": "1984",
+                        "type": "Collector"
+                    },
+                    "start_time": "June 23, 1936",
+                    "end_time": "June 23, 1936",
+                    "location": "Frankfurt am Main",
+                    "method": "sold to"
+                },
+                {
+                    "source": {
+                        "name": "Dr. Irmgard Freein von Lemmers Danforth",
+                        "location": "Wetzlar, Germany",
+                        "birth_date": "1892",
+                        "death_date": "1984",
+                        "type": "Collector"
+                    },
+                    "target": {
+                        "name": "City of Wetzlar",
+                        "location": "Wetzlar, Germany",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Institution"
+                    },
+                    "start_time": "1963",
+                    "end_time": "2020",
+                    "location": "Wetzlar, Germany",
+                    "method": "given to"
+                },
+                {
+                    "source": {
+                        "name": "City of Wetzlar",
+                        "location": "Wetzlar, Germany",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Institution"
+                    },
+                    "target": {
+                        "name": "Heirs of Jacob Goldschmidt",
+                        "location": "Unknown",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Group"
+                    },
+                    "start_time": "2020",
+                    "end_time": "2020",
+                    "location": "Wetzlar, Germany",
+                    "method": "Unknown"
+                },
+                {
+                    "source": {
+                        "name": "Heirs of Jacob Goldschmidt",
+                        "location": "Unknown",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Group"
+                    },
+                    "target": {
+                        "name": "Sotheby's",
+                        "location": "London",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Dealer"
+                    },
+                    "start_time": "2020",
+                    "end_time": "December 5, 2020",
+                    "location": "London",
+                    "method": "Sold through"
+                },
+                {
+                    "source": {
+                        "name": "Sotheby's",
+                        "location": "London",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Dealer"
+                    },
+                    "target": {
+                        "name": "Benappi Fine Art",
+                        "location": "London",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Dealer"
+                    },
+                    "start_time": "December 5, 2020",
+                    "end_time": "December 5, 2020",
+                    "location": "London",
+                    "method": "sold to"
+                },
+                {
+                    "source": {
+                        "name": "Benappi Fine Art",
+                        "location": "London",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Dealer"
+                    },
+                    "target": {
+                        "name": "Yale University Art Gallery",
+                        "location": "New Haven, Conn.",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Institution"
+                    },
+                    "start_time": "2021",
+                    "end_time": "2021",
+                    "location": "London",
+                    "method": "sold to"
+                }
+            ],
+            "model": "google/gemini-2.5-pro-preview-03-25"
+        }
+    ],
+    "provenance": "Art Market, Lucerne, by 1925 (as Bertoldo di Giovanni). Jakob Goldschmidt (1882\u20131955), Berlin, by 1933 [see note 1]; forced sale, Hugo Helbing, Frankfurt am Main, June 23, 1936, lot 68 (as Circle of Bertoldo di Giovanni); sold to Dr. Irmgard Freein von Lemmers Danforth (1892\u20131984), Wetzlar, Germany, June 23, 1936 [see note 2]; given to the city of Wetzlar, Germany, 1963; transferred to the Palais Papuis, Wetzlar, Germany, 1967; restituted to the heirs of Jacob Goldschmidt, 2020; sale, Sotheby\u2019s, London, December 5, 2020 lot 29 (as Attributed to Francesco di Giorgio Martini); sold to Benappi Fine Art, London, December 5, 2020; sold to the Yale University Art Gallery, New Haven, Conn., 2021\r\n\r\nNote 1: Banker, financier, and founder of the Darmst\u00e4dter und Nationalbank (Danat Bank), Jakob Goldschmidt was also a renowned art collector, revered for his extensive holdings of impressionist paintings, European porcelain and Renaissance art. In April 1933, following Hitler\u2019s rise to power, and as a German-Jew, Goldschmidt fled Nazi Germany via Switzerland and London, ultimately settling in New York. Although he managed to transport some of his collection with him, many of the objects, including his collection of Renaissance works of art, were left behind at his mansion on Mattha\u0308ikirchstrasse. In July 1933, Goldschmidt was further coerced into selling his mansion to the Italian Fascist regime to serve as their German embassy. His art collection was subsequently displaced and moved to his private office in Berlin. The Renaissance collection remained there until June 1936 when it was consigned to Hugo Helbing. Three-hundred lots were offered for sale and of the successful bids, the proceeds of the sale never reached Goldschmidt.\r\n\r\nNote 2: Dr. Lemmers-Danforth was a pediatrician and notable art collector. In 1963, she donated around five-hundred works of art to the city of Wetzlar, including Virgin and Child with Angels and Cherubim. In 1967, the collection was put on display at the Palais Papuis, Wetzlar. In 2020, following extensive provenance research on the collection, and with the recognition that the 1936 sale had been forced and the direct result of Nazi persecution, the Virgin and Child with Angels and Cherubim was restituted to the heirs of Jacob Goldschmidt. \r\n\r\n",
+    "object_id": 309878,
+    "date": "2025-04-23 15:53:34"
+}

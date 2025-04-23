@@ -1,0 +1,406 @@
+{
+    "output": [
+        {
+            "movements": [
+                {
+                    "source": "Unknown",
+                    "target": {
+                        "name": "Baron E. Etienne-Edmond-Martin de Beurnonville",
+                        "location": "Paris",
+                        "birth_date": "1825",
+                        "death_date": "1906",
+                        "type": "Collector"
+                    },
+                    "start_time": "Unknown",
+                    "end_time": "1881",
+                    "location": "Paris",
+                    "method": "Unknown"
+                },
+                {
+                    "source": {
+                        "name": "Baron E. Etienne-Edmond-Martin de Beurnonville",
+                        "location": "Paris",
+                        "birth_date": "1825",
+                        "death_date": "1906",
+                        "type": "Collector"
+                    },
+                    "target": {
+                        "name": "Pillet",
+                        "location": "Paris",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Institution"
+                    },
+                    "start_time": "1881",
+                    "end_time": "May 9, 1881",
+                    "location": "Paris",
+                    "method": "sale"
+                },
+                {
+                    "source": {
+                        "name": "Pillet",
+                        "location": "Paris",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Institution"
+                    },
+                    "target": {
+                        "name": "Jean Dollfus",
+                        "location": "Paris",
+                        "birth_date": "1823",
+                        "death_date": "1911",
+                        "type": "Collector"
+                    },
+                    "start_time": "May 9, 1881",
+                    "end_time": "Unknown",
+                    "location": "Paris",
+                    "method": "purchased by/acquired by (from/through/in)"
+                },
+                {
+                    "source": {
+                        "name": "Jean Dollfus",
+                        "location": "Paris",
+                        "birth_date": "1823",
+                        "death_date": "1911",
+                        "type": "Collector"
+                    },
+                    "target": {
+                        "name": "Lair-Dubreuil",
+                        "location": "Paris",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Institution"
+                    },
+                    "start_time": "Unknown",
+                    "end_time": "April 1, 1912",
+                    "location": "Paris",
+                    "method": "sale"
+                },
+                {
+                    "source": {
+                        "name": "Lair-Dubreuil",
+                        "location": "Paris",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Institution"
+                    },
+                    "target": {
+                        "name": "Frederik Muller",
+                        "location": "Amsterdam",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Dealer"
+                    },
+                    "start_time": "April 1, 1912",
+                    "end_time": "Unknown",
+                    "location": "Amsterdam",
+                    "method": "purchased by/acquired by (from/through/in)"
+                },
+                {
+                    "source": {
+                        "name": "Frederik Muller",
+                        "location": "Amsterdam",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Dealer"
+                    },
+                    "target": {
+                        "name": "Franz Kleinberger",
+                        "location": "Paris",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Dealer"
+                    },
+                    "start_time": "Unknown",
+                    "end_time": "1913",
+                    "location": "Paris",
+                    "method": "sold to"
+                },
+                {
+                    "source": {
+                        "name": "Franz Kleinberger",
+                        "location": "Paris",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Dealer"
+                    },
+                    "target": {
+                        "name": "Harald Petri",
+                        "location": "Antwerp",
+                        "birth_date": "1877",
+                        "death_date": "1954",
+                        "type": "Collector"
+                    },
+                    "start_time": "1913",
+                    "end_time": "1926",
+                    "location": "Antwerp",
+                    "method": "sold to"
+                },
+                {
+                    "source": {
+                        "name": "Harald Petri",
+                        "location": "Antwerp",
+                        "birth_date": "1877",
+                        "death_date": "1954",
+                        "type": "Collector"
+                    },
+                    "target": {
+                        "name": "Frederik Muller et Cie",
+                        "location": "Amsterdam",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Institution"
+                    },
+                    "start_time": "1926",
+                    "end_time": "November 30\u2013December 6, 1926",
+                    "location": "Amsterdam",
+                    "method": "sale"
+                },
+                {
+                    "source": {
+                        "name": "Frederik Muller et Cie",
+                        "location": "Amsterdam",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Institution"
+                    },
+                    "target": {
+                        "name": "Unknown",
+                        "location": "Unknown",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Unknown"
+                    },
+                    "start_time": "November 30\u2013December 6, 1926",
+                    "end_time": "Unknown",
+                    "location": "Unknown",
+                    "method": "purchased by/acquired by (from/through/in)"
+                },
+                {
+                    "source": {
+                        "name": "Unknown",
+                        "location": "Unknown",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Unknown"
+                    },
+                    "target": {
+                        "name": "Palais des Beaux-Arts",
+                        "location": "Brussels",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Institution"
+                    },
+                    "start_time": "Unknown",
+                    "end_time": "January 31\u2013February 1, 1944",
+                    "location": "Brussels",
+                    "method": "sale"
+                },
+                {
+                    "source": {
+                        "name": "Palais des Beaux-Arts",
+                        "location": "Brussels",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Institution"
+                    },
+                    "target": {
+                        "name": "Maurice Lagrand",
+                        "location": "Brussels",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Dealer"
+                    },
+                    "start_time": "January 31\u2013February 1, 1944",
+                    "end_time": "January 31\u2013February 1, 1944",
+                    "location": "Brussels",
+                    "method": "sold to"
+                },
+                {
+                    "source": {
+                        "name": "Maurice Lagrand",
+                        "location": "Brussels",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Dealer"
+                    },
+                    "target": {
+                        "name": "Walter Andreas Hofer",
+                        "location": "Berlin",
+                        "birth_date": "1893",
+                        "death_date": "1971",
+                        "type": "Dealer"
+                    },
+                    "start_time": "January 31\u2013February 1, 1944",
+                    "end_time": "Unknown",
+                    "location": "Berlin",
+                    "method": "sold to (probably on behalf of Hermann G\u00f6ring)"
+                },
+                {
+                    "source": {
+                        "name": "Walter Andreas Hofer",
+                        "location": "Berlin",
+                        "birth_date": "1893",
+                        "death_date": "1971",
+                        "type": "Dealer"
+                    },
+                    "target": {
+                        "name": "Dr. Meyer",
+                        "location": "Berlin",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Person"
+                    },
+                    "start_time": "Unknown",
+                    "end_time": "Unknown",
+                    "location": "Berlin",
+                    "method": "possibly given to"
+                },
+                {
+                    "source": {
+                        "name": "Dr. Meyer",
+                        "location": "Berlin",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Person"
+                    },
+                    "target": {
+                        "name": "Private collection",
+                        "location": "Europe",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Collector"
+                    },
+                    "start_time": "Unknown",
+                    "end_time": "Unknown",
+                    "location": "Europe",
+                    "method": "Unknown"
+                },
+                {
+                    "source": {
+                        "name": "Private collection",
+                        "location": "Europe",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Collector"
+                    },
+                    "target": {
+                        "name": "Kunsthandel A.G.",
+                        "location": "Lucerne",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Dealer"
+                    },
+                    "start_time": "Unknown",
+                    "end_time": "March 1973",
+                    "location": "Lucerne",
+                    "method": "sold to (jointly owned with Helmut R\u00fcdiger Seling)"
+                },
+                {
+                    "source": {
+                        "name": "Kunsthandel A.G.",
+                        "location": "Lucerne",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Dealer"
+                    },
+                    "target": {
+                        "name": "Julius B\u00f6hler",
+                        "location": "Munich",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Dealer"
+                    },
+                    "start_time": "March 12, 1973",
+                    "end_time": "Unknown",
+                    "location": "Munich",
+                    "method": "consigned to"
+                },
+                {
+                    "source": {
+                        "name": "Kunsthandel A.G.",
+                        "location": "Lucerne",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Dealer"
+                    },
+                    "target": {
+                        "name": "Julius B\u00f6hler",
+                        "location": "Munich",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Dealer"
+                    },
+                    "start_time": "September 1973",
+                    "end_time": "September 1973",
+                    "location": "Munich",
+                    "method": "sold to"
+                },
+                {
+                    "source": {
+                        "name": "Julius B\u00f6hler",
+                        "location": "Munich",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Dealer"
+                    },
+                    "target": {
+                        "name": "Dr. Herbert Schaefer",
+                        "location": "Malaga, Spain",
+                        "birth_date": "1910",
+                        "death_date": "2011",
+                        "type": "Collector"
+                    },
+                    "start_time": "September 1973",
+                    "end_time": "June 7, 1974",
+                    "location": "Malaga, Spain",
+                    "method": "sold to (with Monika Schaefer)"
+                },
+                {
+                    "source": {
+                        "name": "Dr. Herbert Schaefer",
+                        "location": "Malaga, Spain",
+                        "birth_date": "1910",
+                        "death_date": "2011",
+                        "type": "Collector"
+                    },
+                    "target": {
+                        "name": "Yale University Art Gallery",
+                        "location": "New Haven, Conn.",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Institution"
+                    },
+                    "start_time": "1981",
+                    "end_time": "2019",
+                    "location": "New Haven, Conn.",
+                    "method": "on loan to"
+                },
+                {
+                    "source": {
+                        "name": "Monika Schaefer",
+                        "location": "Malaga, Spain",
+                        "birth_date": "Unknown",
+                        "death_date": "2019",
+                        "type": "Collector"
+                    },
+                    "target": {
+                        "name": "Yale University Art Gallery",
+                        "location": "New Haven, Conn.",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Institution"
+                    },
+                    "start_time": "2019",
+                    "end_time": "2019",
+                    "location": "New Haven, Conn.",
+                    "method": "bequeathed to"
+                }
+            ],
+            "model": "google/gemini-2.5-pro-preview-03-25"
+        }
+    ],
+    "provenance": "Baron E. Etienne-Edmond-Martin de Beurnonville (1825\u20131906), Paris, by 1881; sale, Pillet, Paris, May 9, 1881, lot 468. Jean Dollfus (1823\u20131911), Paris; sale, Lair-Dubreuil, Paris, April 1, 1912, lot 99. With Frederik Muller, Amsterdam. Franz Kleinberger, Paris, 1913. Harald Petri (1877\u20131954), Antwerp, by 1926; sale, Frederik Muller et Cie, Amsterdam, November 30\u2013December 6, 1926, lot 57. Sale, Palais des Beaux-Arts, Brussels, January 31\u2013February 1, 1944, lot 43; sold to \u201cLagrand,\u201d probably Brussels, January 31\u2013February 1, 1944 [see note 1]; sold to Walter Andreas Hofer (1893\u20131971), Berlin, probably on behalf of Hermann G\u00f6ring (1893 \u20131946), Munich; possibly given to \u201cDr. Meyer,\u201d Berlin [see note 2]. Private collection, Europe; sold to Kunsthandel A.G., Lucerne, and \u201cSeling,\u201d March 1973 (jointly owned) [see note 3] (consigned to Julius B\u00f6hler, Munich, March 12, 1973); sold to Julius B\u00f6hler, Munich, September, 1973 (Lagerbuch-number 7\u201373) [see note 4]; sold to Monika Schaefer (n\u00e9e Winter, died 2019) and Dr. Herbert Schaefer (1910\u20132011) Malaga, Spain, June 7, 1974 (on loan to the Yale University Art Gallery, New Haven, Conn., 1981\u20132019); bequeathed to the Yale University Art Gallery, New Haven, Conn., 2019\r\n\r\nNote 1: An annotated copy of the 1944 sale catalogue held by the Rijksbureau voor Kunsthistorische Documentatie (RKD), in the Hague, lists the buyer of the Deposition as \u201cLagrand.\u201d (copy in curatorial object file). \u201cLagrand a Bruxelles\u201d is also listed as the former owner of the painting on the \u2018Liste des oeuvres d'art volees par les allemands en belgique pendant l'occupation arretee au 15 mars 1947,\u2019 (Bundesarchiv, Koblenz, B323/403) and in Missing Works of Art Belgium (1994). \u201cLagrand\u201d refers to Maurice Lagrand (life dates unknown) a Belgian art dealer active in Brussels and Paris in the 1940s, who was investigated for selling works of art during the German occupation of Belgium to agents and dealers working on behalf of Adolf Hitler (1889\u20131945) and Hermann G\u00f6ring (1893 \u20131945).\r\n\r\nNote 2: Archival records of the Office de Recuperation Economique, Belgium, record that the painting was sold by Lagrand to Walter Andreas Hofer, a German art dealer and G\u00f6ring\u2019s chief buyer, on behalf of the Nazi leader. However, post-war testimony provided by Hofer notes that G\u00f6ring rejected the painting and that it was instead offered as a birthday gift to a friend, \u201cDr. Meyer,\u201d who worked for the Wirtschaftsministerium (Reich Ministry of Economics), in Berlin.  (State Archives of Belgium, Brussels, ORE_no.375/1). It is uncertain whether G\u00f6ring actually received the picture, and whether the painting was offered to Dr. Meyer. The identify of Dr. Meyer remains unknown. \r\n\r\nNote 3: \u201cSeling\u201d probably refers to art historian and dealer Helmut R\u00fcdiger Seling (1921\u20132016), Munich. \r\n\r\nNote 4: According to the Julius B\u00f6hler archives, Munich, B\u00f6hler received the painting on commission from the Kunsthandel A.G. Lucerne, a subsidiary of B\u00f6hler\u2019s Munich firm. The painting had been acquired jointly by Kunsthandel A.G., Lucerne, and \u201cSeling,\u201d in March 1973 from a private collection. In September 1973, Julius B\u00f6hler purchased the painting. (Lagerbuch-number 7-73, copy in curatorial object file). \r\n\r\nAdditional information:\r\n\r\nThe German occupation of Belgium during World War II began on May 28, 1940 and lasted until Belgium\u2019s liberation by Allied forces between September 1944 and February 1945. Similar to operations in France, Nazi-looting task forces such as the Einsatzstab Reichsleiter Rosenberg systematically confiscated cultural property in private and public ownership. Concurrently, an active art market thrived in Brussels, with French and Belgian dealers selling works of art to counterparts in Germany. Many such dealers and \u201cmiddle-men,\u201d including Maurice Lagrand, worked directly for or on behalf of Hitler and G\u00f6ring. \r\n\r\nThe full scale of confiscations by Nazi looting task forces and of sales in Belgium to German buyers during the occupation period is unknown, but efforts led by the Service de la Recuperation des Oeuvres d\u2019Art, Office de Recuperation Economique (Ministere des Affaires Economique) sought to document, identify, and recover Belgian cultural property transferred between 1940 and 1945. The \u2018Liste des oeuvres d'art volees par les allemands en belgique pendant l'occupation arretee au 15 mars 1947,\u2019 and Missing Art Works of Belgium (Brusells: Minist\u00e8re des affaires \u00e9conomiques, 1994), are published inventories of the \u201cService,\u201d and reflect the ORE\u2019s efforts to recover objects transferred during the occupation.  Research into the ownership history of the Deposition of Christ, its purported transfer to and from G\u00f6ring\u2019s collection and the basis for the painting\u2019s inclusion on the Belgian repertoire is ongoing. The Gallery has been communicating with the State Archives of Belgium to understand the status of the picture. The Gallery welcomes new information that would help clarify the picture\u2019s ownership history.\r\n",
+    "object_id": 64296,
+    "date": "2025-04-23 15:53:43"
+}

@@ -1,0 +1,287 @@
+introduction: |
+  The following examples describe different means by which a work changes hands. For objects in
+  the Gallery's collection, the method of transfer to the Gallery should begin the final provenance
+  record. Use the full name of the museum—Yale University Art Gallery—when indicating this
+  transfer.
+
+terms:
+  - term: "The artist"
+    description: |
+      Begins a provenance citation to describe a transfer of ownership directly from
+      the artist to the next owner. Do not include date of creation or life dates for artist (since
+      these appear with tombstone). For commissions, see Commissioned by.
+    examples:
+      - |
+        The artist, Easthampton, N.Y.; sold to Tiffany Sprague (1920–1999), Milford,
+        Conn., 1950
+
+  - term: "Commissioned by"
+    description: |
+      Begins a provenance citation to describe the original transfer of a
+      work from the artist to a commissioning entity or to another owner on behalf of a
+      commissioning entity. A commissioned work is defined as a work either ordered and
+      subsequently paid for by the first owner or ordered and subsequently paid for by a donor
+      on behalf of the first owner or custodian (see second example below). The first letter of
+      Commissioned by should always be capitalized, as it will only be used at the head of a
+      provenance citation (do not list The artist or the artist's name before Commissioned by, as
+      his/her previous ownership is implied).
+    examples:
+      - |
+        Commissioned by Jeanette Hancock Logan (1902–1980), Chicago, 1930
+      - |
+        Commissioned by Doge Antonio Grimani (1434–1523) for the church of Santa
+        Maria Gloriosa dei Frari, Venice, 1499
+
+  - term: "sale"
+    description: |
+      Describes sale of the work at auction or by a for-profit gallery. Include the following
+      information, in this order: the word sale; auction house name (spell out ampersands and
+      the abbreviation Co.; omit the abbreviations Ltd. or Inc.) and location (if the auction
+      house is located in more than one city, use the city of sale); sale date(s) (use American
+      style: month precedes day precedes year); and lot numbers (referenced as lot) or
+      catalogue numbers (abbreviated as cat.). For eBay sales, also include seller username and
+      item number, as in the third example below.
+    notes: |
+      If a sale took place over several days, list all days (examples: May 12–13, 1990;
+      May 10 and 13, 1990; May 10–11 and 13, 1990). Omit title of sale (instead, be sure
+      that the auction catalogue has been entered in the Bibliography Module of TMS).
+      If a work included in an auction is unsold, place the provenance record in square
+      brackets, followed by unsold in parentheses.
+    examples:
+      - |
+        Sale, Hall du Savoy, Nice, France, June 24–28, 1942, lot 341
+      - |
+        [Sale, Sotheby's, London, May 5, 1944, lot 6 (unsold)]
+      - |
+        Sale, eBay (seller ID: tonefresh; item #555778990), December 3, 2020
+
+  - term: "sold to"
+    description: |
+      Describes sale from one entity, private or institutional, to another. In general,
+      avoid the phrase purchased by/from/in except in unusual circumstances, such as when
+      there is no identifiable prior owner (for more information on such exceptions, see
+      purchased by/acquired by). Never use bought by/from/through/in.
+    notes: |
+      For the sake of consistency, include full date (month, day, year) of auction sales
+      with both the auction house and the subsequent owner (see third example below).
+      Do not include prices; enter this information in the Provenance Remarks field
+      (which does not push out to the Gallery's website) rather than the Provenance field. Use
+      abbreviated monetary units before the numeral for the following: $, £, F, DM, fl. [for
+      guilders], BF [for Belgian francs]. Spell out and place after the numeral: florins, livres, lire,
+      scudi, ducados, pesos, etc.
+    examples:
+      - |
+        Sold to Monsieur Cima (died 1963), Monte Carlo, Monaco, 1960
+      - |
+        Donald Duck (born 1936), Los Angeles, 1950; sale, Sotheby's, New York,
+        January 15, 1989; sold to Don Juan (born 1950), Madrid, January 15, 1989
+      - |
+        Wildenstein and Company, New York, September 19, 1924; sold to the Yale
+        University Art Gallery, New Haven, Conn., 1951
+      - |
+        Sale, Christie's, London, October 20, 1981, lot 141; sold to Joe Jackson (1946–
+        1999), October 20, 1981; by inheritance to his niece, Chrissy Hines (born
+        1975), 1999
+
+  - term: "given to"
+    description: |
+      Describes transfer of ownership from a living owner to an individual (whether
+      inside or outside the owner's family, as a gift [e.g., for a wedding] or for safekeeping,
+      study, duplication, etc.) or to an institution (e.g., a museum). If a personal gift on a
+      special occasion, include that information either in the provenance record or, if more
+      complicated, as a note (for more on including notes, see Appendix 1).
+    examples:
+      - |
+        Commissioned by Jeanette Hancock Logan (1902–1980), Chicago, 1930; given
+        to the Yale University Art Gallery, New Haven, Conn., 1951
+      - |
+        Given to Aris Iliopoulos (born 1940) and Alexandra Iliopoulos (born 1944),
+        Athens, as a wedding gift, June 3, 1963
+      - |
+        Dr. Georg Swarzenski (1876–1957), Boston, by 1948; given to his son, Dr.
+        Hanns Swarzenski (1903–1985), Boston, on the occasion of his appointment as
+        curator at the Museum of Fine Arts, Boston, June 5, 1948
+      - |
+        OR
+        Dr. Georg Swarzenski (1876–1957), Boston, by 1948; given to his son, Dr.
+        Hanns Swarzenski (1903–1985), Boston, June 5, 1948 [see note 1]
+        Note 1: The reliquary was given as a gift to the younger Swarzenski on the
+        occasion of his appointment as curator at the Museum of Fine Arts, Boston
+        (Swarzenski et al. 1965).
+
+  - term: "by inheritance to"
+    description: |
+      Describes transfer of ownership to an individual either inside or
+      outside the family as established in a will (for transfer via a will to an institution, see
+      bequeathed to). Also used when inheritance is otherwise established by law (e.g., through
+      primogeniture, the English law that made the oldest son the heir to the family estate, even
+      if there was no will or disposition of the estate).
+    notes: |
+      Include the nature of the relationship, if known, e.g., son, daughter, niece, etc. As
+      appropriate, use or omit restrictive commas for husbands, wives, children, etc., per the
+      rules in CMS17 6.28 (e.g., "by inheritance to her husband, Philip Matterhorn," "by
+      inheritance to her daughter Jane Doe"); if uncertain (e.g., you cannot confirm if the
+      owner had more than one daughter), do not include the comma.
+    examples:
+      - |
+        Commissioned by Lord Oliver Spencer Farquhart (1805–1876), 1850; by
+        inheritance to his son Robert Spencer Farquhart (1832–1897), 1876
+      - |
+        Joseph Michelin (1944–2015), New York, 1999; by inheritance to his secretary,
+        Lacy van der Pump, New Haven, Conn., 2015
+
+  - term: "bequeathed to"
+    description: |
+      Describes transfer of ownership to the Gallery (or another institution) as
+      established in a will (for transfer via will to an individual, see by inheritance to)
+    examples:
+      - |
+        Commissioned by Jeanette Hancock Logan (1902–1980), Chicago, 1930;
+        bequeathed to the Yale University Art Gallery, New Haven, Conn., 1980
+      - |
+        Mason Muller (died 1911), New York, by 1905; bequeathed to Sterling
+        Memorial Library, New Haven, Conn., 1911 (inv. no. 55.62.11); transferred to
+        the Yale University Art Gallery, New Haven, Conn., 2000
+
+  - term: "by descent to"
+    description: |
+      Describes transfer of ownership between family members in the absence of
+      a will or other documentation, or where it is known that an object passed down through
+      multiple generations of a family but the provisions of the individual wills and/or the
+      names of each successive inheritor are unknown.
+    notes: |
+      Include the nature of the relationship, if known, e.g., son, daughter, niece, etc. As
+      appropriate, use or omit restrictive commas for husbands, wives, children, etc., per the
+      rules in CMS17 6.28 (e.g., "by descent to her husband, Philip Matterhorn," "by descent
+      to her daughter Jane Doe"); if uncertain (e.g., you cannot confirm if the owner had more
+      than one daughter), do not include the comma.
+    examples:
+      - |
+        Tiffany Sprague (1889–1964), Milford, Conn.; by descent to her daughter,
+        Pepper Sprague (born 1911), Fairfield, Conn., 1964
+
+  - term: "exchanged with"
+    description: |
+      Describes transfer of ownership in which an object has been exchanged
+      or traded for another object or group of objects in lieu of payment. Include the object or
+      group of objects received, if known, in the notes (for more information on including
+      notes, see Appendix 1).
+    examples:
+      - |
+        Raphael Gérard (1886–1983), Paris, 1936; exchanged with Eugenio Ventura
+        (1910–unknown), Florence, April 13, 1942 [see note 1]
+        Note 1: The painting was exchanged for a watercolor, Portrait of Mlle Diot, by
+        Edgar Degas.
+
+  - term: "excavated by"
+    description: |
+      Style rules for excavations vary by excavation. Consult with the Curator of
+      Provenance Research or the Department of Publications and Editorial Services. The
+      following styles have been approved for Yale's Dura-Europos and Gerasa excavations
+      (where [date] is the date of excavation, if known; if unknown, repeat the full date range
+      for the excavation):
+    examples:
+      - |
+        Excavated by the Yale-French Excavations at Dura-Europos, present-day Syria,
+        1928–37; Yale University Art Gallery, New Haven, Conn., [date]
+      - |
+        Excavated by the Yale–British School Excavations at Gerasa, present-day Jordan,
+        1928–34; Yale University Art Gallery, New Haven, Conn., [date]
+
+  - term: "(jointly owned)"
+    description: |
+      Describes a work jointly owned or one that has shared interest between
+      two or more entities. Note that this information goes at the end, not the beginning, of the
+      provenance record.
+    examples:
+      - |
+        Kunsthandel A. G., Lucerne, Switzerland, and "Seling," March 1973 (jointly
+        owned)
+      - |
+        Sold to Ernest Augustus, Duke of Brunswick (1887–1953), Hanover, Germany;
+        sold to Saemy Rosenberg (1892–1971), Frankfurt, Zacharias Hackenbroch
+        (1884–1937), Frankfurt, and Julius Falk Goldschmidt (1882–1964),
+        Frankfurt, 1923 (jointly owned)
+
+  - term: "consigned to"
+    description: |
+      Describes a work's whereabouts while offered for sale through a third party
+      (usually an agent, a dealer, or a gallery). Place the consignment information in
+      parentheses immediately following the owner, as transfer of ownership has not yet
+      occurred. If additional details regarding the period of consignment or the object's
+      subsequent return are known, incorporate them as in the second and third examples
+      below. If the object was subsequently sold to a new owner, see
+      "sold through."
+    examples:
+      - |
+        Joe Smith (1915–1999), Providence, R.I., 1950 (consigned to Knoedler and
+        Company, New York, 1965)
+      - |
+        Joe Smith (1915–1999), Providence, R.I., 1950 (consigned to Knoedler and
+        Company, New York, May 4, 1964 [unsold], and returned, June 3, 1969)
+      - |
+        Joe Smith (1915–1999), Providence, R.I., 1950 (consigned to Knoedler and
+        Company, New York, May 4, 1964); sold to Knoedler and Company, New York,
+        June 3, 1969
+
+  - term: "Sold through"
+    description: |
+      Describes a work's whereabouts when it has been sold through a third party
+      (usually an agent, a dealer, or a gallery):
+    examples:
+      - |
+        Joe Smith (1915–1999), Providence, R.I., 1950 (consigned to Knoedler and
+        Company, New York, May 4, 1964); sold through Knoedler and Company, New
+        York, to Jane Doe (1901–1985), Boston, June 3, 1969
+      - |
+        The artist, Brooklyn; sold through Company Gallery, New York, to the Yale
+        University Art Gallery, New Haven, Conn., 2021
+      - |
+        Beatriz Valleré de Oliveira (born 1982) and Dr. Thomas Krieger (born 1980),
+        Munich, by 2016; sold through Johnny van Haeften, London, to Nicholas Hall
+        Fine Art, Shanghai, June 5, 2020
+
+  - term: "on loan to"
+    description: |
+      Describes a work's whereabouts while on long-term loan (defined as more
+      than one year and not as part of a temporary exhibition) to the Gallery or another
+      institution. As transfer of ownership has not yet occurred, place the loan information in
+      parentheses immediately following the owner. Include start and end dates of the loan,
+      joining with an en-dash and eliding as necessary. If the loan is still active, use the
+      formation "from + [start date]," as in the second example below; if the loan is also a
+      promised gift, follow the third example below:
+    examples:
+      - |
+        Rubin-Ladd Foundation, New York, 2004 (on loan to the San Antonio Museum
+        of Art, 2004–12)
+      - |
+        John Stuart Gordon (born 1961), New Haven, Conn., by 1999 (on loan to the
+        Yale University Art Gallery, New Haven, Conn., from 2021)
+      - |
+        With Galerie Schoffel, Paris, by about 2008; sold to Laurent Wargon, Paris,
+        2010; sold to Thomas Jaffe, New York, 2021 (on loan as a promised gift to the
+        Yale University Art Gallery, New Haven, Conn., from 2021)
+
+  - term: "with"
+    description: |
+      Indicates that a gallery or dealer's role in the ownership history is unknown
+    usage_note: "Use 'with [gallery or dealer name]'"
+    examples:
+      - |
+        with Wildenstein and Company, Paris, 1944
+
+  - term: "purchased by/acquired by (from/through/in)"
+    description: |
+      Use this phrasing only if there is no identifiable prior owner (if the prior owner is known, see sold to);
+      that is, this phrase would only be used at the beginning of a provenance citation (see the last example below
+      for an exception). Since there is no prior provenance record to indicate site of acquisition,
+      place site of acquisition, if known, before the owner's name, as in the second example below.
+    examples:
+      - |
+        Purchased by Arthur Moore (born 1955), Lagos, Nigeria, 1986
+      - |
+        Acquired in Java by Leland Thomas (1911–1998), Shanghai and London,
+        1960s
+      - |
+        Art market, Paris; acquired by Tiffany Sprague (died 1871), New Canaan,
+        Conn., 1850

@@ -1,0 +1,312 @@
+{
+    "output": [
+        {
+            "movements": [
+                {
+                    "source": {
+                        "name": "Henry Livingston",
+                        "location": "St. Mary Parish, Jamaica",
+                        "birth_date": "1719",
+                        "death_date": "1772",
+                        "type": "Person"
+                    },
+                    "target": {
+                        "name": "Maria \u201cMary\u201d Duane (n\u00e9e Maria Livingston)",
+                        "location": "Duanesburg, N.Y.",
+                        "birth_date": "1738",
+                        "death_date": "1821",
+                        "type": "Person"
+                    },
+                    "start_time": "1759",
+                    "end_time": "1759",
+                    "location": "Duanesburg, N.Y.",
+                    "method": "given to"
+                },
+                {
+                    "source": {
+                        "name": "Maria \u201cMary\u201d Duane (n\u00e9e Maria Livingston)",
+                        "location": "Duanesburg, N.Y.",
+                        "birth_date": "1738",
+                        "death_date": "1821",
+                        "type": "Person"
+                    },
+                    "target": {
+                        "name": "William Augustus Steuben North",
+                        "location": "Duanesburg, N.Y.",
+                        "birth_date": "1794",
+                        "death_date": "1845",
+                        "type": "Person"
+                    },
+                    "start_time": "1821",
+                    "end_time": "1821",
+                    "location": "Duanesburg, N.Y.",
+                    "method": "by descent to"
+                },
+                {
+                    "source": {
+                        "name": "William Augustus Steuben North",
+                        "location": "Duanesburg, N.Y.",
+                        "birth_date": "1794",
+                        "death_date": "1845",
+                        "type": "Person"
+                    },
+                    "target": {
+                        "name": "Mary Weston (n\u00e9e Mary Catherine North)",
+                        "location": "Summit, N.J.",
+                        "birth_date": "1822",
+                        "death_date": "1882",
+                        "type": "Person"
+                    },
+                    "start_time": "1845",
+                    "end_time": "1845",
+                    "location": "Summit, N.J.",
+                    "method": "by descent to"
+                },
+                {
+                    "source": {
+                        "name": "Mary Weston (n\u00e9e Mary Catherine North)",
+                        "location": "Summit, N.J.",
+                        "birth_date": "1822",
+                        "death_date": "1882",
+                        "type": "Person"
+                    },
+                    "target": {
+                        "name": "Mary Austin (Mrs. F. B. Austin, n\u00e9e Mary North Weston)",
+                        "location": "Summit, N.J.",
+                        "birth_date": "1851",
+                        "death_date": "1916",
+                        "type": "Person"
+                    },
+                    "start_time": "1882",
+                    "end_time": "1882",
+                    "location": "Summit, N.J.",
+                    "method": "by descent to"
+                },
+                {
+                    "source": {
+                        "name": "Mary Austin (Mrs. F. B. Austin, n\u00e9e Mary North Weston)",
+                        "location": "Summit, N.J.",
+                        "birth_date": "1851",
+                        "death_date": "1916",
+                        "type": "Person"
+                    },
+                    "target": {
+                        "name": "William Morris Austin",
+                        "location": "Yonkers, N.Y.",
+                        "birth_date": "1876",
+                        "death_date": "1938",
+                        "type": "Person"
+                    },
+                    "start_time": "1916",
+                    "end_time": "1916",
+                    "location": "Yonkers, N.Y.",
+                    "method": "by descent to"
+                },
+                {
+                    "source": {
+                        "name": "William Morris Austin",
+                        "location": "Yonkers, N.Y.",
+                        "birth_date": "1876",
+                        "death_date": "1938",
+                        "type": "Person"
+                    },
+                    "target": {
+                        "name": "American Art Association",
+                        "location": "New York, N.Y.",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Institution"
+                    },
+                    "start_time": "Unknown",
+                    "end_time": "1929-01-30",
+                    "location": "New York, N.Y.",
+                    "method": "Sold through"
+                },
+                {
+                    "source": {
+                        "name": "American Art Association",
+                        "location": "New York, N.Y.",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Institution"
+                    },
+                    "target": {
+                        "name": "Unknown",
+                        "location": "Unknown",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Unknown"
+                    },
+                    "start_time": "1929-01-30",
+                    "end_time": "1929-01-30",
+                    "location": "New York, N.Y.",
+                    "method": "sale"
+                },
+                {
+                    "source": {
+                        "name": "Unknown",
+                        "location": "Unknown",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Unknown"
+                    },
+                    "target": {
+                        "name": "Yeakel & Field",
+                        "location": "Laguna Beach, Calif.",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Dealer"
+                    },
+                    "start_time": "1929-01-30",
+                    "end_time": "by 1957",
+                    "location": "Laguna Beach, Calif.",
+                    "method": "purchased by/acquired by (from/through/in)"
+                },
+                {
+                    "source": {
+                        "name": "Yeakel & Field",
+                        "location": "Laguna Beach, Calif.",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Dealer"
+                    },
+                    "target": {
+                        "name": "Athalie Irvine Clarke",
+                        "location": "Los Angeles",
+                        "birth_date": "1903",
+                        "death_date": "1993",
+                        "type": "Collector"
+                    },
+                    "start_time": "after 1957",
+                    "end_time": "Unknown",
+                    "location": "Los Angeles",
+                    "method": "sold to"
+                },
+                {
+                    "source": {
+                        "name": "Athalie Irvine Clarke",
+                        "location": "Los Angeles",
+                        "birth_date": "1903",
+                        "death_date": "1993",
+                        "type": "Collector"
+                    },
+                    "target": {
+                        "name": "Joan Irvine Smith",
+                        "location": "Los Angeles",
+                        "birth_date": "1933",
+                        "death_date": "2019",
+                        "type": "Person"
+                    },
+                    "start_time": "1993",
+                    "end_time": "1993",
+                    "location": "Los Angeles",
+                    "method": "by descent to"
+                },
+                {
+                    "source": {
+                        "name": "Joan Irvine Smith",
+                        "location": "Los Angeles",
+                        "birth_date": "1933",
+                        "death_date": "2019",
+                        "type": "Person"
+                    },
+                    "target": {
+                        "name": "John Moran Auctioneers",
+                        "location": "Monrovia, Calif.",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Institution"
+                    },
+                    "start_time": "Unknown",
+                    "end_time": "2019-06-23",
+                    "location": "Monrovia, Calif.",
+                    "method": "consigned to"
+                },
+                {
+                    "source": {
+                        "name": "John Moran Auctioneers",
+                        "location": "Monrovia, Calif.",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Institution"
+                    },
+                    "target": {
+                        "name": "Unknown",
+                        "location": "Unknown",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Unknown"
+                    },
+                    "start_time": "2019-06-23",
+                    "end_time": "2019",
+                    "location": "Monrovia, Calif.",
+                    "method": "sale"
+                },
+                {
+                    "source": {
+                        "name": "Joan Irvine Smith",
+                        "location": "Los Angeles",
+                        "birth_date": "1933",
+                        "death_date": "2019",
+                        "type": "Person"
+                    },
+                    "target": {
+                        "name": "John Moran Auctioneers",
+                        "location": "Monrovia, Calif.",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Institution"
+                    },
+                    "start_time": "2019",
+                    "end_time": "2019",
+                    "location": "Monrovia, Calif.",
+                    "method": "transferred to"
+                },
+                {
+                    "source": {
+                        "name": "John Moran Auctioneers",
+                        "location": "Monrovia, Calif.",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Institution"
+                    },
+                    "target": {
+                        "name": "Private Collection",
+                        "location": "Los Angeles",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Collector"
+                    },
+                    "start_time": "2020",
+                    "end_time": "2020",
+                    "location": "Los Angeles",
+                    "method": "sold to"
+                },
+                {
+                    "source": {
+                        "name": "Private Collection",
+                        "location": "Los Angeles",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Collector"
+                    },
+                    "target": {
+                        "name": "Yale University Art Gallery",
+                        "location": "New Haven, Conn.",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Institution"
+                    },
+                    "start_time": "2024",
+                    "end_time": "2024",
+                    "location": "New Haven, Conn.",
+                    "method": "sold to"
+                }
+            ],
+            "model": "google/gemini-2.5-pro-preview-03-25"
+        }
+    ],
+    "provenance": "Maria \u201cMary\u201d Duane (n\u00e9e Maria Livingston, 1738\u20131821), Duanesburg, N.Y. [see note 1]; by descent to her grandson William Augustus Steuben North (1794\u20131845), Duanesburg, N.Y., 1821; by descent to his daughter Mary Weston (n\u00e9e Mary Catherine North, 1822\u20131882), Summit, N.J., 1845; by descent to her daughter Mary Austin (Mrs. F. B. Austin, n\u00e9e Mary North Weston, 1851\u20131916), Summit, N.J., 1882; by descent to her son William Morris Austin (1876\u20131938), Summit, N.J., then Yonkers, N.Y., 1916; sale, American Art Association, New York, January 30, 1929, lot 185. Yeakel & Field, Laguna Beach, Calif., by 1957; probably sold to Athalie Irvine Clarke (1903\u20131993), Los Angeles, after 1957 [see note 2]; by descent to her daughter Joan Irvine Smith (1933\u20132019), Los Angeles, 1993; sale, John Moran Auctioneers, Monrovia, Calif., June 23, 2019, lot 1011 [see note 3]; transferred to John Moran Auctioneers, Monrovia, Calif., 2029; sold to private collection, Los Angeles, 2020; sold to Yale University Art Gallery, New Haven, Conn., 2024 \r\n\r\nNote 1: Possibly a present from Mary Livingston\u2019s uncle Henry Livingston (1719\u20131772) of St. Mary Parish, Jamaica, on the occasion of her marriage to James Duane (1733\u20131797) in 1759.\r\nNote 2: Clarke collected paintings by California artists and purchased from Carl Yeakel/ Yeakel & Field. The sticks were found among her property after her death still wrapped in newspapers from the 1950s/60s (email from Jeanne Sloane to John Stuart Gordon, July 8, 2024, copy in curatorial object file). \r\nNote 3: The buyer pulled out of the sale after the auction and the candlesticks became property of the auction house (email from Jeanne Sloane to John Stuart Gordon, July 8, 2024, copy in curatorial object file).",
+    "object_id": 333192,
+    "date": "2025-04-23 15:54:03"
+}

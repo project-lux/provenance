@@ -1,0 +1,252 @@
+{
+    "output": [
+        {
+            "movements": [
+                {
+                    "source": {
+                        "name": "Unknown",
+                        "location": "Unknown",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Unknown"
+                    },
+                    "target": {
+                        "name": "Wolfgang Luck",
+                        "location": "Berlin",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Dealer"
+                    },
+                    "start_time": "Unknown",
+                    "end_time": "1942",
+                    "location": "Berlin",
+                    "method": "with"
+                },
+                {
+                    "source": {
+                        "name": "Wolfgang Luck",
+                        "location": "Berlin",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Dealer"
+                    },
+                    "target": {
+                        "name": "Dr. Herbert Schaefer",
+                        "location": "Berlin",
+                        "birth_date": "1910",
+                        "death_date": "2011",
+                        "type": "Collector"
+                    },
+                    "start_time": "1942",
+                    "end_time": "ca. 1945",
+                    "location": "Berlin",
+                    "method": "sold to"
+                },
+                {
+                    "source": {
+                        "name": "Dr. Herbert Schaefer",
+                        "location": "Berlin",
+                        "birth_date": "1910",
+                        "death_date": "2011",
+                        "type": "Collector"
+                    },
+                    "target": {
+                        "name": "Ingrid G\u00e4rtner (n\u00e9e Meyer)",
+                        "location": "Berlin",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Person"
+                    },
+                    "start_time": "ca. 1945",
+                    "end_time": "April 24, 1947",
+                    "location": "Berlin",
+                    "method": "with"
+                },
+                {
+                    "source": {
+                        "name": "Ingrid G\u00e4rtner (n\u00e9e Meyer)",
+                        "location": "Berlin",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Person"
+                    },
+                    "target": {
+                        "name": "British Allied Military Authorities",
+                        "location": "Helmstedt, Germany",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Group"
+                    },
+                    "start_time": "April 24, 1947",
+                    "end_time": "August 8, 1947",
+                    "location": "Helmstedt, Germany",
+                    "method": "confiscated by"
+                },
+                {
+                    "source": {
+                        "name": "British Allied Military Authorities",
+                        "location": "Helmstedt, Germany",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Group"
+                    },
+                    "target": {
+                        "name": "Kulturbeh\u00f6rde, Hamburg",
+                        "location": "Hamburg",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Institution"
+                    },
+                    "start_time": "August 8, 1947",
+                    "end_time": "August 8, 1947",
+                    "location": "Hamburg",
+                    "method": "transferred to"
+                },
+                {
+                    "source": {
+                        "name": "Kulturbeh\u00f6rde, Hamburg",
+                        "location": "Hamburg",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Institution"
+                    },
+                    "target": {
+                        "name": "Hamburg Kunsthalle",
+                        "location": "Hamburg",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Institution"
+                    },
+                    "start_time": "August 8, 1947",
+                    "end_time": "September 1, 1970",
+                    "location": "Hamburg",
+                    "method": "on loan to"
+                },
+                {
+                    "source": {
+                        "name": "Kulturbeh\u00f6rde, Hamburg",
+                        "location": "Hamburg",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Institution"
+                    },
+                    "target": {
+                        "name": "Dr. Herbert Schaefer",
+                        "location": "Frankfurt am Main, Germany",
+                        "birth_date": "1910",
+                        "death_date": "2011",
+                        "type": "Collector"
+                    },
+                    "start_time": "September 1, 1970",
+                    "end_time": "September 1, 1970",
+                    "location": "Hamburg",
+                    "method": "restituted to"
+                },
+                {
+                    "source": {
+                        "name": "Dr. Herbert Schaefer",
+                        "location": "Frankfurt am Main, Germany",
+                        "birth_date": "1910",
+                        "death_date": "2011",
+                        "type": "Collector"
+                    },
+                    "target": {
+                        "name": "Hamburg Kunsthalle",
+                        "location": "Hamburg",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Institution"
+                    },
+                    "start_time": "September 1, 1970",
+                    "end_time": "June 18, 1981",
+                    "location": "Hamburg",
+                    "method": "on loan to"
+                },
+                {
+                    "source": {
+                        "name": "Dr. Herbert Schaefer",
+                        "location": "Malaga, Spain",
+                        "birth_date": "1910",
+                        "death_date": "2011",
+                        "type": "Collector"
+                    },
+                    "target": {
+                        "name": "Yale University Art Gallery",
+                        "location": "New Haven, Conn.",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Institution"
+                    },
+                    "start_time": "June 18, 1981",
+                    "end_time": "2011",
+                    "location": "New Haven, Conn.",
+                    "method": "on loan to"
+                },
+                {
+                    "source": {
+                        "name": "Dr. Herbert Schaefer",
+                        "location": "Malaga, Spain",
+                        "birth_date": "1910",
+                        "death_date": "2011",
+                        "type": "Collector"
+                    },
+                    "target": {
+                        "name": "Monika Schaefer (n\u00e9e Winter)",
+                        "location": "Malaga, Spain",
+                        "birth_date": "Unknown",
+                        "death_date": "2019",
+                        "type": "Person"
+                    },
+                    "start_time": "2011",
+                    "end_time": "2011",
+                    "location": "Malaga, Spain",
+                    "method": "by inheritance to"
+                },
+                {
+                    "source": {
+                        "name": "Monika Schaefer (n\u00e9e Winter)",
+                        "location": "Malaga, Spain",
+                        "birth_date": "Unknown",
+                        "death_date": "2019",
+                        "type": "Person"
+                    },
+                    "target": {
+                        "name": "Yale University Art Gallery",
+                        "location": "New Haven, Conn.",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Institution"
+                    },
+                    "start_time": "2011",
+                    "end_time": "2019",
+                    "location": "New Haven, Conn.",
+                    "method": "on loan to"
+                },
+                {
+                    "source": {
+                        "name": "Monika Schaefer (n\u00e9e Winter)",
+                        "location": "Malaga, Spain",
+                        "birth_date": "Unknown",
+                        "death_date": "2019",
+                        "type": "Person"
+                    },
+                    "target": {
+                        "name": "Yale University Art Gallery",
+                        "location": "New Haven, Conn.",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Institution"
+                    },
+                    "start_time": "2019",
+                    "end_time": "Unknown",
+                    "location": "New Haven, Conn.",
+                    "method": "bequeathed to"
+                }
+            ],
+            "model": "google/gemini-2.5-pro-preview-03-25"
+        }
+    ],
+    "provenance": "With Wolfgang Luck, Berlin; sold to Dr. Herbert Schaefer (1910\u20132011), Berlin, 1942 (as unknown 18th Century Master, Banquet in a Temple Hall); with Ingrid G\u00e4rtner (n\u00e9e Meyer), Berlin [see note 1]; confiscated by the British Allied Military Authorities, probably at Helmstedt, Germany, April 24\u201325, 1947 [see note 2]; transferred to the Kulturbeh\u00f6rde, Hamburg, August 8, 1947, and placed on view at the Hamburg Kunsthalle; restituted to Dr. Herbert Schaefer, Frankfurt am Main, Germany, and later Malaga, Spain, September 1, 1970 [see note 3] (on loan to the Yale University Art Gallery, New Haven, Conn., 1981\u20132019); bequeathed by Monika Schaefer (n\u00e9e Winter, died 2019) Winter, Malaga, Spain, to the Yale University Art Gallery, New Haven, Conn., 2019\r\n\r\nNote 1: An acquaintance of Dr. Schaefer\u2019s in Berlin, the nature of G\u00e4rtner\u2019s acquisition of the Painting is uncertain. According to testimony provided by G\u00e4rtner, July 21, 1970, in the restitution claim for the Painting filed with the Hamburg Kulturbeh\u00f6rde (Hamburg Cultural Authority), Dr. Schaefer had entrusted the Painting to her for safekeeping at the end of the war (WGA Landsgericht Hamburg 3 O 412/68). In communication with the Gallery, Dr. Schaefer indicated that he had assumed the Painting was plundered along with other artworks in his collection by Soviet forces at the war\u2019s close. He did not learn of G\u00e4rtner\u2019s possession and the subsequent seizure until 1965, when he identified the Painting at the Kunsthalle along with two others (YUAG acc.no. 2001.55.1 and acc.no. 2020.37.45). Dr. Schaefer suggested that the Painting had been stolen from his apartment by G\u00e4rtner and another acquaintance, G\u00fcnter Stumpf, under the guise of the plundering of the period. (The Schaefer Collection, curatorial research file, February 2001)\r\n\r\nNote 2: There is further discrepancy as to where the Painting was sequestered by British forces. In archival material of the Kulturbeh\u00f6rde, it is noted that the Painting had been seized from G\u00e4rtner by British Allied Military Authorities on a plane destined for Capetown (Kulturbeh\u00f6rde, Hamburg, R 180-20.25). In her testimony, G\u00e4rtner states that she had attempted to transfer the Painting to Sweden in a Red Cross transport, but was stopped during an inspection of the bus by British authorities along the border between the British and Russian zones of occupied Germany at Helmstedt (WGA Landsgericht Hamburg 3 O 412/68). Records of the British Allied Military Authority have not been consulted as part of research into the ownership history of the Painting, but it is possible the former narrative was in error. G\u00e4rtner was a Swedish national, born in Uppsala, who returned to Sweden after the war. She maintained a permanent residence in Stockholm after this time.\r\n\r\nNote 3: Following restitution of the Painting to Dr. Schaefer, it remained on loan to the Hamburg Kunsthalle until it was sent to the Gallery, June 18, 1981.\r\n",
+    "object_id": 64315,
+    "date": "2025-04-23 15:53:46"
+}

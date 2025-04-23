@@ -1,0 +1,146 @@
+{
+    "output": [
+        {
+            "movements": [
+                {
+                    "source": "Unknown",
+                    "target": {
+                        "name": "Reginald F. French",
+                        "location": "possibly Amherst, Mass.",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Person"
+                    },
+                    "start_time": "Unknown",
+                    "end_time": "1962-04",
+                    "location": "possibly Amherst, Mass.",
+                    "method": "Unknown"
+                },
+                {
+                    "source": {
+                        "name": "Reginald F. French",
+                        "location": "possibly Amherst, Mass.",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Person"
+                    },
+                    "target": {
+                        "name": "Henry Melville Fuller",
+                        "location": "New York, and Manchester, N.H.",
+                        "birth_date": "1914",
+                        "death_date": "2001",
+                        "type": "Collector"
+                    },
+                    "start_time": "1962-04-19",
+                    "end_time": "1962-04-19",
+                    "location": "Unknown",
+                    "method": "sold to"
+                },
+                {
+                    "source": {
+                        "name": "Henry Melville Fuller",
+                        "location": "New York, and Manchester, N.H.",
+                        "birth_date": "1914",
+                        "death_date": "2001",
+                        "type": "Collector"
+                    },
+                    "target": {
+                        "name": "Frederick Douglass Institute of Negro Arts",
+                        "location": "Washington D.C.",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Institution"
+                    },
+                    "start_time": "1978-01",
+                    "end_time": "1978-01",
+                    "location": "Unknown",
+                    "method": "sold to"
+                },
+                {
+                    "source": {
+                        "name": "Frederick Douglass Institute of Negro Arts",
+                        "location": "Washington D.C.",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Institution"
+                    },
+                    "target": {
+                        "name": "Unknown",
+                        "location": "Massachusetts",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Unknown"
+                    },
+                    "start_time": "1978-01",
+                    "end_time": "1980",
+                    "location": "Massachusetts",
+                    "method": "Unknown"
+                },
+                {
+                    "source": {
+                        "name": "Unknown",
+                        "location": "Massachusetts",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Unknown"
+                    },
+                    "target": {
+                        "name": "Camille O. Cosby and William H. Cosby, Jr.",
+                        "location": "Shelburne Falls, Mass., and Montgomery County, Penn.",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Group"
+                    },
+                    "start_time": "1980",
+                    "end_time": "1980",
+                    "location": "Unknown",
+                    "method": "Sold through"
+                },
+                {
+                    "source": {
+                        "name": "Camille O. Cosby and William H. Cosby, Jr.",
+                        "location": "Shelburne Falls, Mass., and Montgomery County, Penn.",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Group"
+                    },
+                    "target": {
+                        "name": "Private Collection",
+                        "location": "Maine",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Collector"
+                    },
+                    "start_time": "2023",
+                    "end_time": "2023",
+                    "location": "Unknown",
+                    "method": "Sold through"
+                },
+                {
+                    "source": {
+                        "name": "Private Collection",
+                        "location": "Maine",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Collector"
+                    },
+                    "target": {
+                        "name": "Yale University Art Gallery",
+                        "location": "New Haven, Conn.",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Institution"
+                    },
+                    "start_time": "2024-04",
+                    "end_time": "2024-04",
+                    "location": "Unknown",
+                    "method": "Sold through"
+                }
+            ],
+            "model": "google/gemini-2.5-pro-preview-03-25"
+        }
+    ],
+    "provenance": "Reginald F. French, possibly Amherst, Mass., by April 1962; sold to Henry Melville Fuller (1914\u20132001), New York, and Manchester, N.H., April 19, 1962 [see note 1]; sold to the Frederick Douglass Institute of Negro Arts, January 1978 [see note 2]. Trade, Massachusetts, by 1980; sold through David Driskell, Maryland, to Camille O. Cosby  (n\u00e9e Hanks, born 1944) and William H. Cosby, Jr. (born 1937), Shelburne Falls, Mass., and Montgomery County, Penn., 1980 [see note 3]; sold through Alexandre Fine Art Inc., New York, to private collection, Maine, 2023 [see also note 3]; sold through Alexandre Fine Art Inc., New York, to the Yale University Art Gallery, New Haven, Conn., April 2024\r\n\r\nNote 1: Collection card, no date, Currier Museum Archive, Manchester, N.H., copy in accession file.\r\n\r\nNote 2: Letter from Henry Melville Fuller, New York, and Manchester, N.H., to Edward L. Shein, Providence, R.I., agent for the Frederick Douglass Institute of Negro Arts, Washington D.C., January 9, 1978, Currier Museum Archive, Manchester, N.H., copy in accession file. The Frederick Douglass Institute of Negro Arts (also called the Frederick Douglass Museum of African Art) joined the Smithsonian Institution in August 1979 and changed its name to the National Museum of African Art in 1981. Although other paintings by Duncanson were in the former Douglass Institute collection and transferred to the National Museum of African Art, research conducted by the Gallery and Smithsonian in March-April 2024 has been unable to confirm the date and method of transfer of this painting from the collection.\r\n\r\nNote 3: Email from Phil Alexandre, Alexandre Gallery, to the Gallery, January 25, 2024, copy in accession file\r\n",
+    "object_id": 332499,
+    "date": "2025-04-23 15:53:16"
+}
