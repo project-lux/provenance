@@ -48,6 +48,57 @@
         .resizer:hover {
             background: #3B82F6;
         }
+        .timeline-container {
+            height: 80px;
+            padding: 10px 20px;
+            border-bottom: 1px solid #E5E7EB;
+            background-color: #F9FAFB;
+        }
+        .timeline {
+            position: relative;
+            height: 8px;
+            background-color: #E5E7EB;
+            border-radius: 4px;
+            margin: 30px 0 15px 0;
+        }
+        .timeline-marker {
+            position: absolute;
+            top: -25px;
+            transform: translateX(-50%);
+            font-size: 12px;
+            color: #6B7280;
+        }
+        .timeline-marker::after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 20px;
+            height: 15px;
+            width: 1px;
+            background-color: #9CA3AF;
+        }
+        .timeline-period {
+            position: absolute;
+            height: 16px;
+            top: -4px;
+            border-radius: 4px;
+            background-color: #BFDBFE;
+            transition: all 0.2s ease;
+        }
+        .timeline-period.active {
+            background-color: #3B82F6;
+            height: 20px;
+            top: -6px;
+        }
+        .timeline-label {
+            position: absolute;
+            bottom: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 11px;
+            color: #4B5563;
+            white-space: nowrap;
+        }
     </style>
 </head>
 <body class="bg-gray-50">
@@ -73,6 +124,11 @@
             <div class="flex border-b border-gray-200">
                 <div class="px-6 py-4 bg-gray-50 text-gray-700 font-medium flex-1">Provenance Text</div>
                 <div class="px-6 py-4 bg-gray-50 text-gray-700 font-medium flex-1">Movement Sequence</div>
+            </div>
+            
+            <div id="timelineContainer" class="timeline-container">
+                <h3 class="text-sm font-medium text-gray-700">Timeline</h3>
+                <div id="timeline" class="timeline"></div>
             </div>
             
             <div class="flex" style="height: 600px;">
@@ -277,6 +333,9 @@
                 // Get movements from the first output item
                 const movements = data.output[0].movements;
                 
+                // Create timeline
+                createTimeline(movements);
+                
                 // Create movement cards
                 movements.forEach((movement, index) => {
                     const movementCard = document.createElement('div');
@@ -334,6 +393,9 @@
                     movementCard.addEventListener('mouseover', function() {
                         const highlights = JSON.parse(this.dataset.highlights || '{}');
                         temporarilyHighlightText(highlights);
+                        
+                        // Highlight corresponding timeline period
+                        highlightTimeline(this.dataset.index);
                     });
                     
                     // Add mouseout handler to remove temporary highlights
@@ -343,6 +405,12 @@
                             highlightProvenanceText(activeCard);
                         } else {
                             removeTemporaryHighlights();
+                            
+                            // Remove timeline highlights if no card is active
+                            const timelinePeriods = document.querySelectorAll('.timeline-period');
+                            timelinePeriods.forEach(period => {
+                                period.classList.remove('active');
+                            });
                         }
                     });
                     
@@ -355,6 +423,108 @@
                     highlightProvenanceText(firstMovement);
                     setActiveMovement(firstMovement);
                 }
+                
+                // Add hover interactions for timeline periods
+                setTimeout(() => {
+                    const timelinePeriods = document.querySelectorAll('.timeline-period');
+                    timelinePeriods.forEach(period => {
+                        period.addEventListener('mouseover', function() {
+                            const index = this.dataset.index;
+                            const movementCard = document.querySelector(`.movement-card[data-index="${index}"]`);
+                            if (movementCard) {
+                                const event = new MouseEvent('mouseover');
+                                movementCard.dispatchEvent(event);
+                            }
+                            this.classList.add('active');
+                        });
+                        
+                        period.addEventListener('mouseout', function() {
+                            const index = this.dataset.index;
+                            const movementCard = document.querySelector(`.movement-card[data-index="${index}"]`);
+                            if (movementCard) {
+                                const event = new MouseEvent('mouseout');
+                                movementCard.dispatchEvent(event);
+                            }
+                        });
+                    });
+                }, 500);
+            }
+            
+            // Create timeline visualization
+            function createTimeline(movements) {
+                const timelineEl = document.getElementById('timeline');
+                timelineEl.innerHTML = '';
+                
+                // Extract all years
+                let allYears = [];
+                movements.forEach(movement => {
+                    if (movement.start_time && movement.start_time !== 'Unknown') {
+                        allYears.push(parseInt(movement.start_time));
+                    }
+                    if (movement.end_time && movement.end_time !== 'Unknown') {
+                        allYears.push(parseInt(movement.end_time));
+                    }
+                });
+                
+                // Filter out NaN values and sort
+                allYears = allYears.filter(year => !isNaN(year)).sort((a, b) => a - b);
+                
+                if (allYears.length < 2) {
+                    timelineEl.innerHTML = '<div class="text-center text-gray-500">Insufficient date information for timeline</div>';
+                    return;
+                }
+                
+                // Calculate min/max years with padding
+                const minYear = Math.floor(allYears[0] / 10) * 10;
+                const maxYear = Math.ceil(allYears[allYears.length - 1] / 10) * 10;
+                const timelineRange = maxYear - minYear;
+                
+                // Create decade markers
+                for (let year = minYear; year <= maxYear; year += 10) {
+                    const position = ((year - minYear) / timelineRange) * 100;
+                    const marker = document.createElement('div');
+                    marker.className = 'timeline-marker';
+                    marker.textContent = year;
+                    marker.style.left = `${position}%`;
+                    timelineEl.appendChild(marker);
+                }
+                
+                // Create timeline periods for each movement
+                movements.forEach((movement, index) => {
+                    if (movement.start_time === 'Unknown' || movement.end_time === 'Unknown') {
+                        return;
+                    }
+                    
+                    let startYear = parseInt(movement.start_time);
+                    let endYear = parseInt(movement.end_time);
+                    
+                    if (isNaN(startYear) || isNaN(endYear)) {
+                        return;
+                    }
+                    
+                    // If same year, add small width
+                    if (startYear === endYear) {
+                        endYear = startYear + 1;
+                    }
+                    
+                    const startPosition = ((startYear - minYear) / timelineRange) * 100;
+                    const endPosition = ((endYear - minYear) / timelineRange) * 100;
+                    const width = endPosition - startPosition;
+                    
+                    const period = document.createElement('div');
+                    period.className = 'timeline-period';
+                    period.dataset.index = index;
+                    period.style.left = `${startPosition}%`;
+                    period.style.width = `${width}%`;
+                    
+                    // Add label
+                    const label = document.createElement('div');
+                    label.className = 'timeline-label';
+                    label.textContent = `${movement.source.name} → ${movement.target.name}`;
+                    period.appendChild(label);
+                    
+                    timelineEl.appendChild(period);
+                }); 
             }
             
             // Find the text to highlight in the provenance text
@@ -442,11 +612,29 @@
                     applyHighlight(highlights.target.start, highlights.target.end, 'target-highlight');
                 }
                 
+                // Highlight timeline
+                highlightTimeline(movementElement.dataset.index);
+                
                 // Scroll to the highlighted text (prefer target)
                 const highlightElement = provenanceText.querySelector('.target-highlight') || 
                                          provenanceText.querySelector('.source-highlight');
                 if (highlightElement) {
                     highlightElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                }
+            }
+            
+            // Highlight timeline period
+            function highlightTimeline(index) {
+                // Remove active class from all timeline periods
+                const timelinePeriods = document.querySelectorAll('.timeline-period');
+                timelinePeriods.forEach(period => {
+                    period.classList.remove('active');
+                });
+                
+                // Add active class to selected period
+                const activePeriod = document.querySelector(`.timeline-period[data-index="${index}"]`);
+                if (activePeriod) {
+                    activePeriod.classList.add('active');
                 }
             }
             
@@ -532,6 +720,9 @@
                 
                 // Add active class to clicked card
                 movementElement.classList.add('active-movement');
+                
+                // Highlight corresponding timeline period
+                highlightTimeline(movementElement.dataset.index);
                 
                 // Scroll to the movement card
                 movementElement.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
