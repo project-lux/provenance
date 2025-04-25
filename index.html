@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON Provenance Viewer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .highlight {
+            background-color: #FEF08A;
+            transition: background-color 0.3s ease;
+        }
+        .source-highlight {
+            background-color: #86EFAC;
+            transition: background-color 0.3s ease;
+        }
+        .target-highlight {
+            background-color: #FEF08A;
+            transition: background-color 0.3s ease;
+        }
+        .active-movement {
+            background-color: #EFF6FF;
+            border-left: 4px solid #3B82F6;
+        }
+        .json-input {
+            font-family: 'Courier New', Courier, monospace;
+            min-height: 300px;
+        }
+        .provenance-text {
+            white-space: pre-wrap;
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+        }
+        .movement-card {
+            transition: all 0.2s ease;
+        }
+        .movement-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+        .resizer {
+            width: 8px;
+            background: #E5E7EB;
+            cursor: col-resize;
+            transition: background 0.2s;
+        }
+        .resizer:hover {
+            background: #3B82F6;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <div class="container mx-auto px-4 py-8">
+        <h1 class="text-3xl font-bold text-gray-800 mb-6 flex items-center">
+            <i class="fas fa-history mr-3 text-blue-500"></i> Provenance Viewer
+        </h1>
+        
+        <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+            <div class="flex items-center mb-4">
+                <i class="fas fa-paste text-blue-500 mr-2"></i>
+                <h2 class="text-xl font-semibold text-gray-700">Paste Your JSON</h2>
+            </div>
+            <textarea id="jsonInput" class="json-input w-full p-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500" placeholder="Paste your JSON here..."></textarea>
+            <div class="flex justify-end mt-4">
+                <button id="parseBtn" class="bg-blue-500 hover:bg-blue-600 text-white font-medium py-2 px-6 rounded-lg flex items-center transition-colors">
+                    <i class="fas fa-play mr-2"></i> Parse JSON
+                </button>
+            </div>
+        </div>
+        
+        <div id="viewerContainer" class="hidden bg-white rounded-lg shadow-md overflow-hidden">
+            <div class="flex border-b border-gray-200">
+                <div class="px-6 py-4 bg-gray-50 text-gray-700 font-medium flex-1">Provenance Text</div>
+                <div class="px-6 py-4 bg-gray-50 text-gray-700 font-medium flex-1">Movement Sequence</div>
+            </div>
+            
+            <div class="flex" style="height: 600px;">
+                <div id="provenanceText" class="provenance-text overflow-y-auto p-6 flex-1 border-r border-gray-200"></div>
+                
+                <div class="resizer" id="resizer"></div>
+                
+                <div id="movementSequence" class="overflow-y-auto p-6 flex-1">
+                    <div id="movementList" class="space-y-4"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="errorContainer" class="hidden bg-red-50 border-l-4 border-red-500 p-4 mb-8 rounded">
+            <div class="flex">
+                <div class="flex-shrink-0">
+                    <i class="fas fa-exclamation-circle text-red-500"></i>
+                </div>
+                <div class="ml-3">
+                    <p id="errorMessage" class="text-sm text-red-700"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const jsonInput = document.getElementById('jsonInput');
+            const parseBtn = document.getElementById('parseBtn');
+            const viewerContainer = document.getElementById('viewerContainer');
+            const provenanceText = document.getElementById('provenanceText');
+            const movementList = document.getElementById('movementList');
+            const errorContainer = document.getElementById('errorContainer');
+            const errorMessage = document.getElementById('errorMessage');
+            
+            // Sample JSON for demo purposes
+            const sampleJSON = `{
+    "provenance": "Made by artists from the court of Sultan Pakubowono X of Surakarta (Solo); presented as a royal gift (Paringan Dalem) by the court of Surakarta (Solo) to Suhartoyo, Indonesian Ambassador to Great Britain (1985\u20131989), in 1977; by descent to heirs; sold to Dr. Walter Angst (1942\u20132014), Uberlingen, Germany [See Note I], 2000 in Yogyakarta; by descent to Sir Henry Angest (b.1940), London, England, and Perth, Scotland, 2014 [See Note II]; gift to Yale University Art Gallery, New Haven, Conn., 2018. \r\n\r\nNotes: [I] Dr. Walter Angst (1942-2014) was a primatologist and notable collector of \u2018wayang\u2019 (Indonesian puppets) and wayang-related material. From the 1970s he amassed a collection of more than 20,000 puppets, mostly in full sets. While most were acquired directly from Indonesian puppet masters and local dealers, he also purchased many on the international art market. His entire collection was gifted to the Yale University Art Gallery, along with his collection notes. Research is currently ongoing to confirm Angst\u2019s acquisition of each object. [II] Upon Dr. Angst\u2019s death, while legal title passed to his brother, Sir Henry Angest (b.1940), who resides in the United Kingdom, the collection remained in Germany until its donation to the YUAG.",
+    "output": [
+        {
+            "movements": [
+                {
+                    "source": {
+                        "name": "Artists from the court of Sultan Pakubowono X of Surakarta (Solo)",
+                        "location": "Surakarta (Solo), Indonesia",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Group"
+                    },
+                    "target": {
+                        "name": "Court of Surakarta (Solo)",
+                        "location": "Surakarta (Solo), Indonesia",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Institution"
+                    },
+                    "start_time": "Unknown",
+                    "end_time": "1977",
+                    "location": "Surakarta (Solo), Indonesia",
+                    "confidence": "Certain",
+                    "method": "The artist"
+                },
+                {
+                    "source": {
+                        "name": "Court of Surakarta (Solo)",
+                        "location": "Surakarta (Solo), Indonesia",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Institution"
+                    },
+                    "target": {
+                        "name": "Suhartoyo",
+                        "location": "Unknown",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Person"
+                    },
+                    "start_time": "1977",
+                    "end_time": "1977",
+                    "location": "Surakarta (Solo), Indonesia",
+                    "confidence": "Certain",
+                    "method": "given to"
+                },
+                {
+                    "source": {
+                        "name": "Suhartoyo",
+                        "location": "Unknown",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Person"
+                    },
+                    "target": {
+                        "name": "Heirs of Suhartoyo",
+                        "location": "Unknown",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Group"
+                    },
+                    "start_time": "Unknown",
+                    "end_time": "2000",
+                    "location": "Unknown",
+                    "confidence": "Certain",
+                    "method": "by descent to"
+                },
+                {
+                    "source": {
+                        "name": "Heirs of Suhartoyo",
+                        "location": "Unknown",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Group"
+                    },
+                    "target": {
+                        "name": "Dr. Walter Angst",
+                        "location": "Uberlingen, Germany",
+                        "birth_date": "1942",
+                        "death_date": "2014",
+                        "type": "Collector"
+                    },
+                    "start_time": "2000",
+                    "end_time": "2000",
+                    "location": "Yogyakarta, Indonesia",
+                    "confidence": "Certain",
+                    "method": "sold to"
+                },
+                {
+                    "source": {
+                        "name": "Dr. Walter Angst",
+                        "location": "Uberlingen, Germany",
+                        "birth_date": "1942",
+                        "death_date": "2014",
+                        "type": "Collector"
+                    },
+                    "target": {
+                        "name": "Sir Henry Angest",
+                        "location": "London, England, and Perth, Scotland",
+                        "birth_date": "1940",
+                        "death_date": "Unknown",
+                        "type": "Person"
+                    },
+                    "start_time": "2014",
+                    "end_time": "2014",
+                    "location": "Uberlingen, Germany",
+                    "confidence": "Certain",
+                    "method": "by descent to"
+                },
+                {
+                    "source": {
+                        "name": "Sir Henry Angest",
+                        "location": "London, England, and Perth, Scotland",
+                        "birth_date": "1940",
+                        "death_date": "Unknown",
+                        "type": "Person"
+                    },
+                    "target": {
+                        "name": "Yale University Art Gallery",
+                        "location": "New Haven, Conn.",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Institution"
+                    },
+                    "start_time": "2018",
+                    "end_time": "2018",
+                    "location": "Uberlingen, Germany",
+                    "confidence": "Certain",
+                    "method": "given to"
+                }
+            ],
+            "model": "google/gemini-2.5-pro-preview-03-25"
+        }
+    ],
+    "object_id": 293402,
+    "errors": {},
+    "date": "2025-04-25 11:28:43"
+}`;
+            
+            // Insert sample JSON for demo
+            jsonInput.value = sampleJSON;
+            
+            // Parse JSON button click handler
+            parseBtn.addEventListener('click', function() {
+                try {
+                    const jsonData = JSON.parse(jsonInput.value);
+                    displayProvenanceData(jsonData);
+                    errorContainer.classList.add('hidden');
+                    viewerContainer.classList.remove('hidden');
+                } catch (e) {
+                    errorMessage.textContent = 'Invalid JSON: ' + e.message;
+                    errorContainer.classList.remove('hidden');
+                    viewerContainer.classList.add('hidden');
+                }
+            });
+            
+            // Display provenance data
+            function displayProvenanceData(data) {
+                // Display provenance text
+                provenanceText.innerHTML = data.provenance.replace(/\n/g, '<br>');
+                
+                // Clear previous movements
+                movementList.innerHTML = '';
+                
+                // Get movements from the first output item
+                const movements = data.output[0].movements;
+                
+                // Create movement cards
+                movements.forEach((movement, index) => {
+                    const movementCard = document.createElement('div');
+                    movementCard.className = 'movement-card bg-white p-4 rounded-lg border border-gray-200 cursor-pointer';
+                    movementCard.dataset.index = index;
+                    
+                    // Find the text to highlight in the provenance text
+                    const highlights = findHighlightText(movement, data.provenance);
+                    
+                    // Store highlight information as JSON
+                    movementCard.dataset.highlights = JSON.stringify(highlights);
+                    
+                    // Create movement card content
+                    movementCard.innerHTML = `
+                        <div class="flex justify-between items-start mb-2">
+                            <div>
+                                <span class="inline-block bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full mb-1">${index + 1}</span>
+                                <h3 class="font-medium text-gray-800">${movement.method}</h3>
+                            </div>
+                            <span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">${movement.confidence}</span>
+                        </div>
+                        
+                        <div class="grid grid-cols-2 gap-4 mb-3">
+                            <div>
+                                <p class="text-xs text-gray-500 uppercase tracking-wider mb-1">Source</p>
+                                <p class="text-sm font-medium text-gray-700">${typeof movement.source === 'object' ? movement.source.name : movement.source}</p>
+                                ${typeof movement.source === 'object' ? `<p class="text-xs text-gray-500">${movement.source.location}</p>` : ''}
+                            </div>
+                            <div>
+                                <p class="text-xs text-gray-500 uppercase tracking-wider mb-1">Target</p>
+                                <p class="text-sm font-medium text-gray-700">${movement.target.name}</p>
+                                <p class="text-xs text-gray-500">${movement.target.location}</p>
+                            </div>
+                        </div>
+                        
+                        <div class="grid grid-cols-2 gap-4">
+                            <div>
+                                <p class="text-xs text-gray-500 uppercase tracking-wider mb-1">Time</p>
+                                <p class="text-sm text-gray-700">${movement.start_time} - ${movement.end_time}</p>
+                            </div>
+                            <div>
+                                <p class="text-xs text-gray-500 uppercase tracking-wider mb-1">Location</p>
+                                <p class="text-sm text-gray-700">${movement.location}</p>
+                            </div>
+                        </div>
+                    `;
+                    
+                    // Add click handler to highlight text
+                    movementCard.addEventListener('click', function() {
+                        highlightProvenanceText(this);
+                        setActiveMovement(this);
+                    });
+                    
+                    // Add mouseover handler for hover effect
+                    movementCard.addEventListener('mouseover', function() {
+                        const highlights = JSON.parse(this.dataset.highlights || '{}');
+                        temporarilyHighlightText(highlights);
+                    });
+                    
+                    // Add mouseout handler to remove temporary highlights
+                    movementCard.addEventListener('mouseout', function() {
+                        const activeCard = movementList.querySelector('.active-movement');
+                        if (activeCard) {
+                            highlightProvenanceText(activeCard);
+                        } else {
+                            removeTemporaryHighlights();
+                        }
+                    });
+                    
+                    movementList.appendChild(movementCard);
+                });
+                
+                // Highlight the first movement by default
+                if (movements.length > 0) {
+                    const firstMovement = movementList.children[0];
+                    highlightProvenanceText(firstMovement);
+                    setActiveMovement(firstMovement);
+                }
+            }
+            
+            // Find the text to highlight in the provenance text
+            function findHighlightText(movement, provenanceText) {
+                const provenanceTextLower = provenanceText.toLowerCase();
+                
+                // Get source and target names
+                const sourceName = typeof movement.source === 'object' ? movement.source.name : movement.source;
+                const targetName = movement.target.name;
+                const method = movement.method;
+                
+                // Find source in text
+                const sourceResult = {
+                    start: -1,
+                    end: -1,
+                    type: 'source'
+                };
+                
+                if (sourceName && sourceName !== 'Unknown') {
+                    const sourceIndex = provenanceTextLower.indexOf(sourceName.toLowerCase());
+                    if (sourceIndex !== -1) {
+                        sourceResult.start = sourceIndex;
+                        sourceResult.end = sourceIndex + sourceName.length;
+                    }
+                }
+                
+                // Find target in text
+                let searchText = targetName;
+                if (method.includes('descent')) {
+                    searchText = `by descent to ${targetName}`;
+                } else if (method.includes('transferred')) {
+                    searchText = `transferred to ${targetName}`;
+                } else if (method.includes('sold')) {
+                    searchText = `sold to ${targetName}`;
+                }
+                
+                const targetResult = {
+                    start: -1,
+                    end: -1,
+                    type: 'target'
+                };
+                
+                const startIndex = provenanceTextLower.indexOf(searchText.toLowerCase());
+                if (startIndex !== -1) {
+                    targetResult.start = startIndex;
+                    targetResult.end = startIndex + searchText.length;
+                } else {
+                    // Fallback to just the target name
+                    const fallbackIndex = provenanceTextLower.indexOf(targetName.toLowerCase());
+                    if (fallbackIndex !== -1) {
+                        targetResult.start = fallbackIndex;
+                        targetResult.end = fallbackIndex + targetName.length;
+                    }
+                }
+                
+                return {
+                    source: sourceResult,
+                    target: targetResult
+                };
+            }
+            
+            // Highlight text in the provenance viewer
+            function highlightProvenanceText(movementElement) {
+                // Remove all existing highlights
+                const textNodes = getTextNodes(provenanceText);
+                textNodes.forEach(node => {
+                    if (node.parentNode.classList.contains('highlight') || 
+                        node.parentNode.classList.contains('source-highlight') ||
+                        node.parentNode.classList.contains('target-highlight')) {
+                        const parent = node.parentNode;
+                        parent.replaceWith(node);
+                    }
+                });
+                
+                // Get highlight data
+                const highlights = JSON.parse(movementElement.dataset.highlights || '{}');
+                
+                // Apply source highlight
+                if (highlights.source && highlights.source.start >= 0) {
+                    applyHighlight(highlights.source.start, highlights.source.end, 'source-highlight');
+                }
+                
+                // Apply target highlight
+                if (highlights.target && highlights.target.start >= 0) {
+                    applyHighlight(highlights.target.start, highlights.target.end, 'target-highlight');
+                }
+                
+                // Scroll to the highlighted text (prefer target)
+                const highlightElement = provenanceText.querySelector('.target-highlight') || 
+                                         provenanceText.querySelector('.source-highlight');
+                if (highlightElement) {
+                    highlightElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                }
+            }
+            
+            // Apply highlight to a specific range with a given class
+            function applyHighlight(start, end, highlightClass) {
+                if (start >= 0 && end > start) {
+                    const textNodes = getTextNodes(provenanceText);
+                    let currentPos = 0;
+                    
+                    for (const node of textNodes) {
+                        const nodeLength = node.textContent.length;
+                        
+                        if (currentPos + nodeLength > start && currentPos < end) {
+                            const rangeStart = Math.max(0, start - currentPos);
+                            const rangeEnd = Math.min(nodeLength, end - currentPos);
+                            
+                            if (rangeStart < rangeEnd) {
+                                const before = node.textContent.substring(0, rangeStart);
+                                const highlighted = node.textContent.substring(rangeStart, rangeEnd);
+                                const after = node.textContent.substring(rangeEnd);
+                                
+                                const replacement = document.createDocumentFragment();
+                                
+                                if (before) {
+                                    replacement.appendChild(document.createTextNode(before));
+                                }
+                                
+                                if (highlighted) {
+                                    const highlightSpan = document.createElement('span');
+                                    highlightSpan.className = highlightClass;
+                                    highlightSpan.textContent = highlighted;
+                                    replacement.appendChild(highlightSpan);
+                                }
+                                
+                                if (after) {
+                                    replacement.appendChild(document.createTextNode(after));
+                                }
+                                
+                                node.replaceWith(replacement);
+                            }
+                        }
+                        
+                        currentPos += nodeLength;
+                    }
+                }
+            }
+            
+            // Temporary highlight on hover (modified to preserve highlight during hover)
+            function temporarilyHighlightText(highlights) {
+                // Remove previous temporary highlights first
+                removeTemporaryHighlights();
+                
+                // Apply source highlight
+                if (highlights.source && highlights.source.start >= 0) {
+                    applyHighlight(highlights.source.start, highlights.source.end, 'source-highlight');
+                }
+                
+                // Apply target highlight
+                if (highlights.target && highlights.target.start >= 0) {
+                    applyHighlight(highlights.target.start, highlights.target.end, 'target-highlight');
+                }
+            }
+            
+            // Remove temporary highlights
+            function removeTemporaryHighlights() {
+                const textNodes = getTextNodes(provenanceText);
+                textNodes.forEach(node => {
+                    if (node.parentNode.classList.contains('source-highlight') ||
+                        node.parentNode.classList.contains('target-highlight')) {
+                        const parent = node.parentNode;
+                        parent.replaceWith(node);
+                    }
+                });
+            }
+            
+            // Set active movement card
+            function setActiveMovement(movementElement) {
+                // Remove active class from all movement cards
+                const allMovementCards = movementList.querySelectorAll('.movement-card');
+                allMovementCards.forEach(card => {
+                    card.classList.remove('active-movement');
+                });
+                
+                // Add active class to clicked card
+                movementElement.classList.add('active-movement');
+                
+                // Scroll to the movement card
+                movementElement.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            }
+            
+            // Helper function to get all text nodes
+            function getTextNodes(element) {
+                const textNodes = [];
+                const walker = document.createTreeWalker(
+                    element,
+                    NodeFilter.SHOW_TEXT,
+                    null,
+                    false
+                );
+                
+                let node;
+                while (node = walker.nextNode()) {
+                    textNodes.push(node);
+                }
+                
+                return textNodes;
+            }
+            
+            // Resizer functionality
+            const resizer = document.getElementById('resizer');
+            const leftPanel = document.getElementById('provenanceText');
+            const rightPanel = document.getElementById('movementSequence');
+            
+            resizer.addEventListener('mousedown', function(e) {
+                e.preventDefault();
+                document.addEventListener('mousemove', resize);
+                document.addEventListener('mouseup', stopResize);
+            });
+            
+            function resize(e) {
+                const containerWidth = viewerContainer.offsetWidth;
+                const newLeftWidth = (e.clientX - viewerContainer.getBoundingClientRect().left) / containerWidth * 100;
+                const newRightWidth = 100 - newLeftWidth;
+                
+                leftPanel.style.width = `${newLeftWidth}%`;
+                rightPanel.style.width = `${newRightWidth}%`;
+            }
+            
+            function stopResize() {
+                document.removeEventListener('mousemove', resize);
+                document.removeEventListener('mouseup', stopResize);
+            }
+        });
+    </script>
+</body>
+</html>

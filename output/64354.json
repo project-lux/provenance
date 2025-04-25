@@ -1,4 +1,5 @@
 {
+    "provenance": "Count Karol Lanckoro\u0144ski (1848\u20131933), Vienna, by 1918; by inheritance to Count Anton Lanckoro\u0144ski (1893\u20131956), Vienna [see note 1]; confiscated by the Gestapo (as 16th Century Dutch Master, \u2018Tavern Scene\u2019) (A.L. 159) [see note 2]; transferred to Schloss Steyersberg, Warth, Austria; transferred to Schloss Th\u00fcrntal, Fels am Wagram, Austria, about 1942; transferred to Schloss Immendorf, Immendorf, Austria, November 2, 1942 (kiste nr. A.L. 5); returned to Schloss Th\u00fcrntal, Fels am Wagram, Austria; transferred to the salt mines at Altaussee, Austria, about February 1944; recovered by the Monuments Fine Arts and Archives Section of the United States Army (Aussee no. 425) [see note 3]; transferred to the Central Collecting Point, Munich, June 24, 1945 (MCCP no. 502); released to the United States Forces, Austria, Kremsm\u00fcnster Abbey, Kremsm\u00fcnster, Austria, October 27, 1945 (Kr no. 71); transferred to the Bundesdenkmalamt, Schloss Ebenzweier, Altm\u00fcnster, Austria, by December 15, 1946; restituted to Count Anton Lanckoro\u0144ski (1893-1956), Geneva, October 6, 1947 [see note 4]; by inheritance to Countess Karolina Lanckoro\u0144ska (1898-2002) Fribourg, Switzerland and Rome; sold to Heim Gallery, London, 1980; Dr. Herbert Schaefer (1910\u20132011) and Mrs. Monika Schaefer (died 2019), Malaga, Spain, by 1981; on loan to the Yale University Art Gallery, New Haven, Conn., 1981\u20132019; bequeathed to the Yale University Art Gallery, New Haven, Conn., 2019\r\n\r\nNote 1: A Polish noble of Galician descent, Count Karol Lanckoro\u0144ski assembled one of the most important private collections in Austria of Italian, German, French and Dutch paintings. Because the Lanckoro\u0144ski family claimed Polish citizenship, the art collection was subject to expropriation during the Nazi period, and in 1939 it was confiscated by the Gestapo. For a full history on the fate of the Lanckoro\u0144ski collection during and after the Nazi era, see Winiewicz-Wolska (2014), pp. 341 \u2013 403\r\n\r\nNote 2: Works of art confiscated from the Lanckoro\u0144ski collection were earmarked for Adolf Hitler\u2019s F\u00fchrermuseum, in Linz, Austria, a museum which was to showcase the best of Western artistic production. Others were coveted by Hitler\u2019s second in command, Reichsmarschall Hermann G\u00f6ring. Archival documentation from the Bundesdenkmalamt (Federal Monuments Authority Austria), records the movements of A Brothel Scene as the painting\u2019s destination was debated, and it was transferred from one depot to another. (BDA, Vienna, Restitution Material, K26, PM Lanckoronski)\r\n\r\nNote 3: The Central Collecting Point, Munich, was a depot used by the MFAA to process and redistribute cultural property confiscated by the Nazis or displaced between the years 1933\u20131945; while the MFAA identified Count Anton Lanckoro\u0144ski as the former owner of A Brothel Scene, because he no longer resided in Austria, the painting was released to the custody of the United States Air Force in Austria. Archival records from the BDA and National Records and Archives Administration, College Park, Maryland, document A Brothel Scene\u2019s movements during the post-war period, as well as Count Lanckoro\u0144ski\u2019s efforts to recover the painting and secure its return to his new home in Geneva.  (BDA, Vienna, Restitution Material, K26, PM Lanckoronski; NARA, College Park, Maryland, Microfilm Publication M1926, Record Group 260, Roll 0001, Records of the Reparations and Restitutions Branch of the U.S. Allied Commission for Austria (USACA), 1945\u20131950, Austrian Claims, no. 15)\r\n\r\nNote 4: Although the Lanckoronski collection was restituted to Count Lanckoro\u0144ski in October 1947, the Austrian government barred its export and the objects were deposited at Schloss Hohenems on the Austrian border with Switzerland. A fire broke out in the palace on March 28, 1950, and a year later export permission was finally granted to transfer the collection to Switzerland. (as above Winiewicz-Wolska, 2014, p. 400) \r\n",
     "output": [
         {
             "movements": [
@@ -9,11 +10,12 @@
                         "location": "Vienna",
                         "birth_date": "1848",
                         "death_date": "1933",
-                        "type": "Collector"
+                        "type": "Person"
                     },
                     "start_time": "Unknown",
-                    "end_time": "1918",
+                    "end_time": "by 1918",
                     "location": "Vienna",
+                    "confidence": "Certain",
                     "method": "Unknown"
                 },
                 {
@@ -22,18 +24,19 @@
                         "location": "Vienna",
                         "birth_date": "1848",
                         "death_date": "1933",
-                        "type": "Collector"
+                        "type": "Person"
                     },
                     "target": {
                         "name": "Count Anton Lanckoro\u0144ski",
                         "location": "Vienna",
                         "birth_date": "1893",
                         "death_date": "1956",
-                        "type": "Collector"
+                        "type": "Person"
                     },
                     "start_time": "1933",
                     "end_time": "1939",
                     "location": "Vienna",
+                    "confidence": "Certain",
                     "method": "by inheritance to"
                 },
                 {
@@ -42,24 +45,25 @@
                         "location": "Vienna",
                         "birth_date": "1893",
                         "death_date": "1956",
-                        "type": "Collector"
+                        "type": "Person"
                     },
                     "target": {
                         "name": "Gestapo",
-                        "location": "Unknown",
+                        "location": "Austria",
                         "birth_date": "Unknown",
                         "death_date": "Unknown",
                         "type": "Group"
                     },
                     "start_time": "1939",
-                    "end_time": "about 1942",
+                    "end_time": "Unknown",
                     "location": "Vienna",
+                    "confidence": "Certain",
                     "method": "confiscated by"
                 },
                 {
                     "source": {
                         "name": "Gestapo",
-                        "location": "Unknown",
+                        "location": "Austria",
                         "birth_date": "Unknown",
                         "death_date": "Unknown",
                         "type": "Group"
@@ -69,11 +73,12 @@
                         "location": "Warth, Austria",
                         "birth_date": "Unknown",
                         "death_date": "Unknown",
-                        "type": "Institution"
+                        "type": "Building"
                     },
-                    "start_time": "about 1942",
-                    "end_time": "about 1942",
+                    "start_time": "After 1939",
+                    "end_time": "Unknown",
                     "location": "Warth, Austria",
+                    "confidence": "Certain",
                     "method": "transferred to"
                 },
                 {
@@ -82,18 +87,19 @@
                         "location": "Warth, Austria",
                         "birth_date": "Unknown",
                         "death_date": "Unknown",
-                        "type": "Institution"
+                        "type": "Building"
                     },
                     "target": {
                         "name": "Schloss Th\u00fcrntal",
                         "location": "Fels am Wagram, Austria",
                         "birth_date": "Unknown",
                         "death_date": "Unknown",
-                        "type": "Institution"
+                        "type": "Building"
                     },
-                    "start_time": "about 1942",
-                    "end_time": "November 2, 1942",
+                    "start_time": "Unknown",
+                    "end_time": "about 1942",
                     "location": "Fels am Wagram, Austria",
+                    "confidence": "Certain",
                     "method": "transferred to"
                 },
                 {
@@ -102,18 +108,19 @@
                         "location": "Fels am Wagram, Austria",
                         "birth_date": "Unknown",
                         "death_date": "Unknown",
-                        "type": "Institution"
+                        "type": "Building"
                     },
                     "target": {
                         "name": "Schloss Immendorf",
                         "location": "Immendorf, Austria",
                         "birth_date": "Unknown",
                         "death_date": "Unknown",
-                        "type": "Institution"
+                        "type": "Building"
                     },
                     "start_time": "November 2, 1942",
                     "end_time": "Unknown",
                     "location": "Immendorf, Austria",
+                    "confidence": "Certain",
                     "method": "transferred to"
                 },
                 {
@@ -122,18 +129,19 @@
                         "location": "Immendorf, Austria",
                         "birth_date": "Unknown",
                         "death_date": "Unknown",
-                        "type": "Institution"
+                        "type": "Building"
                     },
                     "target": {
                         "name": "Schloss Th\u00fcrntal",
                         "location": "Fels am Wagram, Austria",
                         "birth_date": "Unknown",
                         "death_date": "Unknown",
-                        "type": "Institution"
+                        "type": "Building"
                     },
-                    "start_time": "Unknown",
-                    "end_time": "about February 1944",
+                    "start_time": "After November 2, 1942",
+                    "end_time": "Unknown",
                     "location": "Fels am Wagram, Austria",
+                    "confidence": "Certain",
                     "method": "returned to"
                 },
                 {
@@ -142,47 +150,49 @@
                         "location": "Fels am Wagram, Austria",
                         "birth_date": "Unknown",
                         "death_date": "Unknown",
-                        "type": "Institution"
+                        "type": "Building"
                     },
                     "target": {
-                        "name": "Salt Mines at Altaussee",
+                        "name": "Salt mines at Altaussee",
                         "location": "Altaussee, Austria",
                         "birth_date": "Unknown",
                         "death_date": "Unknown",
-                        "type": "Institution"
+                        "type": "Building"
                     },
                     "start_time": "about February 1944",
                     "end_time": "Unknown",
                     "location": "Altaussee, Austria",
+                    "confidence": "Certain",
                     "method": "transferred to"
                 },
                 {
                     "source": {
-                        "name": "Salt Mines at Altaussee",
+                        "name": "Salt mines at Altaussee",
                         "location": "Altaussee, Austria",
                         "birth_date": "Unknown",
                         "death_date": "Unknown",
-                        "type": "Institution"
+                        "type": "Building"
                     },
                     "target": {
-                        "name": "Monuments Fine Arts and Archives Section (MFAA)",
-                        "location": "Altaussee, Austria",
+                        "name": "Monuments Fine Arts and Archives Section of the United States Army",
+                        "location": "Austria",
                         "birth_date": "Unknown",
                         "death_date": "Unknown",
-                        "type": "Institution"
+                        "type": "Group"
                     },
-                    "start_time": "Unknown",
-                    "end_time": "June 24, 1945",
+                    "start_time": "After February 1944",
+                    "end_time": "before June 24, 1945",
                     "location": "Altaussee, Austria",
+                    "confidence": "Certain",
                     "method": "recovered by"
                 },
                 {
                     "source": {
-                        "name": "Monuments Fine Arts and Archives Section (MFAA)",
-                        "location": "Altaussee, Austria",
+                        "name": "Monuments Fine Arts and Archives Section of the United States Army",
+                        "location": "Austria",
                         "birth_date": "Unknown",
                         "death_date": "Unknown",
-                        "type": "Institution"
+                        "type": "Group"
                     },
                     "target": {
                         "name": "Central Collecting Point, Munich",
@@ -192,8 +202,9 @@
                         "type": "Institution"
                     },
                     "start_time": "June 24, 1945",
-                    "end_time": "October 27, 1945",
+                    "end_time": "Unknown",
                     "location": "Munich, Germany",
+                    "confidence": "Certain",
                     "method": "transferred to"
                 },
                 {
@@ -209,11 +220,12 @@
                         "location": "Kremsm\u00fcnster Abbey, Kremsm\u00fcnster, Austria",
                         "birth_date": "Unknown",
                         "death_date": "Unknown",
-                        "type": "Institution"
+                        "type": "Group"
                     },
                     "start_time": "October 27, 1945",
                     "end_time": "Unknown",
                     "location": "Kremsm\u00fcnster Abbey, Kremsm\u00fcnster, Austria",
+                    "confidence": "Certain",
                     "method": "released to"
                 },
                 {
@@ -222,7 +234,7 @@
                         "location": "Kremsm\u00fcnster Abbey, Kremsm\u00fcnster, Austria",
                         "birth_date": "Unknown",
                         "death_date": "Unknown",
-                        "type": "Institution"
+                        "type": "Group"
                     },
                     "target": {
                         "name": "Bundesdenkmalamt",
@@ -231,9 +243,10 @@
                         "death_date": "Unknown",
                         "type": "Institution"
                     },
-                    "start_time": "Unknown",
-                    "end_time": "December 15, 1946",
+                    "start_time": "After October 27, 1945",
+                    "end_time": "by December 15, 1946",
                     "location": "Schloss Ebenzweier, Altm\u00fcnster, Austria",
+                    "confidence": "Certain",
                     "method": "transferred to"
                 },
                 {
@@ -249,31 +262,33 @@
                         "location": "Geneva",
                         "birth_date": "1893",
                         "death_date": "1956",
-                        "type": "Collector"
+                        "type": "Person"
                     },
                     "start_time": "October 6, 1947",
                     "end_time": "October 6, 1947",
-                    "location": "Altm\u00fcnster, Austria",
+                    "location": "Geneva",
+                    "confidence": "Certain",
                     "method": "restituted to"
                 },
                 {
                     "source": {
-                        "name": "Bundesdenkmalamt",
-                        "location": "Schloss Ebenzweier, Altm\u00fcnster, Austria",
-                        "birth_date": "Unknown",
-                        "death_date": "Unknown",
-                        "type": "Institution"
+                        "name": "Count Anton Lanckoro\u0144ski",
+                        "location": "Geneva",
+                        "birth_date": "1893",
+                        "death_date": "1956",
+                        "type": "Person"
                     },
                     "target": {
                         "name": "Schloss Hohenems",
                         "location": "Hohenems, Austria",
                         "birth_date": "Unknown",
                         "death_date": "Unknown",
-                        "type": "Institution"
+                        "type": "Building"
                     },
-                    "start_time": "October 6, 1947",
+                    "start_time": "October 1947",
                     "end_time": "1951",
                     "location": "Hohenems, Austria",
+                    "confidence": "Certain",
                     "method": "deposited at"
                 },
                 {
@@ -282,18 +297,19 @@
                         "location": "Hohenems, Austria",
                         "birth_date": "Unknown",
                         "death_date": "Unknown",
-                        "type": "Institution"
+                        "type": "Building"
                     },
                     "target": {
                         "name": "Count Anton Lanckoro\u0144ski",
                         "location": "Geneva",
                         "birth_date": "1893",
                         "death_date": "1956",
-                        "type": "Collector"
+                        "type": "Person"
                     },
                     "start_time": "1951",
                     "end_time": "1956",
-                    "location": "Geneva, Switzerland",
+                    "location": "Geneva",
+                    "confidence": "Certain",
                     "method": "transferred to"
                 },
                 {
@@ -302,18 +318,19 @@
                         "location": "Geneva",
                         "birth_date": "1893",
                         "death_date": "1956",
-                        "type": "Collector"
+                        "type": "Person"
                     },
                     "target": {
                         "name": "Countess Karolina Lanckoro\u0144ska",
                         "location": "Fribourg, Switzerland and Rome",
                         "birth_date": "1898",
                         "death_date": "2002",
-                        "type": "Collector"
+                        "type": "Person"
                     },
                     "start_time": "1956",
                     "end_time": "1980",
-                    "location": "Geneva/Fribourg/Rome",
+                    "location": "Fribourg, Switzerland and Rome",
+                    "confidence": "Certain",
                     "method": "by inheritance to"
                 },
                 {
@@ -322,85 +339,89 @@
                         "location": "Fribourg, Switzerland and Rome",
                         "birth_date": "1898",
                         "death_date": "2002",
-                        "type": "Collector"
+                        "type": "Person"
                     },
                     "target": {
                         "name": "Heim Gallery",
-                        "location": "London, UK",
+                        "location": "London",
                         "birth_date": "Unknown",
                         "death_date": "Unknown",
                         "type": "Dealer"
                     },
                     "start_time": "1980",
-                    "end_time": "1980",
-                    "location": "London, UK",
+                    "end_time": "Unknown",
+                    "location": "London",
+                    "confidence": "Certain",
                     "method": "sold to"
                 },
                 {
                     "source": {
                         "name": "Heim Gallery",
-                        "location": "London, UK",
+                        "location": "London",
                         "birth_date": "Unknown",
                         "death_date": "Unknown",
                         "type": "Dealer"
                     },
                     "target": {
-                        "name": "Dr. Herbert Schaefer and Mrs. Monika Schaefer",
+                        "name": "Dr. Herbert Schaefer",
                         "location": "Malaga, Spain",
-                        "birth_date": "Unknown",
-                        "death_date": "Unknown",
-                        "type": "Collector"
+                        "birth_date": "1910",
+                        "death_date": "2011",
+                        "type": "Person"
                     },
-                    "start_time": "1980",
-                    "end_time": "1981",
+                    "start_time": "After 1980",
+                    "end_time": "by 1981",
                     "location": "Malaga, Spain",
+                    "confidence": "Certain",
                     "method": "purchased by/acquired by (from/through/in)"
                 },
                 {
                     "source": {
-                        "name": "Dr. Herbert Schaefer and Mrs. Monika Schaefer",
+                        "name": "Dr. Herbert Schaefer",
                         "location": "Malaga, Spain",
-                        "birth_date": "Unknown",
-                        "death_date": "Unknown",
-                        "type": "Collector"
+                        "birth_date": "1910",
+                        "death_date": "2011",
+                        "type": "Person"
                     },
                     "target": {
                         "name": "Yale University Art Gallery",
-                        "location": "New Haven, Conn., USA",
+                        "location": "New Haven, Conn.",
                         "birth_date": "Unknown",
                         "death_date": "Unknown",
                         "type": "Institution"
                     },
                     "start_time": "1981",
                     "end_time": "2019",
-                    "location": "New Haven, Conn., USA",
+                    "location": "New Haven, Conn.",
+                    "confidence": "Certain",
                     "method": "on loan to"
                 },
                 {
                     "source": {
-                        "name": "Dr. Herbert Schaefer and Mrs. Monika Schaefer",
+                        "name": "Mrs. Monika Schaefer",
                         "location": "Malaga, Spain",
                         "birth_date": "Unknown",
-                        "death_date": "Unknown",
-                        "type": "Collector"
+                        "death_date": "2019",
+                        "type": "Person"
                     },
                     "target": {
                         "name": "Yale University Art Gallery",
-                        "location": "New Haven, Conn., USA",
+                        "location": "New Haven, Conn.",
                         "birth_date": "Unknown",
                         "death_date": "Unknown",
                         "type": "Institution"
                     },
                     "start_time": "2019",
-                    "end_time": "Unknown",
-                    "location": "New Haven, Conn., USA",
+                    "end_time": "Present",
+                    "location": "New Haven, Conn.",
+                    "confidence": "Certain",
                     "method": "bequeathed to"
                 }
             ],
             "model": "google/gemini-2.5-pro-preview-03-25"
         }
     ],
-    "provenance": "Count Karol Lanckoro\u0144ski (1848\u20131933), Vienna, by 1918; by inheritance to Count Anton Lanckoro\u0144ski (1893\u20131956), Vienna [see note 1]; confiscated by the Gestapo (as 16th Century Dutch Master, \u2018Tavern Scene\u2019) (A.L. 159) [see note 2]; transferred to Schloss Steyersberg, Warth, Austria; transferred to Schloss Th\u00fcrntal, Fels am Wagram, Austria, about 1942; transferred to Schloss Immendorf, Immendorf, Austria, November 2, 1942 (kiste nr. A.L. 5); returned to Schloss Th\u00fcrntal, Fels am Wagram, Austria; transferred to the salt mines at Altaussee, Austria, about February 1944; recovered by the Monuments Fine Arts and Archives Section of the United States Army (Aussee no. 425) [see note 3]; transferred to the Central Collecting Point, Munich, June 24, 1945 (MCCP no. 502); released to the United States Forces, Austria, Kremsm\u00fcnster Abbey, Kremsm\u00fcnster, Austria, October 27, 1945 (Kr no. 71); transferred to the Bundesdenkmalamt, Schloss Ebenzweier, Altm\u00fcnster, Austria, by December 15, 1946; restituted to Count Anton Lanckoro\u0144ski (1893-1956), Geneva, October 6, 1947 [see note 4]; by inheritance to Countess Karolina Lanckoro\u0144ska (1898-2002) Fribourg, Switzerland and Rome; sold to Heim Gallery, London, 1980; Dr. Herbert Schaefer (1910\u20132011) and Mrs. Monika Schaefer (died 2019), Malaga, Spain, by 1981; on loan to the Yale University Art Gallery, New Haven, Conn., 1981\u20132019; bequeathed to the Yale University Art Gallery, New Haven, Conn., 2019\r\n\r\nNote 1: A Polish noble of Galician descent, Count Karol Lanckoro\u0144ski assembled one of the most important private collections in Austria of Italian, German, French and Dutch paintings. Because the Lanckoro\u0144ski family claimed Polish citizenship, the art collection was subject to expropriation during the Nazi period, and in 1939 it was confiscated by the Gestapo. For a full history on the fate of the Lanckoro\u0144ski collection during and after the Nazi era, see Winiewicz-Wolska (2014), pp. 341 \u2013 403\r\n\r\nNote 2: Works of art confiscated from the Lanckoro\u0144ski collection were earmarked for Adolf Hitler\u2019s F\u00fchrermuseum, in Linz, Austria, a museum which was to showcase the best of Western artistic production. Others were coveted by Hitler\u2019s second in command, Reichsmarschall Hermann G\u00f6ring. Archival documentation from the Bundesdenkmalamt (Federal Monuments Authority Austria), records the movements of A Brothel Scene as the painting\u2019s destination was debated, and it was transferred from one depot to another. (BDA, Vienna, Restitution Material, K26, PM Lanckoronski)\r\n\r\nNote 3: The Central Collecting Point, Munich, was a depot used by the MFAA to process and redistribute cultural property confiscated by the Nazis or displaced between the years 1933\u20131945; while the MFAA identified Count Anton Lanckoro\u0144ski as the former owner of A Brothel Scene, because he no longer resided in Austria, the painting was released to the custody of the United States Air Force in Austria. Archival records from the BDA and National Records and Archives Administration, College Park, Maryland, document A Brothel Scene\u2019s movements during the post-war period, as well as Count Lanckoro\u0144ski\u2019s efforts to recover the painting and secure its return to his new home in Geneva.  (BDA, Vienna, Restitution Material, K26, PM Lanckoronski; NARA, College Park, Maryland, Microfilm Publication M1926, Record Group 260, Roll 0001, Records of the Reparations and Restitutions Branch of the U.S. Allied Commission for Austria (USACA), 1945\u20131950, Austrian Claims, no. 15)\r\n\r\nNote 4: Although the Lanckoronski collection was restituted to Count Lanckoro\u0144ski in October 1947, the Austrian government barred its export and the objects were deposited at Schloss Hohenems on the Austrian border with Switzerland. A fire broke out in the palace on March 28, 1950, and a year later export permission was finally granted to transfer the collection to Switzerland. (as above Winiewicz-Wolska, 2014, p. 400) \r\n",
     "object_id": 64354,
-    "date": "2025-04-23 15:54:03"
+    "errors": {},
+    "date": "2025-04-25 11:28:43"
 }

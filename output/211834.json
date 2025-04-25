@@ -1,0 +1,244 @@
+{
+    "provenance": "Trade, Germany, by 1991 or 1992; sold to Spink and Son, London, 1991 or 1992 [see note 1]; sold to Deirdre Pirie (1937\u20132016) and Robert S. Pirie (1934\u20132015)  [see note 2]; sale, Christie's, New York, March 22, 2000, lot 159; sold to Ann R. Kinney and Gilbert H. Kinney (1931\u20132020), New York, March 22, 2000 (Kinney inv. no. 87) (on loan to the Yale University Art Gallery, New Haven, Conn., 2016\u201321); given to the Yale University Art Gallery New Haven, Conn., 2021\r\n\r\nNote 1: According to information provided by Jane Hoskins-Thurston, formerly of Spink and Son, Spink acquired this work from a German dealer in 1991 or 1992. Spink sold it to Mr. and Mrs. Pirie, and it was in their possession when in was exhibited in the Asia Society show \"Buddha of the Future\" in 1994, cat. no. 48 (email from Jane Hoskins-Thurston to Ann Kinney, November 6, 2012, copy in accession file).\r\n\r\nNote 2: According to information provided by Hugo Kreijger, a former consultant for Christie's auction house.  (Email from Hugo Kreijger to Ann Kinney, December 16, 2012, copy in accession file; see also note 1)\r\n\r\n",
+    "output": [
+        {
+            "movements": [
+                {
+                    "source": {
+                        "name": "Unknown",
+                        "location": "Unknown",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Unknown"
+                    },
+                    "target": {
+                        "name": "Unknown",
+                        "location": "Germany",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Dealer"
+                    },
+                    "start_time": "Unknown",
+                    "end_time": "Unknown",
+                    "location": "Germany",
+                    "confidence": "Possible",
+                    "method": "Unknown"
+                },
+                {
+                    "source": {
+                        "name": "Unknown",
+                        "location": "Germany",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Dealer"
+                    },
+                    "target": {
+                        "name": "Unknown",
+                        "location": "Germany",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Dealer"
+                    },
+                    "start_time": "Unknown",
+                    "end_time": "1991/1992",
+                    "location": "Germany",
+                    "confidence": "Certain",
+                    "method": "with"
+                },
+                {
+                    "source": {
+                        "name": "Unknown",
+                        "location": "Germany",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Dealer"
+                    },
+                    "target": {
+                        "name": "Spink and Son",
+                        "location": "London",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Dealer"
+                    },
+                    "start_time": "1991/1992",
+                    "end_time": "1991/1992",
+                    "location": "London",
+                    "confidence": "Certain",
+                    "method": "sold to"
+                },
+                {
+                    "source": {
+                        "name": "Spink and Son",
+                        "location": "London",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Dealer"
+                    },
+                    "target": {
+                        "name": "Spink and Son",
+                        "location": "London",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Dealer"
+                    },
+                    "start_time": "1991/1992",
+                    "end_time": "1991/1992",
+                    "location": "London",
+                    "confidence": "Certain",
+                    "method": "with"
+                },
+                {
+                    "source": {
+                        "name": "Spink and Son",
+                        "location": "London",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Dealer"
+                    },
+                    "target": {
+                        "name": "Deirdre Pirie and Robert S. Pirie",
+                        "location": "Unknown",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Group"
+                    },
+                    "start_time": "1991/1992",
+                    "end_time": "1991/1992",
+                    "location": "London",
+                    "confidence": "Certain",
+                    "method": "sold to"
+                },
+                {
+                    "source": {
+                        "name": "Deirdre Pirie and Robert S. Pirie",
+                        "location": "Unknown",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Group"
+                    },
+                    "target": {
+                        "name": "Deirdre Pirie and Robert S. Pirie",
+                        "location": "Unknown",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Group"
+                    },
+                    "start_time": "1991/1992",
+                    "end_time": "2000-03-22",
+                    "location": "Unknown",
+                    "confidence": "Certain",
+                    "method": "with"
+                },
+                {
+                    "source": {
+                        "name": "Deirdre Pirie and Robert S. Pirie",
+                        "location": "Unknown",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Group"
+                    },
+                    "target": {
+                        "name": "Ann R. Kinney and Gilbert H. Kinney",
+                        "location": "New York",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Group"
+                    },
+                    "start_time": "2000-03-22",
+                    "end_time": "2000-03-22",
+                    "location": "New York",
+                    "confidence": "Certain",
+                    "method": "Sold through"
+                },
+                {
+                    "source": {
+                        "name": "Ann R. Kinney and Gilbert H. Kinney",
+                        "location": "New York",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Group"
+                    },
+                    "target": {
+                        "name": "Ann R. Kinney and Gilbert H. Kinney",
+                        "location": "New York",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Group"
+                    },
+                    "start_time": "2000-03-22",
+                    "end_time": "2016",
+                    "location": "New York",
+                    "confidence": "Certain",
+                    "method": "with"
+                },
+                {
+                    "source": {
+                        "name": "Ann R. Kinney and Gilbert H. Kinney",
+                        "location": "New York",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Group"
+                    },
+                    "target": {
+                        "name": "Yale University Art Gallery",
+                        "location": "New Haven, Conn.",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Institution"
+                    },
+                    "start_time": "2016",
+                    "end_time": "2021",
+                    "location": "New Haven, Conn.",
+                    "confidence": "Certain",
+                    "method": "on loan to"
+                },
+                {
+                    "source": {
+                        "name": "Ann R. Kinney and Gilbert H. Kinney",
+                        "location": "New York",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Group"
+                    },
+                    "target": {
+                        "name": "Yale University Art Gallery",
+                        "location": "New Haven, Conn.",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Institution"
+                    },
+                    "start_time": "2021",
+                    "end_time": "2021",
+                    "location": "New Haven, Conn.",
+                    "confidence": "Certain",
+                    "method": "given to"
+                },
+                {
+                    "source": {
+                        "name": "Yale University Art Gallery",
+                        "location": "New Haven, Conn.",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Institution"
+                    },
+                    "target": {
+                        "name": "Yale University Art Gallery",
+                        "location": "New Haven, Conn.",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Institution"
+                    },
+                    "start_time": "2021",
+                    "end_time": "Unknown",
+                    "location": "New Haven, Conn.",
+                    "confidence": "Certain",
+                    "method": "with"
+                }
+            ],
+            "model": "google/gemini-2.5-pro-preview-03-25"
+        }
+    ],
+    "object_id": 211834,
+    "errors": {},
+    "date": "2025-04-25 11:28:52"
+}

@@ -1,7 +1,29 @@
 {
+    "provenance": "Alexander Turney Stewart (1802\u20131876), New York; by inheritance to his wife, Cornelia Mitchell Clinch Stewart (1802\u20131886), New York, 1876 [see note 1]; sale, American Art Association, 23\u201325 March, 1887, lot 996 [see note 2]. Charles Magnell (1932\u2013 1996), Saratoga Springs, N.Y., by 1987 [see note 3]; sold to Meg Caldwell, New York, 1987; sale, Doyle, New York, May 2, 2023, lot 321; sold to Stewart Rosenblum, New York, May 2, 2023; given to the Yale University Art Gallery, New Haven, Conn., 2023\r\n\r\nNote 1: A.T. Stewart\u2019s will, dated April 30, 1876, states \u201cAll my property and estates of any and every kind and description, and wherever situated, I give, devise, and bequeath to my dear wife, Cornelia M. Stewart\u201d (copy in curatorial object file).  \r\n\r\nNote 2: Collection sold at the direction of Mrs. Stewart\u2019s executors, Henry Hilton and Charles Clinch. Lot 996 described as \u201cLarge center table, carved rosewood and gilt, marquetry top, with repouss\u00e9 bronze rim, decorated porcelain medallions and ormolou mountings\u201d (American Art Association, The Stewart Collection of Paintings, Sculpture, and Other Objects of Art, March 23\u201325, 1887, copy in curatorial object file).\r\n\r\nNote 3: According to Magnell, he acquired the table from a member of the Hilton family in the Saratoga Springs area. In addition to being executor for both A. T. and Cornelia Stewart, Hilton shared business interests with the Stewarts and both families had properties in Saratoga Springs. Newspaper accounts record that the Hilton family bought numerous lots at the Stewart auction although records for the furniture portion are vague. Magnell presumed that Hilton purchased the table and it remained in the family (copies of notes from the previous owner and copies of period news accounts in curatorial object file).",
     "output": [
         {
             "movements": [
+                {
+                    "source": {
+                        "name": "Unknown",
+                        "location": "Unknown",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Unknown"
+                    },
+                    "target": {
+                        "name": "Alexander Turney Stewart",
+                        "location": "New York",
+                        "birth_date": "1802",
+                        "death_date": "1876",
+                        "type": "Person"
+                    },
+                    "start_time": "Unknown",
+                    "end_time": "1876",
+                    "location": "New York",
+                    "confidence": "Certain",
+                    "method": "purchased by/acquired by (from/through/in)"
+                },
                 {
                     "source": {
                         "name": "Alexander Turney Stewart",
@@ -18,8 +40,9 @@
                         "type": "Person"
                     },
                     "start_time": "1876",
-                    "end_time": "1876",
+                    "end_time": "1886",
                     "location": "New York",
+                    "confidence": "Certain",
                     "method": "by inheritance to"
                 },
                 {
@@ -37,9 +60,10 @@
                         "death_date": "Unknown",
                         "type": "Unknown"
                     },
-                    "start_time": "1887-03-23",
-                    "end_time": "1887-03-25",
-                    "location": "New York",
+                    "start_time": "March 23-25, 1887",
+                    "end_time": "March 23-25, 1887",
+                    "location": "American Art Association, New York",
+                    "confidence": "Certain",
                     "method": "sale"
                 },
                 {
@@ -51,20 +75,21 @@
                         "type": "Unknown"
                     },
                     "target": {
-                        "name": "Member of the Hilton family",
-                        "location": "Saratoga Springs area",
+                        "name": "Unknown",
+                        "location": "Unknown",
                         "birth_date": "Unknown",
                         "death_date": "Unknown",
-                        "type": "Person"
+                        "type": "Unknown"
                     },
-                    "start_time": "1887-03-25",
+                    "start_time": "March 23-25, 1887",
                     "end_time": "Unknown",
                     "location": "Unknown",
+                    "confidence": "Possible",
                     "method": "Unknown"
                 },
                 {
                     "source": {
-                        "name": "Member of the Hilton family",
+                        "name": "Unknown",
                         "location": "Saratoga Springs area",
                         "birth_date": "Unknown",
                         "death_date": "Unknown",
@@ -78,8 +103,9 @@
                         "type": "Person"
                     },
                     "start_time": "Unknown",
-                    "end_time": "by 1987",
+                    "end_time": "1987",
                     "location": "Saratoga Springs, N.Y.",
+                    "confidence": "Possible",
                     "method": "purchased by/acquired by (from/through/in)"
                 },
                 {
@@ -100,6 +126,7 @@
                     "start_time": "1987",
                     "end_time": "1987",
                     "location": "New York",
+                    "confidence": "Certain",
                     "method": "sold to"
                 },
                 {
@@ -117,9 +144,10 @@
                         "death_date": "Unknown",
                         "type": "Person"
                     },
-                    "start_time": "2023-05-02",
-                    "end_time": "2023-05-02",
-                    "location": "New York",
+                    "start_time": "May 2, 2023",
+                    "end_time": "May 2, 2023",
+                    "location": "Doyle, New York",
+                    "confidence": "Certain",
                     "method": "sale"
                 },
                 {
@@ -140,13 +168,14 @@
                     "start_time": "2023",
                     "end_time": "2023",
                     "location": "New Haven, Conn.",
+                    "confidence": "Certain",
                     "method": "given to"
                 }
             ],
             "model": "google/gemini-2.5-pro-preview-03-25"
         }
     ],
-    "provenance": "Alexander Turney Stewart (1802\u20131876), New York; by inheritance to his wife, Cornelia Mitchell Clinch Stewart (1802\u20131886), New York, 1876 [see note 1]; sale, American Art Association, 23\u201325 March, 1887, lot 996 [see note 2]. Charles Magnell (1932\u2013 1996), Saratoga Springs, N.Y., by 1987 [see note 3]; sold to Meg Caldwell, New York, 1987; sale, Doyle, New York, May 2, 2023, lot 321; sold to Stewart Rosenblum, New York, May 2, 2023; given to the Yale University Art Gallery, New Haven, Conn., 2023\r\n\r\nNote 1: A.T. Stewart\u2019s will, dated April 30, 1876, states \u201cAll my property and estates of any and every kind and description, and wherever situated, I give, devise, and bequeath to my dear wife, Cornelia M. Stewart\u201d (copy in curatorial object file).  \r\n\r\nNote 2: Collection sold at the direction of Mrs. Stewart\u2019s executors, Henry Hilton and Charles Clinch. Lot 996 described as \u201cLarge center table, carved rosewood and gilt, marquetry top, with repouss\u00e9 bronze rim, decorated porcelain medallions and ormolou mountings\u201d (American Art Association, The Stewart Collection of Paintings, Sculpture, and Other Objects of Art, March 23\u201325, 1887, copy in curatorial object file).\r\n\r\nNote 3: According to Magnell, he acquired the table from a member of the Hilton family in the Saratoga Springs area. In addition to being executor for both A. T. and Cornelia Stewart, Hilton shared business interests with the Stewarts and both families had properties in Saratoga Springs. Newspaper accounts record that the Hilton family bought numerous lots at the Stewart auction although records for the furniture portion are vague. Magnell presumed that Hilton purchased the table and it remained in the family (copies of notes from the previous owner and copies of period news accounts in curatorial object file).",
     "object_id": 324615,
-    "date": "2025-04-23 15:53:42"
+    "errors": {},
+    "date": "2025-04-25 11:29:04"
 }

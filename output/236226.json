@@ -1,0 +1,97 @@
+{
+    "provenance": "Made by Ki Enthus Susmono, Tegal, Indonesia, 1999; sold to Dr. Walter Angst (1942-2014), Uberlingen, Germany [See Note I], 2002; by descent to Sir Henry Angest (b.1940), London, England, and Perth, Scotland, 2014 [See Note II]; gift to Yale University Art Gallery, New Haven, Conn., 2018.\r\n\r\nNotes: [I] Dr. Walter Angst (1942-2014) was a primatologist and notable collector of \u2018wayang\u2019 (Indonesian puppets) and wayang-related material. From the 1970s he amassed a collection of more than 20,000 puppets, mostly in full sets. While most were acquired directly from Indonesian puppet masters and local dealers, he also purchased many on the international art market. His entire collection was gifted to the Yale University Art Gallery, along with his collection notes. Research is currently ongoing to confirm Angst\u2019s acquisition of each object. [II] Upon Dr. Angst\u2019s death, while legal title passed to his brother, Sir Henry Angest (b.1940), who resides in the United Kingdom, the collection remained in Germany until its donation to the YUAG.",
+    "output": [
+        {
+            "movements": [
+                {
+                    "source": {
+                        "name": "Ki Enthus Susmono",
+                        "location": "Tegal, Indonesia",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Person"
+                    },
+                    "target": {
+                        "name": "Ki Enthus Susmono",
+                        "location": "Tegal, Indonesia",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Person"
+                    },
+                    "start_time": "1999",
+                    "end_time": "1999",
+                    "location": "Tegal, Indonesia",
+                    "confidence": "Certain",
+                    "method": "The artist"
+                },
+                {
+                    "source": {
+                        "name": "Ki Enthus Susmono",
+                        "location": "Tegal, Indonesia",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Person"
+                    },
+                    "target": {
+                        "name": "Dr. Walter Angst",
+                        "location": "Uberlingen, Germany",
+                        "birth_date": "1942",
+                        "death_date": "2014",
+                        "type": "Collector"
+                    },
+                    "start_time": "2002",
+                    "end_time": "2002",
+                    "location": "Unknown",
+                    "confidence": "Certain",
+                    "method": "sold to"
+                },
+                {
+                    "source": {
+                        "name": "Dr. Walter Angst",
+                        "location": "Uberlingen, Germany",
+                        "birth_date": "1942",
+                        "death_date": "2014",
+                        "type": "Collector"
+                    },
+                    "target": {
+                        "name": "Sir Henry Angest",
+                        "location": "London, England, and Perth, Scotland",
+                        "birth_date": "1940",
+                        "death_date": "Unknown",
+                        "type": "Person"
+                    },
+                    "start_time": "2014",
+                    "end_time": "2014",
+                    "location": "Uberlingen, Germany",
+                    "confidence": "Certain",
+                    "method": "by descent to"
+                },
+                {
+                    "source": {
+                        "name": "Sir Henry Angest",
+                        "location": "London, England, and Perth, Scotland",
+                        "birth_date": "1940",
+                        "death_date": "Unknown",
+                        "type": "Person"
+                    },
+                    "target": {
+                        "name": "Yale University Art Gallery",
+                        "location": "New Haven, Conn.",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Institution"
+                    },
+                    "start_time": "2018",
+                    "end_time": "2018",
+                    "location": "Unknown",
+                    "confidence": "Certain",
+                    "method": "gift to"
+                }
+            ],
+            "model": "google/gemini-2.5-pro-preview-03-25"
+        }
+    ],
+    "object_id": 236226,
+    "errors": {},
+    "date": "2025-04-25 11:28:06"
+}

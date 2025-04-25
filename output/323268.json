@@ -1,4 +1,5 @@
 {
+    "provenance": "Frederick Hill Meserve (1865\u20131962), New York, by 1962 [see note 1];\u00a0by descent to his daughter, Dorothy Meserve Kunhardt (1901\u20131979),\u00a0 Beverly, Mass., by 1962 [see note 2];\u00a0by descent to her son, Philip Bradish Kunhardt, Jr., (1928\u20132006), Chappaqua, N.Y.,; transferred to the Meserve-Kunhardt Foundation, Pleasantville, N.Y., 2002 (deposited with the State University of New York-Purchase, 2009\u20132015) [see note 3];\u00a0sold to the Beinecke Rare Book & Manuscript Library, New Haven, Conn., 2015; sold to the Yale University Art Gallery, New Haven Conn, 2021. \r\n\r\nNote 1: Frederick Hill Meserve began collecting photographs in 1897, making him one of America\u2019s first photography collectors. Over a period of sixty years, he amassed an extensive collection of photographs documenting the American Civil War and nineteenth century American history and culture. \r\n\r\nNote 2: Dorothy Meserve Kunhardt joined in her father\u2019s research and collecting efforts; her son, Philip Bradish Kunhardt, Jr., continued caring for the collection, preserving what became known as the Meserve-Kunhardt Collection at his home in Chappaqua.  \r\n\r\nNote 3: In 2002, the descendants of Philip Bradish Kunhardt, Jr., including his sons Philip Bradish Kunhardt, III (born 1951), Peter Whiting Kunhardt, Sr. (born 1952), and his grandson, Peter Whiting Kunhardt, Jr. (born 1982), formed the Meserve-Kunhardt Foundation, a tax-exempt nonprofit organization dedicated to the preservation of oral and visual history and the use of it to inform, educate, and inspire.",
     "output": [
         {
             "movements": [
@@ -11,9 +12,10 @@
                         "death_date": "1962",
                         "type": "Collector"
                     },
-                    "start_time": "Unknown",
+                    "start_time": "1897",
                     "end_time": "1962",
                     "location": "New York",
+                    "confidence": "Certain",
                     "method": "purchased by/acquired by (from/through/in)"
                 },
                 {
@@ -34,6 +36,7 @@
                     "start_time": "1962",
                     "end_time": "1979",
                     "location": "Beverly, Mass.",
+                    "confidence": "Certain",
                     "method": "by descent to"
                 },
                 {
@@ -54,6 +57,7 @@
                     "start_time": "1979",
                     "end_time": "2002",
                     "location": "Chappaqua, N.Y.",
+                    "confidence": "Certain",
                     "method": "by descent to"
                 },
                 {
@@ -74,7 +78,8 @@
                     "start_time": "2002",
                     "end_time": "2015",
                     "location": "Pleasantville, N.Y.",
-                    "method": "Unknown"
+                    "confidence": "Certain",
+                    "method": "transferred to"
                 },
                 {
                     "source": {
@@ -94,6 +99,7 @@
                     "start_time": "2015",
                     "end_time": "2021",
                     "location": "New Haven, Conn.",
+                    "confidence": "Certain",
                     "method": "sold to"
                 },
                 {
@@ -106,21 +112,22 @@
                     },
                     "target": {
                         "name": "Yale University Art Gallery",
-                        "location": "New Haven Conn",
+                        "location": "New Haven, Conn.",
                         "birth_date": "Unknown",
                         "death_date": "Unknown",
                         "type": "Institution"
                     },
                     "start_time": "2021",
                     "end_time": "Unknown",
-                    "location": "New Haven Conn",
+                    "location": "New Haven, Conn.",
+                    "confidence": "Certain",
                     "method": "sold to"
                 }
             ],
             "model": "google/gemini-2.5-pro-preview-03-25"
         }
     ],
-    "provenance": "Frederick Hill Meserve (1865\u20131962), New York, by 1962 [see note 1];\u00a0by descent to his daughter, Dorothy Meserve Kunhardt (1901\u20131979),\u00a0 Beverly, Mass., by 1962 [see note 2];\u00a0by descent to her son, Philip Bradish Kunhardt, Jr., (1928\u20132006), Chappaqua, N.Y.,; transferred to the Meserve-Kunhardt Foundation, Pleasantville, N.Y., 2002 (deposited with the State University of New York-Purchase, 2009\u20132015) [see note 3];\u00a0sold to the Beinecke Rare Book & Manuscript Library, New Haven, Conn., 2015; sold to the Yale University Art Gallery, New Haven Conn, 2021. \r\n\r\nNote 1: Frederick Hill Meserve began collecting photographs in 1897, making him one of America\u2019s first photography collectors. Over a period of sixty years, he amassed an extensive collection of photographs documenting the American Civil War and nineteenth century American history and culture. \r\n\r\nNote 2: Dorothy Meserve Kunhardt joined in her father\u2019s research and collecting efforts; her son, Philip Bradish Kunhardt, Jr., continued caring for the collection, preserving what became known as the Meserve-Kunhardt Collection at his home in Chappaqua.  \r\n\r\nNote 3: In 2002, the descendants of Philip Bradish Kunhardt, Jr., including his sons Philip Bradish Kunhardt, III (born 1951), Peter Whiting Kunhardt, Sr. (born 1952), and his grandson, Peter Whiting Kunhardt, Jr. (born 1982), formed the Meserve-Kunhardt Foundation, a tax-exempt nonprofit organization dedicated to the preservation of oral and visual history and the use of it to inform, educate, and inspire.",
     "object_id": 323268,
-    "date": "2025-04-23 15:54:24"
+    "errors": {},
+    "date": "2025-04-25 11:27:09"
 }

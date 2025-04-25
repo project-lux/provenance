@@ -1,0 +1,307 @@
+{
+    "provenance": "The artist; by inheritance to the estate of Marsden Hartley , New York, 1943 (consigned to Martha Jackson Gallery, New York, June 1956, inv. no. 1664) [see note 1]; sold through Martha Jackson Gallery, New York, to William H. Bender, Jr. (1894\u20131973) Bronxville, N.Y., January 17, 1957 [see note 2]; by descent to his wife, Nellie Rankin Bender (Mrs. William H. Bender, Jr.), Bronxville, N.Y.; by descent to the Estate of Mrs. William H. Bender Jr.; sale, Sotheby Parke\u2013Bernet Inc., New York, April 21, 1977, lot 165; sold to Julie Leisenring, Berwyn, Pa., April 21, 1977; given to the Yale University Art Gallery, New Haven, Conn., 2024\r\n\r\nNote 1: Letter from Alan Chidsey, Trustee of the Marsden Hartley Estate, February 25, 1957, G. Alan Chidsey papers, 1912-1979, Archives of American Art, Smithsonian Institution. Copy in accession file.\r\n\r\nNote 2: Invoice from the Martha Jackson Gallery, New York, January 17, 1957, William H. Bender papers, [ca. 1940] \u2013 1972, Archives of American Art, Smithsonian Institution. Copy in accession file.\r\n",
+    "output": [
+        {
+            "movements": [
+                {
+                    "source": {
+                        "name": "Marsden Hartley",
+                        "location": "Unknown",
+                        "birth_date": "1877",
+                        "death_date": "1943",
+                        "type": "Person"
+                    },
+                    "target": {
+                        "name": "Estate of Marsden Hartley",
+                        "location": "New York",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Group"
+                    },
+                    "start_time": "1943",
+                    "end_time": "1943",
+                    "location": "New York",
+                    "confidence": "Certain",
+                    "method": "by inheritance to"
+                },
+                {
+                    "source": {
+                        "name": "Estate of Marsden Hartley",
+                        "location": "New York",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Group"
+                    },
+                    "target": {
+                        "name": "Estate of Marsden Hartley",
+                        "location": "New York",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Group"
+                    },
+                    "start_time": "1943",
+                    "end_time": "1956-06",
+                    "location": "New York",
+                    "confidence": "Certain",
+                    "method": "Unknown"
+                },
+                {
+                    "source": {
+                        "name": "Estate of Marsden Hartley",
+                        "location": "New York",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Group"
+                    },
+                    "target": {
+                        "name": "Martha Jackson Gallery",
+                        "location": "New York",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Dealer"
+                    },
+                    "start_time": "1956-06",
+                    "end_time": "1956-06",
+                    "location": "New York",
+                    "confidence": "Certain",
+                    "method": "consigned to"
+                },
+                {
+                    "source": {
+                        "name": "Martha Jackson Gallery",
+                        "location": "New York",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Dealer"
+                    },
+                    "target": {
+                        "name": "Martha Jackson Gallery",
+                        "location": "New York",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Dealer"
+                    },
+                    "start_time": "1956-06",
+                    "end_time": "1957-01-17",
+                    "location": "New York",
+                    "confidence": "Certain",
+                    "method": "Unknown"
+                },
+                {
+                    "source": {
+                        "name": "Estate of Marsden Hartley",
+                        "location": "New York",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Group"
+                    },
+                    "target": {
+                        "name": "William H. Bender, Jr.",
+                        "location": "Bronxville, N.Y.",
+                        "birth_date": "1894",
+                        "death_date": "1973",
+                        "type": "Person"
+                    },
+                    "start_time": "1957-01-17",
+                    "end_time": "1957-01-17",
+                    "location": "New York",
+                    "confidence": "Certain",
+                    "method": "Sold through Martha Jackson Gallery"
+                },
+                {
+                    "source": {
+                        "name": "William H. Bender, Jr.",
+                        "location": "Bronxville, N.Y.",
+                        "birth_date": "1894",
+                        "death_date": "1973",
+                        "type": "Person"
+                    },
+                    "target": {
+                        "name": "William H. Bender, Jr.",
+                        "location": "Bronxville, N.Y.",
+                        "birth_date": "1894",
+                        "death_date": "1973",
+                        "type": "Person"
+                    },
+                    "start_time": "1957-01-17",
+                    "end_time": "1973",
+                    "location": "Bronxville, N.Y.",
+                    "confidence": "Certain",
+                    "method": "Unknown"
+                },
+                {
+                    "source": {
+                        "name": "William H. Bender, Jr.",
+                        "location": "Bronxville, N.Y.",
+                        "birth_date": "1894",
+                        "death_date": "1973",
+                        "type": "Person"
+                    },
+                    "target": {
+                        "name": "Nellie Rankin Bender (Mrs. William H. Bender, Jr.)",
+                        "location": "Bronxville, N.Y.",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Person"
+                    },
+                    "start_time": "1973",
+                    "end_time": "1973",
+                    "location": "Bronxville, N.Y.",
+                    "confidence": "Certain",
+                    "method": "by descent to"
+                },
+                {
+                    "source": {
+                        "name": "Nellie Rankin Bender (Mrs. William H. Bender, Jr.)",
+                        "location": "Bronxville, N.Y.",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Person"
+                    },
+                    "target": {
+                        "name": "Nellie Rankin Bender (Mrs. William H. Bender, Jr.)",
+                        "location": "Bronxville, N.Y.",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Person"
+                    },
+                    "start_time": "1973",
+                    "end_time": "Unknown",
+                    "location": "Bronxville, N.Y.",
+                    "confidence": "Certain",
+                    "method": "Unknown"
+                },
+                {
+                    "source": {
+                        "name": "Nellie Rankin Bender (Mrs. William H. Bender, Jr.)",
+                        "location": "Bronxville, N.Y.",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Person"
+                    },
+                    "target": {
+                        "name": "Estate of Mrs. William H. Bender Jr.",
+                        "location": "Unknown",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Group"
+                    },
+                    "start_time": "Unknown",
+                    "end_time": "Unknown",
+                    "location": "Unknown",
+                    "confidence": "Certain",
+                    "method": "by descent to"
+                },
+                {
+                    "source": {
+                        "name": "Estate of Mrs. William H. Bender Jr.",
+                        "location": "Unknown",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Group"
+                    },
+                    "target": {
+                        "name": "Estate of Mrs. William H. Bender Jr.",
+                        "location": "Unknown",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Group"
+                    },
+                    "start_time": "Unknown",
+                    "end_time": "1977-04-21",
+                    "location": "Unknown",
+                    "confidence": "Certain",
+                    "method": "Unknown"
+                },
+                {
+                    "source": {
+                        "name": "Estate of Mrs. William H. Bender Jr.",
+                        "location": "Unknown",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Group"
+                    },
+                    "target": {
+                        "name": "Julie Leisenring",
+                        "location": "Berwyn, Pa.",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Person"
+                    },
+                    "start_time": "1977-04-21",
+                    "end_time": "1977-04-21",
+                    "location": "New York",
+                    "confidence": "Certain",
+                    "method": "sale, Sotheby Parke\u2013Bernet Inc."
+                },
+                {
+                    "source": {
+                        "name": "Julie Leisenring",
+                        "location": "Berwyn, Pa.",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Person"
+                    },
+                    "target": {
+                        "name": "Julie Leisenring",
+                        "location": "Berwyn, Pa.",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Person"
+                    },
+                    "start_time": "1977-04-21",
+                    "end_time": "2024",
+                    "location": "Berwyn, Pa.",
+                    "confidence": "Certain",
+                    "method": "Unknown"
+                },
+                {
+                    "source": {
+                        "name": "Julie Leisenring",
+                        "location": "Berwyn, Pa.",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Person"
+                    },
+                    "target": {
+                        "name": "Yale University Art Gallery",
+                        "location": "New Haven, Conn.",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Institution"
+                    },
+                    "start_time": "2024",
+                    "end_time": "2024",
+                    "location": "New Haven, Conn.",
+                    "confidence": "Certain",
+                    "method": "given to"
+                },
+                {
+                    "source": {
+                        "name": "Yale University Art Gallery",
+                        "location": "New Haven, Conn.",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Institution"
+                    },
+                    "target": {
+                        "name": "Yale University Art Gallery",
+                        "location": "New Haven, Conn.",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Institution"
+                    },
+                    "start_time": "2024",
+                    "end_time": "Unknown",
+                    "location": "New Haven, Conn.",
+                    "confidence": "Certain",
+                    "method": "Unknown"
+                }
+            ],
+            "model": "google/gemini-2.5-pro-preview-03-25"
+        }
+    ],
+    "object_id": 333622,
+    "errors": {},
+    "date": "2025-04-25 11:29:42"
+}
