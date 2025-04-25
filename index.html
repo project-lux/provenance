@@ -127,7 +127,17 @@
             </div>
             
             <div id="timelineContainer" class="timeline-container">
-                <h3 class="text-sm font-medium text-gray-700">Timeline</h3>
+                <div class="flex justify-between items-center mb-2">
+                    <h3 class="text-sm font-medium text-gray-700">Timeline</h3>
+                    <div class="flex items-center">
+                        <span class="text-xs text-gray-500 mr-2">Activities</span>
+                        <label class="relative inline-flex items-center cursor-pointer">
+                            <input id="timelineToggle" type="checkbox" class="sr-only peer">
+                            <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-2 peer-focus:ring-blue-300 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-blue-500"></div>
+                        </label>
+                        <span class="text-xs text-gray-500 ml-2">Ownership</span>
+                    </div>
+                </div>
                 <div id="timeline" class="timeline"></div>
             </div>
             
@@ -348,6 +358,13 @@
                     // Store highlight information as JSON
                     movementCard.dataset.highlights = JSON.stringify(highlights);
                     
+                    // Handle potentially unknown locations
+                    const sourceLocation = typeof movement.source === 'object' && movement.source.location !== 'Unknown' ? 
+                        `<p class="text-xs text-gray-500">${movement.source.location}</p>` : '';
+                        
+                    const targetLocation = movement.target.location !== 'Unknown' ? 
+                        `<p class="text-xs text-gray-500">${movement.target.location}</p>` : '';
+                    
                     // Create movement card content
                     movementCard.innerHTML = `
                         <div class="flex justify-between items-start mb-2">
@@ -362,12 +379,12 @@
                             <div>
                                 <p class="text-xs text-gray-500 uppercase tracking-wider mb-1">Source</p>
                                 <p class="text-sm font-medium text-gray-700">${typeof movement.source === 'object' ? movement.source.name : movement.source}</p>
-                                ${typeof movement.source === 'object' ? `<p class="text-xs text-gray-500">${movement.source.location}</p>` : ''}
+                                ${sourceLocation}
                             </div>
                             <div>
                                 <p class="text-xs text-gray-500 uppercase tracking-wider mb-1">Target</p>
                                 <p class="text-sm font-medium text-gray-700">${movement.target.name}</p>
-                                <p class="text-xs text-gray-500">${movement.target.location}</p>
+                                ${targetLocation}
                             </div>
                         </div>
                         
@@ -378,7 +395,7 @@
                             </div>
                             <div>
                                 <p class="text-xs text-gray-500 uppercase tracking-wider mb-1">Location</p>
-                                <p class="text-sm text-gray-700">${movement.location}</p>
+                                <p class="text-sm text-gray-700">${movement.location !== 'Unknown' ? movement.location : 'Not specified'}</p>
                             </div>
                         </div>
                     `;
@@ -453,78 +470,239 @@
             // Create timeline visualization
             function createTimeline(movements) {
                 const timelineEl = document.getElementById('timeline');
-                timelineEl.innerHTML = '';
+                const timelineToggle = document.getElementById('timelineToggle');
                 
-                // Extract all years
-                let allYears = [];
-                movements.forEach(movement => {
-                    if (movement.start_time && movement.start_time !== 'Unknown') {
-                        allYears.push(parseInt(movement.start_time));
+                // Function to render the timeline
+                function renderTimeline(showOwnership) {
+                    timelineEl.innerHTML = '';
+                    
+                    // Extract all valid years (don't consider location)
+                    let allYears = [];
+                    movements.forEach(movement => {
+                        if (movement.start_time && movement.start_time !== 'Unknown') {
+                            // Handle "Before YYYY" format
+                            const yearStr = movement.start_time.replace('Before ', '');
+                            const year = parseInt(yearStr);
+                            if (!isNaN(year)) {
+                                allYears.push(year);
+                            }
+                        }
+                        if (movement.end_time && movement.end_time !== 'Unknown') {
+                            // Handle "Before YYYY" format
+                            const yearStr = movement.end_time.replace('Before ', '');
+                            const year = parseInt(yearStr);
+                            if (!isNaN(year)) {
+                                allYears.push(year);
+                            }
+                        }
+                    });
+                    
+                    // Filter and sort years
+                    allYears = allYears.sort((a, b) => a - b);
+                    
+                    if (allYears.length < 2) {
+                        timelineEl.innerHTML = '<div class="text-center text-gray-500">Insufficient date information for timeline</div>';
+                        return;
                     }
-                    if (movement.end_time && movement.end_time !== 'Unknown') {
-                        allYears.push(parseInt(movement.end_time));
+                    
+                    // Calculate min/max years with padding
+                    const minYear = Math.floor(allYears[0] / 10) * 10;
+                    const maxYear = Math.ceil(allYears[allYears.length - 1] / 10) * 10;
+                    const timelineRange = maxYear - minYear;
+                    
+                    // Create decade markers
+                    for (let year = minYear; year <= maxYear; year += 10) {
+                        const position = ((year - minYear) / timelineRange) * 100;
+                        const marker = document.createElement('div');
+                        marker.className = 'timeline-marker';
+                        marker.textContent = year;
+                        marker.style.left = `${position}%`;
+                        timelineEl.appendChild(marker);
                     }
+                    
+                    if (showOwnership) {
+                        // OWNERSHIP MODE - Show continuous ownership periods
+                        const ownershipData = calculateOwnershipPeriods(movements);
+                        
+                        ownershipData.forEach((ownership, index) => {
+                            // Only check for unknown years, not locations
+                            if (ownership.startYear === 'Unknown' || ownership.endYear === 'Unknown') {
+                                return;
+                            }
+                            
+                            // Handle "Before YYYY" format
+                            let startYear = ownership.startYear.replace('Before ', '');
+                            let endYear = ownership.endYear.replace('Before ', '');
+                            
+                            startYear = parseInt(startYear);
+                            endYear = parseInt(endYear);
+                            
+                            if (isNaN(startYear) || isNaN(endYear)) {
+                                return;
+                            }
+                            
+                            // For same-year transactions, add minimal width
+                            if (startYear === endYear) {
+                                endYear += 1;
+                            }
+                            
+                            const startPosition = ((startYear - minYear) / timelineRange) * 100;
+                            const endPosition = ((endYear - minYear) / timelineRange) * 100;
+                            const width = endPosition - startPosition;
+                            
+                            const period = document.createElement('div');
+                            period.className = 'timeline-period';
+                            period.dataset.index = ownership.movementIndex;
+                            period.style.left = `${startPosition}%`;
+                            period.style.width = `${width}%`;
+                            period.style.backgroundColor = getColorForIndex(index);
+                            
+                            // Add label
+                            const label = document.createElement('div');
+                            label.className = 'timeline-label';
+                            label.textContent = ownership.owner;
+                            period.appendChild(label);
+                            
+                            timelineEl.appendChild(period);
+                        });
+                    } else {
+                        // ACTIVITY MODE - Show discrete movement events (original implementation)
+                        movements.forEach((movement, index) => {
+                            // For activity view, only check for unknown date, not location
+                            if (movement.start_time === 'Unknown' || movement.end_time === 'Unknown') {
+                                return;
+                            }
+                            
+                            // Handle "Before YYYY" format
+                            let startYear = movement.start_time.replace('Before ', '');
+                            let endYear = movement.end_time.replace('Before ', '');
+                            
+                            startYear = parseInt(startYear);
+                            endYear = parseInt(endYear);
+                            
+                            if (isNaN(startYear) || isNaN(endYear)) {
+                                return;
+                            }
+                            
+                            // If same year, add small width
+                            if (startYear === endYear) {
+                                endYear = startYear + 1;
+                            }
+                            
+                            const startPosition = ((startYear - minYear) / timelineRange) * 100;
+                            const endPosition = ((endYear - minYear) / timelineRange) * 100;
+                            const width = endPosition - startPosition;
+                            
+                            const period = document.createElement('div');
+                            period.className = 'timeline-period';
+                            period.dataset.index = index;
+                            period.style.left = `${startPosition}%`;
+                            period.style.width = `${width}%`;
+                            
+                            // Add label
+                            const label = document.createElement('div');
+                            label.className = 'timeline-label';
+                            label.textContent = `${movement.source.name} → ${movement.target.name}`;
+                            period.appendChild(label);
+                            
+                            timelineEl.appendChild(period);
+                        });
+                    }
+                    
+                    // Add hover interactions for timeline periods
+                    setTimeout(() => {
+                        const timelinePeriods = document.querySelectorAll('.timeline-period');
+                        timelinePeriods.forEach(period => {
+                            period.addEventListener('mouseover', function() {
+                                const index = this.dataset.index;
+                                const movementCard = document.querySelector(`.movement-card[data-index="${index}"]`);
+                                if (movementCard) {
+                                    const event = new MouseEvent('mouseover');
+                                    movementCard.dispatchEvent(event);
+                                }
+                                this.classList.add('active');
+                            });
+                            
+                            period.addEventListener('mouseout', function() {
+                                const index = this.dataset.index;
+                                const movementCard = document.querySelector(`.movement-card[data-index="${index}"]`);
+                                if (movementCard) {
+                                    const event = new MouseEvent('mouseout');
+                                    movementCard.dispatchEvent(event);
+                                }
+                            });
+                        });
+                    }, 100);
+                }
+                
+                // Function to calculate continuous ownership periods
+                function calculateOwnershipPeriods(movements) {
+                    const ownershipPeriods = [];
+                    const owners = new Map();
+                    
+                    // Process each movement to determine ownership periods
+                    movements.forEach((movement, index) => {
+                        const targetName = movement.target.name;
+                        const endTime = movement.end_time;
+                        
+                        // Record the time when this entity received the item
+                        owners.set(targetName, {
+                            owner: targetName,
+                            startYear: endTime,
+                            movementIndex: index
+                        });
+                        
+                        // If the source is already known, update their end time
+                        const sourceName = typeof movement.source === 'object' ? movement.source.name : movement.source;
+                        if (owners.has(sourceName)) {
+                            const sourceData = owners.get(sourceName);
+                            sourceData.endYear = endTime;
+                            ownershipPeriods.push(sourceData);
+                            owners.delete(sourceName);
+                        }
+                    });
+                    
+                    // Add any remaining owners (current owner)
+                    owners.forEach(ownerData => {
+                        // If this is the current owner (still owns the item)
+                        ownerData.endYear = new Date().getFullYear().toString();
+                        ownershipPeriods.push(ownerData);
+                    });
+                    
+                    // Sort by ownership start time
+                    return ownershipPeriods.sort((a, b) => {
+                        // Handle "Before YYYY" format
+                        const aStartYear = parseInt(a.startYear.replace('Before ', ''));
+                        const bStartYear = parseInt(b.startYear.replace('Before ', ''));
+                        
+                        if (isNaN(aStartYear)) return 1;
+                        if (isNaN(bStartYear)) return -1;
+                        return aStartYear - bStartYear;
+                    });
+                }
+                
+                // Function to generate colors for different owners
+                function getColorForIndex(index) {
+                    const colors = [
+                        '#BFDBFE', // blue-200
+                        '#C7D2FE', // indigo-200
+                        '#DDD6FE', // violet-200
+                        '#FBCFE8', // pink-200
+                        '#FDE68A', // yellow-200
+                        '#A7F3D0', // emerald-200
+                        '#BAE6FD', // light-blue-200
+                        '#E5E7EB'  // gray-200
+                    ];
+                    return colors[index % colors.length];
+                }
+                
+                // Initial render with activity mode
+                renderTimeline(false);
+                
+                // Handle toggle changes
+                timelineToggle.addEventListener('change', function() {
+                    renderTimeline(this.checked);
                 });
-                
-                // Filter out NaN values and sort
-                allYears = allYears.filter(year => !isNaN(year)).sort((a, b) => a - b);
-                
-                if (allYears.length < 2) {
-                    timelineEl.innerHTML = '<div class="text-center text-gray-500">Insufficient date information for timeline</div>';
-                    return;
-                }
-                
-                // Calculate min/max years with padding
-                const minYear = Math.floor(allYears[0] / 10) * 10;
-                const maxYear = Math.ceil(allYears[allYears.length - 1] / 10) * 10;
-                const timelineRange = maxYear - minYear;
-                
-                // Create decade markers
-                for (let year = minYear; year <= maxYear; year += 10) {
-                    const position = ((year - minYear) / timelineRange) * 100;
-                    const marker = document.createElement('div');
-                    marker.className = 'timeline-marker';
-                    marker.textContent = year;
-                    marker.style.left = `${position}%`;
-                    timelineEl.appendChild(marker);
-                }
-                
-                // Create timeline periods for each movement
-                movements.forEach((movement, index) => {
-                    if (movement.start_time === 'Unknown' || movement.end_time === 'Unknown') {
-                        return;
-                    }
-                    
-                    let startYear = parseInt(movement.start_time);
-                    let endYear = parseInt(movement.end_time);
-                    
-                    if (isNaN(startYear) || isNaN(endYear)) {
-                        return;
-                    }
-                    
-                    // If same year, add small width
-                    if (startYear === endYear) {
-                        endYear = startYear + 1;
-                    }
-                    
-                    const startPosition = ((startYear - minYear) / timelineRange) * 100;
-                    const endPosition = ((endYear - minYear) / timelineRange) * 100;
-                    const width = endPosition - startPosition;
-                    
-                    const period = document.createElement('div');
-                    period.className = 'timeline-period';
-                    period.dataset.index = index;
-                    period.style.left = `${startPosition}%`;
-                    period.style.width = `${width}%`;
-                    
-                    // Add label
-                    const label = document.createElement('div');
-                    label.className = 'timeline-label';
-                    label.textContent = `${movement.source.name} → ${movement.target.name}`;
-                    period.appendChild(label);
-                    
-                    timelineEl.appendChild(period);
-                }); 
             }
             
             // Find the text to highlight in the provenance text
@@ -543,6 +721,7 @@
                     type: 'source'
                 };
                 
+                // Don't filter out entities if just the location is unknown
                 if (sourceName && sourceName !== 'Unknown') {
                     const sourceIndex = provenanceTextLower.indexOf(sourceName.toLowerCase());
                     if (sourceIndex !== -1) {
@@ -559,6 +738,8 @@
                     searchText = `transferred to ${targetName}`;
                 } else if (method.includes('sold')) {
                     searchText = `sold to ${targetName}`;
+                } else if (method.includes('given')) {
+                    searchText = `given to ${targetName}`;
                 }
                 
                 const targetResult = {
