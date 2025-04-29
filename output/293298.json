@@ -5,7 +5,7 @@
             "movements": [
                 {
                     "source": {
-                        "name": "Artists from the court of Sultan Pakubowono X",
+                        "name": "Artists from the court of Sultan Pakubowono X of Surakarta (Solo)",
                         "location": "Surakarta (Solo), Indonesia",
                         "birth_date": "Unknown",
                         "death_date": "Unknown",
@@ -22,7 +22,10 @@
                     "end_time": "Before 1977",
                     "location": "Surakarta (Solo), Indonesia",
                     "confidence": "Certain",
-                    "method": "The artist"
+                    "method": "Unknown",
+                    "change_in_ownership": true,
+                    "change_in_location": false,
+                    "change_in_custody": true
                 },
                 {
                     "source": {
@@ -41,9 +44,12 @@
                     },
                     "start_time": "1977",
                     "end_time": "1977",
-                    "location": "Surakarta (Solo), Indonesia",
+                    "location": "Unknown",
                     "confidence": "Certain",
-                    "method": "given to"
+                    "method": "given to",
+                    "change_in_ownership": true,
+                    "change_in_location": "Unknown",
+                    "change_in_custody": true
                 },
                 {
                     "source": {
@@ -64,7 +70,10 @@
                     "end_time": "Before 2000",
                     "location": "Unknown",
                     "confidence": "Certain",
-                    "method": "by descent to"
+                    "method": "by descent to",
+                    "change_in_ownership": true,
+                    "change_in_location": "Unknown",
+                    "change_in_custody": true
                 },
                 {
                     "source": {
@@ -85,7 +94,10 @@
                     "end_time": "2000",
                     "location": "Yogyakarta, Indonesia",
                     "confidence": "Certain",
-                    "method": "sold to"
+                    "method": "sold to",
+                    "change_in_ownership": true,
+                    "change_in_location": true,
+                    "change_in_custody": true
                 },
                 {
                     "source": {
@@ -106,7 +118,10 @@
                     "end_time": "2014",
                     "location": "Uberlingen, Germany",
                     "confidence": "Certain",
-                    "method": "by descent to"
+                    "method": "by descent to",
+                    "change_in_ownership": true,
+                    "change_in_location": false,
+                    "change_in_custody": false
                 },
                 {
                     "source": {
@@ -127,7 +142,10 @@
                     "end_time": "2018",
                     "location": "New Haven, Conn.",
                     "confidence": "Certain",
-                    "method": "given to"
+                    "method": "given to",
+                    "change_in_ownership": true,
+                    "change_in_location": true,
+                    "change_in_custody": true
                 }
             ],
             "model": "google/gemini-2.5-pro-preview-03-25"
@@ -135,5 +153,5 @@
     ],
     "object_id": 293298,
     "errors": {},
-    "date": "2025-04-25 11:28:11"
+    "date": "2025-04-29 14:33:32"
 }

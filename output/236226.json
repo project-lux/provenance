@@ -19,10 +19,13 @@
                         "type": "Person"
                     },
                     "start_time": "1999",
-                    "end_time": "1999",
+                    "end_time": "2002",
                     "location": "Tegal, Indonesia",
                     "confidence": "Certain",
-                    "method": "The artist"
+                    "method": "The artist",
+                    "change_in_ownership": false,
+                    "change_in_location": false,
+                    "change_in_custody": false
                 },
                 {
                     "source": {
@@ -41,9 +44,36 @@
                     },
                     "start_time": "2002",
                     "end_time": "2002",
-                    "location": "Unknown",
+                    "location": "Uberlingen, Germany",
                     "confidence": "Certain",
-                    "method": "sold to"
+                    "method": "sold to",
+                    "change_in_ownership": true,
+                    "change_in_location": true,
+                    "change_in_custody": true
+                },
+                {
+                    "source": {
+                        "name": "Dr. Walter Angst",
+                        "location": "Uberlingen, Germany",
+                        "birth_date": "1942",
+                        "death_date": "2014",
+                        "type": "Collector"
+                    },
+                    "target": {
+                        "name": "Dr. Walter Angst",
+                        "location": "Uberlingen, Germany",
+                        "birth_date": "1942",
+                        "death_date": "2014",
+                        "type": "Collector"
+                    },
+                    "start_time": "2002",
+                    "end_time": "2014",
+                    "location": "Uberlingen, Germany",
+                    "confidence": "Certain",
+                    "method": "Unknown",
+                    "change_in_ownership": false,
+                    "change_in_location": false,
+                    "change_in_custody": false
                 },
                 {
                     "source": {
@@ -64,7 +94,34 @@
                     "end_time": "2014",
                     "location": "Uberlingen, Germany",
                     "confidence": "Certain",
-                    "method": "by descent to"
+                    "method": "by descent to",
+                    "change_in_ownership": true,
+                    "change_in_location": false,
+                    "change_in_custody": true
+                },
+                {
+                    "source": {
+                        "name": "Sir Henry Angest",
+                        "location": "London, England, and Perth, Scotland",
+                        "birth_date": "1940",
+                        "death_date": "Unknown",
+                        "type": "Person"
+                    },
+                    "target": {
+                        "name": "Sir Henry Angest",
+                        "location": "London, England, and Perth, Scotland",
+                        "birth_date": "1940",
+                        "death_date": "Unknown",
+                        "type": "Person"
+                    },
+                    "start_time": "2014",
+                    "end_time": "2018",
+                    "location": "Uberlingen, Germany",
+                    "confidence": "Certain",
+                    "method": "Unknown",
+                    "change_in_ownership": false,
+                    "change_in_location": false,
+                    "change_in_custody": false
                 },
                 {
                     "source": {
@@ -83,9 +140,36 @@
                     },
                     "start_time": "2018",
                     "end_time": "2018",
-                    "location": "Unknown",
+                    "location": "New Haven, Conn.",
                     "confidence": "Certain",
-                    "method": "gift to"
+                    "method": "gift to",
+                    "change_in_ownership": true,
+                    "change_in_location": true,
+                    "change_in_custody": true
+                },
+                {
+                    "source": {
+                        "name": "Yale University Art Gallery",
+                        "location": "New Haven, Conn.",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Institution"
+                    },
+                    "target": {
+                        "name": "Yale University Art Gallery",
+                        "location": "New Haven, Conn.",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Institution"
+                    },
+                    "start_time": "2018",
+                    "end_time": "Unknown",
+                    "location": "New Haven, Conn.",
+                    "confidence": "Certain",
+                    "method": "Unknown",
+                    "change_in_ownership": false,
+                    "change_in_location": false,
+                    "change_in_custody": false
                 }
             ],
             "model": "google/gemini-2.5-pro-preview-03-25"
@@ -93,5 +177,5 @@
     ],
     "object_id": 236226,
     "errors": {},
-    "date": "2025-04-25 11:28:06"
+    "date": "2025-04-29 14:33:58"
 }

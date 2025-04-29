@@ -49,10 +49,10 @@
             background: #3B82F6;
         }
         .timeline-container {
-            height: 80px;
-            padding: 10px 20px;
+            padding: 20px;
             border-bottom: 1px solid #E5E7EB;
             background-color: #F9FAFB;
+            margin-bottom: 2rem;
         }
         .timeline {
             position: relative;
@@ -99,6 +99,18 @@
             color: #4B5563;
             white-space: nowrap;
         }
+        #viewerContainer {
+            display: flex;
+            flex-direction: column;
+        }
+        #timelineContainer {
+            flex-shrink: 0;
+        }
+        .content-container {
+            flex: 1;
+            display: flex;
+            min-height: 0;
+        }
     </style>
 </head>
 <body class="bg-gray-50">
@@ -129,19 +141,34 @@
             <div id="timelineContainer" class="timeline-container">
                 <div class="flex justify-between items-center mb-2">
                     <h3 class="text-sm font-medium text-gray-700">Timeline</h3>
-                    <div class="flex items-center">
-                        <span class="text-xs text-gray-500 mr-2">Activities</span>
-                        <label class="relative inline-flex items-center cursor-pointer">
-                            <input id="timelineToggle" type="checkbox" class="sr-only peer">
-                            <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-2 peer-focus:ring-blue-300 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-blue-500"></div>
-                        </label>
-                        <span class="text-xs text-gray-500 ml-2">Ownership</span>
+                    <div class="flex items-center space-x-4">
+                        <div class="flex items-center">
+                            <span class="text-xs text-gray-500 mr-2">Periods</span>
+                            <label class="relative inline-flex items-center cursor-pointer">
+                                <input id="timelineToggle" type="checkbox" class="sr-only peer">
+                                <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-2 peer-focus:ring-blue-300 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-blue-500"></div>
+                            </label>
+                            <span class="text-xs text-gray-500 ml-2">Events</span>
+                        </div>
                     </div>
                 </div>
-                <div id="timeline" class="timeline"></div>
+                <div class="space-y-8">
+                    <div>
+                        <div class="text-xs text-gray-500 mb-2">Ownership</div>
+                        <div id="ownershipTimeline" class="timeline"></div>
+                    </div>
+                    <div>
+                        <div class="text-xs text-gray-500 mb-2">Location</div>
+                        <div id="locationTimeline" class="timeline"></div>
+                    </div>
+                    <div>
+                        <div class="text-xs text-gray-500 mb-2">Custody</div>
+                        <div id="custodyTimeline" class="timeline"></div>
+                    </div>
+                </div>
             </div>
             
-            <div class="flex" style="height: 600px;">
+            <div class="content-container">
                 <div id="provenanceText" class="provenance-text overflow-y-auto p-6 flex-1 border-r border-gray-200"></div>
                 
                 <div class="resizer" id="resizer"></div>
@@ -469,31 +496,30 @@
             
             // Create timeline visualization
             function createTimeline(movements) {
-                const timelineEl = document.getElementById('timeline');
+                const ownershipTimelineEl = document.getElementById('ownershipTimeline');
+                const locationTimelineEl = document.getElementById('locationTimeline');
+                const custodyTimelineEl = document.getElementById('custodyTimeline');
                 const timelineToggle = document.getElementById('timelineToggle');
                 
-                // Function to render the timeline
-                function renderTimeline(showOwnership) {
-                    timelineEl.innerHTML = '';
+                // Function to render all timelines
+                function renderTimelines() {
+                    // Clear all timelines
+                    ownershipTimelineEl.innerHTML = '';
+                    locationTimelineEl.innerHTML = '';
+                    custodyTimelineEl.innerHTML = '';
                     
-                    // Extract all valid years (don't consider location)
+                    // Extract all valid years
                     let allYears = [];
                     movements.forEach(movement => {
                         if (movement.start_time && movement.start_time !== 'Unknown') {
-                            // Handle "Before YYYY" format
                             const yearStr = movement.start_time.replace('Before ', '');
                             const year = parseInt(yearStr);
-                            if (!isNaN(year)) {
-                                allYears.push(year);
-                            }
+                            if (!isNaN(year)) allYears.push(year);
                         }
                         if (movement.end_time && movement.end_time !== 'Unknown') {
-                            // Handle "Before YYYY" format
                             const yearStr = movement.end_time.replace('Before ', '');
                             const year = parseInt(yearStr);
-                            if (!isNaN(year)) {
-                                allYears.push(year);
-                            }
+                            if (!isNaN(year)) allYears.push(year);
                         }
                     });
                     
@@ -501,7 +527,10 @@
                     allYears = allYears.sort((a, b) => a - b);
                     
                     if (allYears.length < 2) {
-                        timelineEl.innerHTML = '<div class="text-center text-gray-500">Insufficient date information for timeline</div>';
+                        const message = '<div class="text-center text-gray-500">Insufficient date information for timeline</div>';
+                        ownershipTimelineEl.innerHTML = message;
+                        locationTimelineEl.innerHTML = message;
+                        custodyTimelineEl.innerHTML = message;
                         return;
                     }
                     
@@ -510,179 +539,196 @@
                     const maxYear = Math.ceil(allYears[allYears.length - 1] / 10) * 10;
                     const timelineRange = maxYear - minYear;
                     
-                    // Create decade markers
-                    for (let year = minYear; year <= maxYear; year += 10) {
-                        const position = ((year - minYear) / timelineRange) * 100;
-                        const marker = document.createElement('div');
-                        marker.className = 'timeline-marker';
-                        marker.textContent = year;
-                        marker.style.left = `${position}%`;
-                        timelineEl.appendChild(marker);
-                    }
-                    
-                    if (showOwnership) {
-                        // OWNERSHIP MODE - Show continuous ownership periods
-                        const ownershipData = calculateOwnershipPeriods(movements);
-                        
-                        ownershipData.forEach((ownership, index) => {
-                            // Only check for unknown years, not locations
-                            if (ownership.startYear === 'Unknown' || ownership.endYear === 'Unknown') {
-                                return;
-                            }
-                            
-                            // Handle "Before YYYY" format
-                            let startYear = ownership.startYear.replace('Before ', '');
-                            let endYear = ownership.endYear.replace('Before ', '');
-                            
-                            startYear = parseInt(startYear);
-                            endYear = parseInt(endYear);
-                            
-                            if (isNaN(startYear) || isNaN(endYear)) {
-                                return;
-                            }
-                            
-                            // For same-year transactions, add minimal width
-                            if (startYear === endYear) {
-                                endYear += 1;
-                            }
-                            
-                            const startPosition = ((startYear - minYear) / timelineRange) * 100;
-                            const endPosition = ((endYear - minYear) / timelineRange) * 100;
-                            const width = endPosition - startPosition;
-                            
-                            const period = document.createElement('div');
-                            period.className = 'timeline-period';
-                            period.dataset.index = ownership.movementIndex;
-                            period.style.left = `${startPosition}%`;
-                            period.style.width = `${width}%`;
-                            period.style.backgroundColor = getColorForIndex(index);
-                            
-                            // Add label
-                            const label = document.createElement('div');
-                            label.className = 'timeline-label';
-                            label.textContent = ownership.owner;
-                            period.appendChild(label);
-                            
-                            timelineEl.appendChild(period);
-                        });
-                    } else {
-                        // ACTIVITY MODE - Show discrete movement events (original implementation)
-                        movements.forEach((movement, index) => {
-                            // For activity view, only check for unknown date, not location
-                            if (movement.start_time === 'Unknown' || movement.end_time === 'Unknown') {
-                                return;
-                            }
-                            
-                            // Handle "Before YYYY" format
-                            let startYear = movement.start_time.replace('Before ', '');
-                            let endYear = movement.end_time.replace('Before ', '');
-                            
-                            startYear = parseInt(startYear);
-                            endYear = parseInt(endYear);
-                            
-                            if (isNaN(startYear) || isNaN(endYear)) {
-                                return;
-                            }
-                            
-                            // If same year, add small width
-                            if (startYear === endYear) {
-                                endYear = startYear + 1;
-                            }
-                            
-                            const startPosition = ((startYear - minYear) / timelineRange) * 100;
-                            const endPosition = ((endYear - minYear) / timelineRange) * 100;
-                            const width = endPosition - startPosition;
-                            
-                            const period = document.createElement('div');
-                            period.className = 'timeline-period';
-                            period.dataset.index = index;
-                            period.style.left = `${startPosition}%`;
-                            period.style.width = `${width}%`;
-                            
-                            // Add label
-                            const label = document.createElement('div');
-                            label.className = 'timeline-label';
-                            label.textContent = `${movement.source.name} → ${movement.target.name}`;
-                            period.appendChild(label);
-                            
-                            timelineEl.appendChild(period);
-                        });
-                    }
-                    
-                    // Add hover interactions for timeline periods
-                    setTimeout(() => {
-                        const timelinePeriods = document.querySelectorAll('.timeline-period');
-                        timelinePeriods.forEach(period => {
-                            period.addEventListener('mouseover', function() {
-                                const index = this.dataset.index;
-                                const movementCard = document.querySelector(`.movement-card[data-index="${index}"]`);
-                                if (movementCard) {
-                                    const event = new MouseEvent('mouseover');
-                                    movementCard.dispatchEvent(event);
-                                }
-                                this.classList.add('active');
-                            });
-                            
-                            period.addEventListener('mouseout', function() {
-                                const index = this.dataset.index;
-                                const movementCard = document.querySelector(`.movement-card[data-index="${index}"]`);
-                                if (movementCard) {
-                                    const event = new MouseEvent('mouseout');
-                                    movementCard.dispatchEvent(event);
-                                }
-                            });
-                        });
-                    }, 100);
-                }
-                
-                // Function to calculate continuous ownership periods
-                function calculateOwnershipPeriods(movements) {
-                    const ownershipPeriods = [];
-                    const owners = new Map();
-                    
-                    // Process each movement to determine ownership periods
-                    movements.forEach((movement, index) => {
-                        const targetName = movement.target.name;
-                        const endTime = movement.end_time;
-                        
-                        // Record the time when this entity received the item
-                        owners.set(targetName, {
-                            owner: targetName,
-                            startYear: endTime,
-                            movementIndex: index
-                        });
-                        
-                        // If the source is already known, update their end time
-                        const sourceName = typeof movement.source === 'object' ? movement.source.name : movement.source;
-                        if (owners.has(sourceName)) {
-                            const sourceData = owners.get(sourceName);
-                            sourceData.endYear = endTime;
-                            ownershipPeriods.push(sourceData);
-                            owners.delete(sourceName);
+                    // Create decade markers for each timeline
+                    [ownershipTimelineEl, locationTimelineEl, custodyTimelineEl].forEach(timeline => {
+                        for (let year = minYear; year <= maxYear; year += 10) {
+                            const position = ((year - minYear) / timelineRange) * 100;
+                            const marker = document.createElement('div');
+                            marker.className = 'timeline-marker';
+                            marker.textContent = year;
+                            marker.style.left = `${position}%`;
+                            timeline.appendChild(marker);
                         }
                     });
                     
-                    // Add any remaining owners (current owner)
-                    owners.forEach(ownerData => {
-                        // If this is the current owner (still owns the item)
-                        ownerData.endYear = new Date().getFullYear().toString();
-                        ownershipPeriods.push(ownerData);
+                    // Render ownership timeline
+                    renderTimelineType(ownershipTimelineEl, movements, 'ownership', minYear, timelineRange);
+                    // Render location timeline
+                    renderTimelineType(locationTimelineEl, movements, 'location', minYear, timelineRange);
+                    // Render custody timeline
+                    renderTimelineType(custodyTimelineEl, movements, 'custody', minYear, timelineRange);
+                }
+                
+                // Function to render a specific timeline type
+                function renderTimelineType(timelineEl, movements, type, minYear, timelineRange) {
+                    let currentEntity = null;
+                    let currentStartYear = null;
+                    let labels = [];
+                    
+                    // Reset the timeline container height
+                    const container = timelineEl.closest('.timeline-container');
+                    container.style.height = 'auto';
+                    timelineEl.style.marginBottom = '15px';
+                    
+                    movements.forEach((movement, index) => {
+                        // Skip if start or end time is unknown
+                        if (movement.start_time === 'Unknown' || movement.end_time === 'Unknown') return;
+                        
+                        let startYear = parseInt(movement.start_time.replace('Before ', ''));
+                        let endYear = parseInt(movement.end_time.replace('Before ', ''));
+                        
+                        if (isNaN(startYear) || isNaN(endYear)) return;
+                        
+                        let entity = null;
+                        let shouldCreatePeriod = false;
+                        
+                        switch(type) {
+                            case 'ownership':
+                                if (movement.change_in_ownership) {
+                                    entity = movement.target.name;
+                                    shouldCreatePeriod = true;
+                                }
+                                break;
+                            case 'location':
+                                if (movement.change_in_location) {
+                                    entity = movement.location;
+                                    shouldCreatePeriod = true;
+                                }
+                                break;
+                            case 'custody':
+                                if (movement.change_in_custody) {
+                                    entity = movement.target.name;
+                                    shouldCreatePeriod = true;
+                                }
+                                break;
+                        }
+                        
+                        if (shouldCreatePeriod && entity) {
+                            const isEventsView = timelineToggle.checked; // Fixed the logic
+                            
+                            if (isEventsView) {
+                                // For events view, show a single point in time
+                                const eventYear = endYear;
+                                const position = ((eventYear - minYear) / timelineRange) * 100;
+                                
+                                const eventMarker = document.createElement('div');
+                                eventMarker.className = 'timeline-period';
+                                eventMarker.dataset.index = index;
+                                eventMarker.style.left = `${position}%`;
+                                eventMarker.style.width = '4px';
+                                eventMarker.style.height = '16px';
+                                eventMarker.style.top = '-4px';
+                                eventMarker.style.backgroundColor = getColorForEntity(entity);
+                                
+                                // Add label
+                                const label = document.createElement('div');
+                                label.className = 'timeline-label';
+                                label.textContent = `${entity} (${eventYear})`;
+                                label.style.left = `${position}%`;
+                                eventMarker.appendChild(label);
+                                
+                                timelineEl.appendChild(eventMarker);
+                                labels.push({ position, label });
+                                
+                                // Add hover events
+                                addHoverEvents(eventMarker, index);
+                            } else {
+                                // For periods view, show the full duration
+                                // For same-year transactions, add minimal width
+                                if (startYear === endYear) endYear += 1;
+                                
+                                const startPosition = ((startYear - minYear) / timelineRange) * 100;
+                                const endPosition = ((endYear - minYear) / timelineRange) * 100;
+                                const width = endPosition - startPosition;
+                                
+                                const period = document.createElement('div');
+                                period.className = 'timeline-period';
+                                period.dataset.index = index;
+                                period.style.left = `${startPosition}%`;
+                                period.style.width = `${width}%`;
+                                period.style.backgroundColor = getColorForEntity(entity);
+                                
+                                // Add label
+                                const label = document.createElement('div');
+                                label.className = 'timeline-label';
+                                label.textContent = `${entity} (${startYear}-${endYear})`;
+                                label.style.left = `${(startPosition + endPosition) / 2}%`;
+                                period.appendChild(label);
+                                
+                                timelineEl.appendChild(period);
+                                labels.push({ position: (startPosition + endPosition) / 2, label });
+                                
+                                // Add hover events
+                                addHoverEvents(period, index);
+                            }
+                        }
                     });
                     
-                    // Sort by ownership start time
-                    return ownershipPeriods.sort((a, b) => {
-                        // Handle "Before YYYY" format
-                        const aStartYear = parseInt(a.startYear.replace('Before ', ''));
-                        const bStartYear = parseInt(b.startYear.replace('Before ', ''));
+                    // Adjust overlapping labels
+                    adjustOverlappingLabels(labels, timelineEl);
+                }
+                
+                // Function to adjust overlapping labels
+                function adjustOverlappingLabels(labels, timelineEl) {
+                    // Sort labels by position
+                    labels.sort((a, b) => a.position - b.position);
+                    
+                    // Group overlapping labels
+                    const groups = [];
+                    let currentGroup = [];
+                    
+                    labels.forEach((label, index) => {
+                        if (currentGroup.length === 0) {
+                            currentGroup.push(label);
+                        } else {
+                            const lastLabel = currentGroup[currentGroup.length - 1];
+                            // Check if labels overlap (within 20% of the timeline)
+                            if (Math.abs(label.position - lastLabel.position) < 20) {
+                                currentGroup.push(label);
+                            } else {
+                                groups.push(currentGroup);
+                                currentGroup = [label];
+                            }
+                        }
+                    });
+                    
+                    if (currentGroup.length > 0) {
+                        groups.push(currentGroup);
+                    }
+                    
+                    // Find the maximum stack height needed
+                    let maxStackHeight = 0;
+                    groups.forEach(group => {
+                        if (group.length > 1) {
+                            const stackHeight = group.length * 20; // 20px per label
+                            maxStackHeight = Math.max(maxStackHeight, stackHeight);
+                        }
+                    });
+                    
+                    // Adjust positions for overlapping labels and update container height
+                    if (maxStackHeight > 0) {
+                        const container = timelineEl.closest('.timeline-container');
+                        const currentHeight = parseInt(getComputedStyle(container).height);
+                        const newHeight = currentHeight + maxStackHeight;
+                        container.style.height = `${newHeight}px`;
                         
-                        if (isNaN(aStartYear)) return 1;
-                        if (isNaN(bStartYear)) return -1;
-                        return aStartYear - bStartYear;
+                        // Adjust the timeline height to accommodate labels
+                        timelineEl.style.marginBottom = `${maxStackHeight}px`;
+                    }
+                    
+                    // Position the labels
+                    groups.forEach(group => {
+                        if (group.length > 1) {
+                            group.forEach((label, index) => {
+                                // Stack labels vertically
+                                label.label.style.bottom = `${-20 - (index * 20)}px`;
+                            });
+                        }
                     });
                 }
                 
-                // Function to generate colors for different owners
-                function getColorForIndex(index) {
+                // Function to generate colors for different entities
+                function getColorForEntity(entity) {
                     const colors = [
                         '#BFDBFE', // blue-200
                         '#C7D2FE', // indigo-200
@@ -693,15 +739,42 @@
                         '#BAE6FD', // light-blue-200
                         '#E5E7EB'  // gray-200
                     ];
-                    return colors[index % colors.length];
+                    
+                    // Create a simple hash of the entity name to get a consistent color
+                    let hash = 0;
+                    for (let i = 0; i < entity.length; i++) {
+                        hash = entity.charCodeAt(i) + ((hash << 5) - hash);
+                    }
+                    return colors[Math.abs(hash) % colors.length];
                 }
                 
-                // Initial render with activity mode
-                renderTimeline(false);
+                // Function to add hover events to timeline elements
+                function addHoverEvents(element, index) {
+                    element.addEventListener('mouseover', function() {
+                        const movementCard = document.querySelector(`.movement-card[data-index="${index}"]`);
+                        if (movementCard) {
+                            const event = new MouseEvent('mouseover');
+                            movementCard.dispatchEvent(event);
+                        }
+                        this.classList.add('active');
+                    });
+                    
+                    element.addEventListener('mouseout', function() {
+                        const movementCard = document.querySelector(`.movement-card[data-index="${index}"]`);
+                        if (movementCard) {
+                            const event = new MouseEvent('mouseout');
+                            movementCard.dispatchEvent(event);
+                        }
+                        this.classList.remove('active');
+                    });
+                }
+                
+                // Initial render
+                renderTimelines();
                 
                 // Handle toggle changes
                 timelineToggle.addEventListener('change', function() {
-                    renderTimeline(this.checked);
+                    renderTimelines();
                 });
             }
             

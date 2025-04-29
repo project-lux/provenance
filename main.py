@@ -75,6 +75,10 @@ class Movement(BaseModel):
     # Handle Gaps
     method: Union[Literal[*PROVENANCE_METHODS], str]
 
+    change_in_ownership: Union[bool, Literal["Unknown"]]
+    change_in_location: Union[bool, Literal["Unknown"]]
+    change_in_custody: Union[bool, Literal["Unknown"]]
+
 class Provenance(BaseModel):
     movements: List[Movement]
 

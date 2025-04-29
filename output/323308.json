@@ -4,13 +4,7 @@
         {
             "movements": [
                 {
-                    "source": {
-                        "name": "Unknown",
-                        "location": "Unknown",
-                        "birth_date": "Unknown",
-                        "death_date": "Unknown",
-                        "type": "Unknown"
-                    },
+                    "source": "Unknown",
                     "target": {
                         "name": "Frederick Hill Meserve",
                         "location": "New York",
@@ -22,7 +16,10 @@
                     "end_time": "1962",
                     "location": "New York",
                     "confidence": "Certain",
-                    "method": "Unknown"
+                    "method": "purchased by/acquired by (from/through/in)",
+                    "change_in_ownership": true,
+                    "change_in_location": true,
+                    "change_in_custody": true
                 },
                 {
                     "source": {
@@ -43,7 +40,10 @@
                     "end_time": "1979",
                     "location": "Beverly, Mass.",
                     "confidence": "Certain",
-                    "method": "by descent to"
+                    "method": "by descent to",
+                    "change_in_ownership": true,
+                    "change_in_location": true,
+                    "change_in_custody": true
                 },
                 {
                     "source": {
@@ -64,7 +64,10 @@
                     "end_time": "2002",
                     "location": "Chappaqua, N.Y.",
                     "confidence": "Certain",
-                    "method": "by descent to"
+                    "method": "by descent to",
+                    "change_in_ownership": true,
+                    "change_in_location": true,
+                    "change_in_custody": true
                 },
                 {
                     "source": {
@@ -82,10 +85,13 @@
                         "type": "Institution"
                     },
                     "start_time": "2002",
-                    "end_time": "2015",
+                    "end_time": "2009",
                     "location": "Pleasantville, N.Y.",
                     "confidence": "Certain",
-                    "method": "transferred to"
+                    "method": "transferred to",
+                    "change_in_ownership": true,
+                    "change_in_location": true,
+                    "change_in_custody": true
                 },
                 {
                     "source": {
@@ -106,7 +112,34 @@
                     "end_time": "2015",
                     "location": "Unknown",
                     "confidence": "Certain",
-                    "method": "on loan to"
+                    "method": "on loan to",
+                    "change_in_ownership": false,
+                    "change_in_location": true,
+                    "change_in_custody": true
+                },
+                {
+                    "source": {
+                        "name": "State University of New York-Purchase",
+                        "location": "Unknown",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Institution"
+                    },
+                    "target": {
+                        "name": "Meserve-Kunhardt Foundation",
+                        "location": "Pleasantville, N.Y.",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Institution"
+                    },
+                    "start_time": "2015",
+                    "end_time": "2015",
+                    "location": "Pleasantville, N.Y.",
+                    "confidence": "Certain",
+                    "method": "Unknown",
+                    "change_in_ownership": false,
+                    "change_in_location": true,
+                    "change_in_custody": true
                 },
                 {
                     "source": {
@@ -127,7 +160,10 @@
                     "end_time": "2021",
                     "location": "New Haven, Conn.",
                     "confidence": "Certain",
-                    "method": "sold to"
+                    "method": "sold to",
+                    "change_in_ownership": true,
+                    "change_in_location": true,
+                    "change_in_custody": true
                 },
                 {
                     "source": {
@@ -148,7 +184,10 @@
                     "end_time": "Unknown",
                     "location": "New Haven, Conn.",
                     "confidence": "Certain",
-                    "method": "sold to"
+                    "method": "sold to",
+                    "change_in_ownership": true,
+                    "change_in_location": false,
+                    "change_in_custody": true
                 }
             ],
             "model": "google/gemini-2.5-pro-preview-03-25"
@@ -156,5 +195,5 @@
     ],
     "object_id": 323308,
     "errors": {},
-    "date": "2025-04-25 11:28:43"
+    "date": "2025-04-29 14:34:21"
 }

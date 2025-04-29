@@ -5,48 +5,6 @@
             "movements": [
                 {
                     "source": {
-                        "name": "Unknown",
-                        "location": "Unknown",
-                        "birth_date": "Unknown",
-                        "death_date": "Unknown",
-                        "type": "Unknown"
-                    },
-                    "target": {
-                        "name": "Baron Kawada Koichir\u014d (H\u014dgaian)",
-                        "location": "Tokyo",
-                        "birth_date": "1836",
-                        "death_date": "1896",
-                        "type": "Collector"
-                    },
-                    "start_time": "Unknown",
-                    "end_time": "Unknown",
-                    "location": "Tokyo",
-                    "confidence": "Certain",
-                    "method": "purchased by/acquired by (from/through/in)"
-                },
-                {
-                    "source": {
-                        "name": "Baron Kawada Koichir\u014d (H\u014dgaian)",
-                        "location": "Tokyo",
-                        "birth_date": "1836",
-                        "death_date": "1896",
-                        "type": "Collector"
-                    },
-                    "target": {
-                        "name": "Baron Kawada Koichir\u014d (H\u014dgaian)",
-                        "location": "Tokyo",
-                        "birth_date": "1836",
-                        "death_date": "1896",
-                        "type": "Collector"
-                    },
-                    "start_time": "Unknown",
-                    "end_time": "1896",
-                    "location": "Tokyo",
-                    "confidence": "Certain",
-                    "method": "with"
-                },
-                {
-                    "source": {
                         "name": "Baron Kawada Koichir\u014d (H\u014dgaian)",
                         "location": "Tokyo",
                         "birth_date": "1836",
@@ -64,7 +22,10 @@
                     "end_time": "1896",
                     "location": "Tokyo",
                     "confidence": "Certain",
-                    "method": "by descent to"
+                    "method": "by descent to",
+                    "change_in_ownership": true,
+                    "change_in_location": false,
+                    "change_in_custody": true
                 },
                 {
                     "source": {
@@ -75,80 +36,44 @@
                         "type": "Person"
                     },
                     "target": {
-                        "name": "Baron Kawada Ry\u014dkichi",
+                        "name": "Motoyama Toyozane",
                         "location": "Tokyo",
-                        "birth_date": "1856",
-                        "death_date": "1951",
-                        "type": "Person"
-                    },
-                    "start_time": "1896",
-                    "end_time": "1933-02-20",
-                    "location": "Tokyo",
-                    "confidence": "Certain",
-                    "method": "with"
-                },
-                {
-                    "source": {
-                        "name": "Baron Kawada Ry\u014dkichi",
-                        "location": "Tokyo",
-                        "birth_date": "1856",
-                        "death_date": "1951",
-                        "type": "Person"
-                    },
-                    "target": {
-                        "name": "Unknown",
-                        "location": "Unknown",
-                        "birth_date": "Unknown",
+                        "birth_date": "1877",
                         "death_date": "Unknown",
-                        "type": "Unknown"
+                        "type": "Dealer"
                     },
                     "start_time": "1933-02-20",
                     "end_time": "1933-02-20",
                     "location": "Tokyo (Tokyo Bijutsu Kurabu)",
-                    "confidence": "Certain",
-                    "method": "sale"
-                },
-                {
-                    "source": {
-                        "name": "Unknown",
-                        "location": "Unknown",
-                        "birth_date": "Unknown",
-                        "death_date": "Unknown",
-                        "type": "Unknown"
-                    },
-                    "target": {
-                        "name": "Unknown",
-                        "location": "Unknown",
-                        "birth_date": "Unknown",
-                        "death_date": "Unknown",
-                        "type": "Unknown"
-                    },
-                    "start_time": "1933-02-20",
-                    "end_time": "late 1947",
-                    "location": "Unknown",
                     "confidence": "Possible",
-                    "method": "with"
+                    "method": "sale",
+                    "change_in_ownership": true,
+                    "change_in_location": true,
+                    "change_in_custody": true
                 },
                 {
                     "source": {
-                        "name": "Unknown",
-                        "location": "Unknown",
-                        "birth_date": "Unknown",
+                        "name": "Motoyama Toyozane",
+                        "location": "Tokyo",
+                        "birth_date": "1877",
                         "death_date": "Unknown",
-                        "type": "Unknown"
+                        "type": "Dealer"
                     },
                     "target": {
                         "name": "Mr. Stanley Jerome Love",
                         "location": "New York",
                         "birth_date": "1926",
                         "death_date": "1994",
-                        "type": "Person"
+                        "type": "Collector"
                     },
                     "start_time": "late 1947",
                     "end_time": "late 1947",
                     "location": "Tokyo (Tokyo Bijutsu Kurabu)",
                     "confidence": "Possible",
-                    "method": "sold to"
+                    "method": "sale",
+                    "change_in_ownership": true,
+                    "change_in_location": true,
+                    "change_in_custody": true
                 },
                 {
                     "source": {
@@ -156,67 +81,28 @@
                         "location": "New York",
                         "birth_date": "1926",
                         "death_date": "1994",
-                        "type": "Person"
+                        "type": "Collector"
                     },
                     "target": {
-                        "name": "Mr. Stanley Jerome Love",
-                        "location": "New York",
-                        "birth_date": "1926",
-                        "death_date": "1994",
-                        "type": "Person"
+                        "name": "William K. Love and Victoria Love",
+                        "location": "Mill Valley, Calif., and Larkspur, Calif.",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Group"
                     },
-                    "start_time": "late 1947",
+                    "start_time": "1994",
                     "end_time": "1994",
                     "location": "New York",
-                    "confidence": "Possible",
-                    "method": "with"
-                },
-                {
-                    "source": {
-                        "name": "Mr. Stanley Jerome Love",
-                        "location": "New York",
-                        "birth_date": "1926",
-                        "death_date": "1994",
-                        "type": "Person"
-                    },
-                    "target": {
-                        "name": "William K. Love and Victoria Love",
-                        "location": "Mill Valley, Calif. and Larkspur, Calif.",
-                        "birth_date": "Unknown",
-                        "death_date": "Unknown",
-                        "type": "Group"
-                    },
-                    "start_time": "1994",
-                    "end_time": "1994",
-                    "location": "USA",
                     "confidence": "Certain",
-                    "method": "by descent to"
+                    "method": "by descent to",
+                    "change_in_ownership": true,
+                    "change_in_location": false,
+                    "change_in_custody": true
                 },
                 {
                     "source": {
                         "name": "William K. Love and Victoria Love",
-                        "location": "Mill Valley, Calif. and Larkspur, Calif.",
-                        "birth_date": "Unknown",
-                        "death_date": "Unknown",
-                        "type": "Group"
-                    },
-                    "target": {
-                        "name": "William K. Love and Victoria Love",
-                        "location": "Mill Valley, Calif. and Larkspur, Calif.",
-                        "birth_date": "Unknown",
-                        "death_date": "Unknown",
-                        "type": "Group"
-                    },
-                    "start_time": "1994",
-                    "end_time": "Unknown",
-                    "location": "Mill Valley, Calif. and Larkspur, Calif.",
-                    "confidence": "Certain",
-                    "method": "(jointly owned)"
-                },
-                {
-                    "source": {
-                        "name": "William K. Love and Victoria Love",
-                        "location": "Mill Valley, Calif. and Larkspur, Calif.",
+                        "location": "Mill Valley, Calif., and Larkspur, Calif.",
                         "birth_date": "Unknown",
                         "death_date": "Unknown",
                         "type": "Group"
@@ -232,7 +118,10 @@
                     "end_time": "1994-10-25",
                     "location": "New York",
                     "confidence": "Certain",
-                    "method": "consigned to"
+                    "method": "consigned to",
+                    "change_in_ownership": false,
+                    "change_in_location": true,
+                    "change_in_custody": true
                 },
                 {
                     "source": {
@@ -244,42 +133,24 @@
                     },
                     "target": {
                         "name": "William K. Love and Victoria Love",
-                        "location": "Mill Valley, Calif. and Larkspur, Calif.",
+                        "location": "Mill Valley, Calif., and Larkspur, Calif.",
                         "birth_date": "Unknown",
                         "death_date": "Unknown",
                         "type": "Group"
                     },
                     "start_time": "1994-10-25",
-                    "end_time": "1994-10-25",
-                    "location": "New York",
+                    "end_time": "1994",
+                    "location": "California",
                     "confidence": "Certain",
-                    "method": "Unknown"
+                    "method": "Unknown",
+                    "change_in_ownership": false,
+                    "change_in_location": true,
+                    "change_in_custody": true
                 },
                 {
                     "source": {
                         "name": "William K. Love and Victoria Love",
-                        "location": "Mill Valley, Calif. and Larkspur, Calif.",
-                        "birth_date": "Unknown",
-                        "death_date": "Unknown",
-                        "type": "Group"
-                    },
-                    "target": {
-                        "name": "William K. Love and Victoria Love",
-                        "location": "Mill Valley, Calif. and Larkspur, Calif.",
-                        "birth_date": "Unknown",
-                        "death_date": "Unknown",
-                        "type": "Group"
-                    },
-                    "start_time": "1994-10-25",
-                    "end_time": "2007",
-                    "location": "Mill Valley, Calif. and Larkspur, Calif.",
-                    "confidence": "Certain",
-                    "method": "(jointly owned)"
-                },
-                {
-                    "source": {
-                        "name": "William K. Love and Victoria Love",
-                        "location": "Mill Valley, Calif. and Larkspur, Calif.",
+                        "location": "Mill Valley, Calif., and Larkspur, Calif.",
                         "birth_date": "Unknown",
                         "death_date": "Unknown",
                         "type": "Group"
@@ -295,12 +166,15 @@
                     "end_time": "2021",
                     "location": "New Haven, Conn.",
                     "confidence": "Certain",
-                    "method": "on loan to"
+                    "method": "on loan to",
+                    "change_in_ownership": false,
+                    "change_in_location": true,
+                    "change_in_custody": true
                 },
                 {
                     "source": {
                         "name": "William K. Love and Victoria Love",
-                        "location": "Mill Valley, Calif. and Larkspur, Calif.",
+                        "location": "Mill Valley, Calif., and Larkspur, Calif.",
                         "birth_date": "Unknown",
                         "death_date": "Unknown",
                         "type": "Group"
@@ -316,28 +190,10 @@
                     "end_time": "2021",
                     "location": "New Haven, Conn.",
                     "confidence": "Certain",
-                    "method": "given to"
-                },
-                {
-                    "source": {
-                        "name": "Yale University Art Gallery",
-                        "location": "New Haven, Conn.",
-                        "birth_date": "Unknown",
-                        "death_date": "Unknown",
-                        "type": "Institution"
-                    },
-                    "target": {
-                        "name": "Yale University Art Gallery",
-                        "location": "New Haven, Conn.",
-                        "birth_date": "Unknown",
-                        "death_date": "Unknown",
-                        "type": "Institution"
-                    },
-                    "start_time": "2021",
-                    "end_time": "Unknown",
-                    "location": "New Haven, Conn.",
-                    "confidence": "Certain",
-                    "method": "with"
+                    "method": "given to",
+                    "change_in_ownership": true,
+                    "change_in_location": false,
+                    "change_in_custody": false
                 }
             ],
             "model": "google/gemini-2.5-pro-preview-03-25"
@@ -345,5 +201,5 @@
     ],
     "object_id": 122030,
     "errors": {},
-    "date": "2025-04-25 11:28:02"
+    "date": "2025-04-29 14:33:14"
 }

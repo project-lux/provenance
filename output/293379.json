@@ -6,49 +6,55 @@
                 {
                     "source": {
                         "name": "Artists from the court of Sultan Pakubowono X",
-                        "location": "Surakarta (Solo), Indonesia",
+                        "location": "Surakarta (Solo)",
                         "birth_date": "Unknown",
                         "death_date": "Unknown",
                         "type": "Group"
                     },
                     "target": {
-                        "name": "Court of Surakarta (Solo)",
-                        "location": "Surakarta (Solo), Indonesia",
+                        "name": "Court of Sultan Pakubowono X of Surakarta (Solo)",
+                        "location": "Surakarta (Solo)",
                         "birth_date": "Unknown",
                         "death_date": "Unknown",
                         "type": "Institution"
                     },
                     "start_time": "Unknown",
-                    "end_time": "1977",
-                    "location": "Surakarta (Solo), Indonesia",
+                    "end_time": "Unknown",
+                    "location": "Surakarta (Solo)",
                     "confidence": "Certain",
-                    "method": "The artist"
+                    "method": "The artist",
+                    "change_in_ownership": true,
+                    "change_in_location": false,
+                    "change_in_custody": true
                 },
                 {
                     "source": {
-                        "name": "Court of Surakarta (Solo)",
-                        "location": "Surakarta (Solo), Indonesia",
+                        "name": "Court of Sultan Pakubowono X of Surakarta (Solo)",
+                        "location": "Surakarta (Solo)",
                         "birth_date": "Unknown",
                         "death_date": "Unknown",
                         "type": "Institution"
                     },
                     "target": {
                         "name": "Suhartoyo",
-                        "location": "Indonesia / Great Britain",
+                        "location": "Unknown",
                         "birth_date": "Unknown",
                         "death_date": "Unknown",
                         "type": "Person"
                     },
                     "start_time": "1977",
                     "end_time": "1977",
-                    "location": "Surakarta (Solo), Indonesia",
+                    "location": "Surakarta (Solo)",
                     "confidence": "Certain",
-                    "method": "given to"
+                    "method": "given to",
+                    "change_in_ownership": true,
+                    "change_in_location": true,
+                    "change_in_custody": true
                 },
                 {
                     "source": {
                         "name": "Suhartoyo",
-                        "location": "Indonesia / Great Britain",
+                        "location": "Unknown",
                         "birth_date": "Unknown",
                         "death_date": "Unknown",
                         "type": "Person"
@@ -61,10 +67,13 @@
                         "type": "Group"
                     },
                     "start_time": "Unknown",
-                    "end_time": "2000",
+                    "end_time": "Unknown",
                     "location": "Unknown",
                     "confidence": "Certain",
-                    "method": "by descent to"
+                    "method": "by descent to",
+                    "change_in_ownership": true,
+                    "change_in_location": "Unknown",
+                    "change_in_custody": true
                 },
                 {
                     "source": {
@@ -83,9 +92,12 @@
                     },
                     "start_time": "2000",
                     "end_time": "2000",
-                    "location": "Yogyakarta, Indonesia",
+                    "location": "Yogyakarta",
                     "confidence": "Certain",
-                    "method": "sold to"
+                    "method": "sold to",
+                    "change_in_ownership": true,
+                    "change_in_location": true,
+                    "change_in_custody": true
                 },
                 {
                     "source": {
@@ -104,9 +116,36 @@
                     },
                     "start_time": "2014",
                     "end_time": "2014",
-                    "location": "Uberlingen, Germany",
+                    "location": "Unknown",
                     "confidence": "Certain",
-                    "method": "by descent to"
+                    "method": "by descent to",
+                    "change_in_ownership": true,
+                    "change_in_location": false,
+                    "change_in_custody": false
+                },
+                {
+                    "source": {
+                        "name": "Dr. Walter Angst",
+                        "location": "Uberlingen, Germany",
+                        "birth_date": "1942",
+                        "death_date": "2014",
+                        "type": "Collector"
+                    },
+                    "target": {
+                        "name": "Unknown",
+                        "location": "Germany",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Unknown"
+                    },
+                    "start_time": "2014",
+                    "end_time": "2018",
+                    "location": "Germany",
+                    "confidence": "Certain",
+                    "method": "Unknown",
+                    "change_in_ownership": false,
+                    "change_in_location": false,
+                    "change_in_custody": true
                 },
                 {
                     "source": {
@@ -127,7 +166,10 @@
                     "end_time": "2018",
                     "location": "New Haven, Conn.",
                     "confidence": "Certain",
-                    "method": "given to"
+                    "method": "gift to",
+                    "change_in_ownership": true,
+                    "change_in_location": true,
+                    "change_in_custody": true
                 }
             ],
             "model": "google/gemini-2.5-pro-preview-03-25"
@@ -135,5 +177,5 @@
     ],
     "object_id": 293379,
     "errors": {},
-    "date": "2025-04-25 11:27:31"
+    "date": "2025-04-29 14:33:20"
 }

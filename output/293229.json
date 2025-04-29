@@ -5,32 +5,59 @@
             "movements": [
                 {
                     "source": {
-                        "name": "artists from the court of Sultan Pakubowono X of Surakarta (Solo)",
+                        "name": "artists from the court of Sultan Pakubowono X",
                         "location": "Surakarta (Solo), Indonesia",
                         "birth_date": "Unknown",
                         "death_date": "Unknown",
                         "type": "Group"
                     },
                     "target": {
-                        "name": "Court of Surakarta (Solo)",
+                        "name": "court of Surakarta (Solo)",
                         "location": "Surakarta (Solo), Indonesia",
                         "birth_date": "Unknown",
                         "death_date": "Unknown",
                         "type": "Institution"
                     },
                     "start_time": "Unknown",
-                    "end_time": "1977",
+                    "end_time": "Before 1977",
                     "location": "Surakarta (Solo), Indonesia",
-                    "confidence": "Possible",
-                    "method": "Unknown"
+                    "confidence": "Certain",
+                    "method": "The artist",
+                    "change_in_ownership": true,
+                    "change_in_location": false,
+                    "change_in_custody": true
                 },
                 {
                     "source": {
-                        "name": "Court of Surakarta (Solo)",
+                        "name": "court of Surakarta (Solo)",
                         "location": "Surakarta (Solo), Indonesia",
                         "birth_date": "Unknown",
                         "death_date": "Unknown",
                         "type": "Institution"
+                    },
+                    "target": {
+                        "name": "Suhartoyo",
+                        "location": "Indonesia",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Person"
+                    },
+                    "start_time": "1977",
+                    "end_time": "1977",
+                    "location": "Surakarta (Solo), Indonesia",
+                    "confidence": "Certain",
+                    "method": "given to",
+                    "change_in_ownership": true,
+                    "change_in_location": false,
+                    "change_in_custody": true
+                },
+                {
+                    "source": {
+                        "name": "Suhartoyo",
+                        "location": "Indonesia",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Person"
                     },
                     "target": {
                         "name": "Suhartoyo",
@@ -40,10 +67,13 @@
                         "type": "Person"
                     },
                     "start_time": "1977",
-                    "end_time": "1977",
+                    "end_time": "Unknown",
                     "location": "Unknown",
                     "confidence": "Certain",
-                    "method": "given to"
+                    "method": "Unknown",
+                    "change_in_ownership": false,
+                    "change_in_location": "Unknown",
+                    "change_in_custody": false
                 },
                 {
                     "source": {
@@ -54,21 +84,48 @@
                         "type": "Person"
                     },
                     "target": {
-                        "name": "Heirs of Suhartoyo",
+                        "name": "heirs of Suhartoyo",
                         "location": "Unknown",
                         "birth_date": "Unknown",
                         "death_date": "Unknown",
                         "type": "Group"
                     },
                     "start_time": "Unknown",
-                    "end_time": "2000",
+                    "end_time": "Before 2000",
                     "location": "Unknown",
                     "confidence": "Certain",
-                    "method": "by descent to"
+                    "method": "by descent to",
+                    "change_in_ownership": true,
+                    "change_in_location": "Unknown",
+                    "change_in_custody": true
                 },
                 {
                     "source": {
-                        "name": "Heirs of Suhartoyo",
+                        "name": "heirs of Suhartoyo",
+                        "location": "Unknown",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Group"
+                    },
+                    "target": {
+                        "name": "heirs of Suhartoyo",
+                        "location": "Unknown",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Group"
+                    },
+                    "start_time": "Before 2000",
+                    "end_time": "2000",
+                    "location": "Unknown",
+                    "confidence": "Certain",
+                    "method": "Unknown",
+                    "change_in_ownership": false,
+                    "change_in_location": false,
+                    "change_in_custody": false
+                },
+                {
+                    "source": {
+                        "name": "heirs of Suhartoyo",
                         "location": "Unknown",
                         "birth_date": "Unknown",
                         "death_date": "Unknown",
@@ -85,7 +142,34 @@
                     "end_time": "2000",
                     "location": "Yogyakarta, Indonesia",
                     "confidence": "Certain",
-                    "method": "sold to"
+                    "method": "sold to",
+                    "change_in_ownership": true,
+                    "change_in_location": false,
+                    "change_in_custody": true
+                },
+                {
+                    "source": {
+                        "name": "Dr. Walter Angst",
+                        "location": "Yogyakarta, Indonesia",
+                        "birth_date": "1942",
+                        "death_date": "2014",
+                        "type": "Collector"
+                    },
+                    "target": {
+                        "name": "Dr. Walter Angst",
+                        "location": "Uberlingen, Germany",
+                        "birth_date": "1942",
+                        "death_date": "2014",
+                        "type": "Collector"
+                    },
+                    "start_time": "2000",
+                    "end_time": "2014",
+                    "location": "Uberlingen, Germany",
+                    "confidence": "Certain",
+                    "method": "Unknown",
+                    "change_in_ownership": false,
+                    "change_in_location": true,
+                    "change_in_custody": false
                 },
                 {
                     "source": {
@@ -106,7 +190,34 @@
                     "end_time": "2014",
                     "location": "Uberlingen, Germany",
                     "confidence": "Certain",
-                    "method": "by descent to"
+                    "method": "by descent to",
+                    "change_in_ownership": true,
+                    "change_in_location": false,
+                    "change_in_custody": false
+                },
+                {
+                    "source": {
+                        "name": "Sir Henry Angest",
+                        "location": "London, England, and Perth, Scotland",
+                        "birth_date": "1940",
+                        "death_date": "Unknown",
+                        "type": "Person"
+                    },
+                    "target": {
+                        "name": "Sir Henry Angest",
+                        "location": "London, England, and Perth, Scotland",
+                        "birth_date": "1940",
+                        "death_date": "Unknown",
+                        "type": "Person"
+                    },
+                    "start_time": "2014",
+                    "end_time": "2018",
+                    "location": "Uberlingen, Germany",
+                    "confidence": "Certain",
+                    "method": "Unknown",
+                    "change_in_ownership": false,
+                    "change_in_location": false,
+                    "change_in_custody": false
                 },
                 {
                     "source": {
@@ -127,7 +238,10 @@
                     "end_time": "2018",
                     "location": "New Haven, Conn.",
                     "confidence": "Certain",
-                    "method": "given to"
+                    "method": "given to",
+                    "change_in_ownership": true,
+                    "change_in_location": true,
+                    "change_in_custody": true
                 }
             ],
             "model": "google/gemini-2.5-pro-preview-03-25"
@@ -135,5 +249,5 @@
     ],
     "object_id": 293229,
     "errors": {},
-    "date": "2025-04-25 11:28:29"
+    "date": "2025-04-29 14:34:06"
 }

@@ -5,28 +5,55 @@
             "movements": [
                 {
                     "source": {
-                        "name": "artists from the court of Sultan Pakubowono X",
+                        "name": "artists from the court of Sultan Pakubowono X of Surakarta (Solo)",
                         "location": "Surakarta (Solo), Indonesia",
                         "birth_date": "Unknown",
                         "death_date": "Unknown",
                         "type": "Group"
                     },
                     "target": {
-                        "name": "Court of Surakarta (Solo)",
+                        "name": "artists from the court of Sultan Pakubowono X of Surakarta (Solo)",
+                        "location": "Surakarta (Solo), Indonesia",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Group"
+                    },
+                    "start_time": "Unknown",
+                    "end_time": "before 1977",
+                    "location": "Surakarta (Solo), Indonesia",
+                    "confidence": "Certain",
+                    "method": "The artist",
+                    "change_in_ownership": false,
+                    "change_in_location": false,
+                    "change_in_custody": false
+                },
+                {
+                    "source": {
+                        "name": "artists from the court of Sultan Pakubowono X of Surakarta (Solo)",
+                        "location": "Surakarta (Solo), Indonesia",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Group"
+                    },
+                    "target": {
+                        "name": "court of Surakarta (Solo)",
                         "location": "Surakarta (Solo), Indonesia",
                         "birth_date": "Unknown",
                         "death_date": "Unknown",
                         "type": "Institution"
                     },
                     "start_time": "Unknown",
-                    "end_time": "1977",
+                    "end_time": "before 1977",
                     "location": "Surakarta (Solo), Indonesia",
                     "confidence": "Certain",
-                    "method": "The artist"
+                    "method": "Unknown",
+                    "change_in_ownership": true,
+                    "change_in_location": false,
+                    "change_in_custody": true
                 },
                 {
                     "source": {
-                        "name": "Court of Surakarta (Solo)",
+                        "name": "court of Surakarta (Solo)",
                         "location": "Surakarta (Solo), Indonesia",
                         "birth_date": "Unknown",
                         "death_date": "Unknown",
@@ -43,7 +70,10 @@
                     "end_time": "1977",
                     "location": "Surakarta (Solo), Indonesia",
                     "confidence": "Certain",
-                    "method": "given to"
+                    "method": "given to",
+                    "change_in_ownership": true,
+                    "change_in_location": true,
+                    "change_in_custody": true
                 },
                 {
                     "source": {
@@ -54,21 +84,24 @@
                         "type": "Person"
                     },
                     "target": {
-                        "name": "Heirs of Suhartoyo",
+                        "name": "heirs of Suhartoyo",
                         "location": "Unknown",
                         "birth_date": "Unknown",
                         "death_date": "Unknown",
                         "type": "Group"
                     },
-                    "start_time": "Unknown",
-                    "end_time": "2000",
+                    "start_time": "after 1977",
+                    "end_time": "before 2000",
                     "location": "Unknown",
                     "confidence": "Certain",
-                    "method": "by descent to"
+                    "method": "by descent to",
+                    "change_in_ownership": true,
+                    "change_in_location": "Unknown",
+                    "change_in_custody": true
                 },
                 {
                     "source": {
-                        "name": "Heirs of Suhartoyo",
+                        "name": "heirs of Suhartoyo",
                         "location": "Unknown",
                         "birth_date": "Unknown",
                         "death_date": "Unknown",
@@ -85,7 +118,10 @@
                     "end_time": "2000",
                     "location": "Yogyakarta, Indonesia",
                     "confidence": "Certain",
-                    "method": "sold to"
+                    "method": "sold to",
+                    "change_in_ownership": true,
+                    "change_in_location": true,
+                    "change_in_custody": true
                 },
                 {
                     "source": {
@@ -106,7 +142,10 @@
                     "end_time": "2014",
                     "location": "Uberlingen, Germany",
                     "confidence": "Certain",
-                    "method": "by descent to"
+                    "method": "by descent to",
+                    "change_in_ownership": true,
+                    "change_in_location": false,
+                    "change_in_custody": true
                 },
                 {
                     "source": {
@@ -118,16 +157,19 @@
                     },
                     "target": {
                         "name": "Yale University Art Gallery",
-                        "location": "New Haven, Conn.",
+                        "location": "New Haven, Conn., USA",
                         "birth_date": "Unknown",
                         "death_date": "Unknown",
                         "type": "Institution"
                     },
                     "start_time": "2018",
                     "end_time": "2018",
-                    "location": "New Haven, Conn.",
+                    "location": "Uberlingen, Germany",
                     "confidence": "Certain",
-                    "method": "given to"
+                    "method": "given to",
+                    "change_in_ownership": true,
+                    "change_in_location": true,
+                    "change_in_custody": true
                 }
             ],
             "model": "google/gemini-2.5-pro-preview-03-25"
@@ -135,5 +177,5 @@
     ],
     "object_id": 293351,
     "errors": {},
-    "date": "2025-04-25 11:28:22"
+    "date": "2025-04-29 14:33:55"
 }

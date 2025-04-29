@@ -4,6 +4,24 @@
         {
             "movements": [
                 {
+                    "source": "Unknown",
+                    "target": {
+                        "name": "Ki Enthus Susmono",
+                        "location": "Tegal, Indonesia",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Person"
+                    },
+                    "start_time": "1999",
+                    "end_time": "1999",
+                    "location": "Tegal, Indonesia",
+                    "confidence": "Certain",
+                    "method": "The artist",
+                    "change_in_ownership": true,
+                    "change_in_location": true,
+                    "change_in_custody": true
+                },
+                {
                     "source": {
                         "name": "Ki Enthus Susmono",
                         "location": "Tegal, Indonesia",
@@ -20,9 +38,12 @@
                     },
                     "start_time": "2002",
                     "end_time": "2002",
-                    "location": "Unknown",
-                    "confidence": "Possible",
-                    "method": "sold to"
+                    "location": "Uberlingen, Germany",
+                    "confidence": "Certain",
+                    "method": "sold to",
+                    "change_in_ownership": true,
+                    "change_in_location": true,
+                    "change_in_custody": true
                 },
                 {
                     "source": {
@@ -41,9 +62,12 @@
                     },
                     "start_time": "2014",
                     "end_time": "2014",
-                    "location": "Germany",
+                    "location": "Uberlingen, Germany",
                     "confidence": "Certain",
-                    "method": "by descent to"
+                    "method": "by descent to",
+                    "change_in_ownership": true,
+                    "change_in_location": false,
+                    "change_in_custody": true
                 },
                 {
                     "source": {
@@ -62,9 +86,12 @@
                     },
                     "start_time": "2018",
                     "end_time": "2018",
-                    "location": "Unknown",
+                    "location": "New Haven, Conn.",
                     "confidence": "Certain",
-                    "method": "gift to"
+                    "method": "gift to",
+                    "change_in_ownership": true,
+                    "change_in_location": true,
+                    "change_in_custody": true
                 }
             ],
             "model": "google/gemini-2.5-pro-preview-03-25"
@@ -72,5 +99,5 @@
     ],
     "object_id": 236224,
     "errors": {},
-    "date": "2025-04-25 11:27:12"
+    "date": "2025-04-29 14:32:44"
 }

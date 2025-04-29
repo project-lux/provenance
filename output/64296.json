@@ -13,10 +13,13 @@
                         "type": "Collector"
                     },
                     "start_time": "Unknown",
-                    "end_time": "1881",
+                    "end_time": "by 1881",
                     "location": "Paris",
                     "confidence": "Certain",
-                    "method": "Unknown"
+                    "method": "Unknown",
+                    "change_in_ownership": true,
+                    "change_in_location": true,
+                    "change_in_custody": true
                 },
                 {
                     "source": {
@@ -27,25 +30,28 @@
                         "type": "Collector"
                     },
                     "target": {
-                        "name": "Unknown Buyer at Pillet Sale 1881",
-                        "location": "Unknown",
-                        "birth_date": "Unknown",
-                        "death_date": "Unknown",
-                        "type": "Unknown"
+                        "name": "Jean Dollfus",
+                        "location": "Paris",
+                        "birth_date": "1823",
+                        "death_date": "1911",
+                        "type": "Collector"
                     },
-                    "start_time": "1881-05-09",
-                    "end_time": "1881-05-09",
+                    "start_time": "May 9, 1881",
+                    "end_time": "May 9, 1881",
                     "location": "Paris",
                     "confidence": "Certain",
-                    "method": "sale"
+                    "method": "sale (Pillet, lot 468)",
+                    "change_in_ownership": true,
+                    "change_in_location": false,
+                    "change_in_custody": true
                 },
                 {
                     "source": {
-                        "name": "Unknown Buyer at Pillet Sale 1881",
-                        "location": "Unknown",
-                        "birth_date": "Unknown",
-                        "death_date": "Unknown",
-                        "type": "Unknown"
+                        "name": "Jean Dollfus",
+                        "location": "Paris",
+                        "birth_date": "1823",
+                        "death_date": "1911",
+                        "type": "Collector"
                     },
                     "target": {
                         "name": "Jean Dollfus",
@@ -54,36 +60,42 @@
                         "death_date": "1911",
                         "type": "Collector"
                     },
-                    "start_time": "1881-05-09",
-                    "end_time": "1911",
+                    "start_time": "May 9, 1881",
+                    "end_time": "April 1, 1912",
                     "location": "Paris",
                     "confidence": "Certain",
-                    "method": "purchased by/acquired by (from/through/in)"
+                    "method": "purchased by/acquired by (from/through/in)",
+                    "change_in_ownership": false,
+                    "change_in_location": false,
+                    "change_in_custody": false
                 },
                 {
                     "source": {
-                        "name": "Jean Dollfus (Estate)",
+                        "name": "Jean Dollfus",
                         "location": "Paris",
-                        "birth_date": "Unknown",
-                        "death_date": "Unknown",
-                        "type": "Other"
+                        "birth_date": "1823",
+                        "death_date": "1911",
+                        "type": "Collector"
                     },
                     "target": {
-                        "name": "Unknown Buyer at Lair-Dubreuil Sale 1912",
+                        "name": "Unknown",
                         "location": "Unknown",
                         "birth_date": "Unknown",
                         "death_date": "Unknown",
                         "type": "Unknown"
                     },
-                    "start_time": "1912-04-01",
-                    "end_time": "1912-04-01",
+                    "start_time": "April 1, 1912",
+                    "end_time": "April 1, 1912",
                     "location": "Paris",
                     "confidence": "Certain",
-                    "method": "sale"
+                    "method": "sale (Lair-Dubreuil, lot 99)",
+                    "change_in_ownership": true,
+                    "change_in_location": "Unknown",
+                    "change_in_custody": true
                 },
                 {
                     "source": {
-                        "name": "Unknown Buyer at Lair-Dubreuil Sale 1912",
+                        "name": "Unknown",
                         "location": "Unknown",
                         "birth_date": "Unknown",
                         "death_date": "Unknown",
@@ -96,11 +108,14 @@
                         "death_date": "Unknown",
                         "type": "Dealer"
                     },
-                    "start_time": "1912-04-01",
-                    "end_time": "Unknown",
+                    "start_time": "After April 1, 1912",
+                    "end_time": "Before 1913",
                     "location": "Amsterdam",
                     "confidence": "Certain",
-                    "method": "with"
+                    "method": "with",
+                    "change_in_ownership": "Unknown",
+                    "change_in_location": true,
+                    "change_in_custody": true
                 },
                 {
                     "source": {
@@ -121,7 +136,10 @@
                     "end_time": "1913",
                     "location": "Paris",
                     "confidence": "Certain",
-                    "method": "sold to"
+                    "method": "Unknown",
+                    "change_in_ownership": "Unknown",
+                    "change_in_location": true,
+                    "change_in_custody": true
                 },
                 {
                     "source": {
@@ -138,11 +156,14 @@
                         "death_date": "1954",
                         "type": "Collector"
                     },
-                    "start_time": "1913",
-                    "end_time": "1926-11-30",
+                    "start_time": "After 1913",
+                    "end_time": "by 1926",
                     "location": "Antwerp",
                     "confidence": "Certain",
-                    "method": "sold to"
+                    "method": "Unknown",
+                    "change_in_ownership": true,
+                    "change_in_location": true,
+                    "change_in_custody": true
                 },
                 {
                     "source": {
@@ -153,42 +174,48 @@
                         "type": "Collector"
                     },
                     "target": {
-                        "name": "Unknown Buyer at Muller Sale 1926",
+                        "name": "Unknown",
                         "location": "Unknown",
                         "birth_date": "Unknown",
                         "death_date": "Unknown",
                         "type": "Unknown"
                     },
-                    "start_time": "1926-11-30",
-                    "end_time": "1926-12-06",
+                    "start_time": "November 30\u2013December 6, 1926",
+                    "end_time": "November 30\u2013December 6, 1926",
                     "location": "Amsterdam",
                     "confidence": "Certain",
-                    "method": "sale"
+                    "method": "sale (Frederik Muller et Cie, lot 57)",
+                    "change_in_ownership": true,
+                    "change_in_location": "Unknown",
+                    "change_in_custody": true
                 },
                 {
                     "source": {
-                        "name": "Unknown Buyer at Muller Sale 1926",
+                        "name": "Unknown",
                         "location": "Unknown",
                         "birth_date": "Unknown",
                         "death_date": "Unknown",
                         "type": "Unknown"
                     },
                     "target": {
-                        "name": "Unknown Intermediary Owner 1926-1944",
+                        "name": "Unknown",
                         "location": "Unknown",
                         "birth_date": "Unknown",
                         "death_date": "Unknown",
                         "type": "Unknown"
                     },
-                    "start_time": "1926-12-06",
-                    "end_time": "1944-01-31",
+                    "start_time": "After December 6, 1926",
+                    "end_time": "Before January 31, 1944",
                     "location": "Unknown",
                     "confidence": "Certain",
-                    "method": "Unknown"
+                    "method": "Unknown",
+                    "change_in_ownership": "Unknown",
+                    "change_in_location": "Unknown",
+                    "change_in_custody": "Unknown"
                 },
                 {
                     "source": {
-                        "name": "Unknown Intermediary Owner 1926-1944",
+                        "name": "Unknown",
                         "location": "Unknown",
                         "birth_date": "Unknown",
                         "death_date": "Unknown",
@@ -201,11 +228,14 @@
                         "death_date": "Unknown",
                         "type": "Dealer"
                     },
-                    "start_time": "1944-01-31",
-                    "end_time": "1944-02-01",
+                    "start_time": "January 31\u2013February 1, 1944",
+                    "end_time": "January 31\u2013February 1, 1944",
                     "location": "Brussels",
                     "confidence": "Certain",
-                    "method": "sale"
+                    "method": "sale (Palais des Beaux-Arts, lot 43)",
+                    "change_in_ownership": true,
+                    "change_in_location": false,
+                    "change_in_custody": true
                 },
                 {
                     "source": {
@@ -222,11 +252,14 @@
                         "death_date": "1971",
                         "type": "Dealer"
                     },
-                    "start_time": "1944-02-01",
+                    "start_time": "After February 1, 1944",
                     "end_time": "Unknown",
                     "location": "Unknown",
                     "confidence": "Certain",
-                    "method": "sold to"
+                    "method": "sold to (probably on behalf of Hermann G\u00f6ring)",
+                    "change_in_ownership": true,
+                    "change_in_location": true,
+                    "change_in_custody": true
                 },
                 {
                     "source": {
@@ -237,8 +270,8 @@
                         "type": "Dealer"
                     },
                     "target": {
-                        "name": "Dr. Meyer",
-                        "location": "Berlin",
+                        "name": "Unknown",
+                        "location": "Unknown",
                         "birth_date": "Unknown",
                         "death_date": "Unknown",
                         "type": "Unknown"
@@ -247,32 +280,14 @@
                     "end_time": "Unknown",
                     "location": "Berlin",
                     "confidence": "Possible",
-                    "method": "given to"
+                    "method": "Possibly acquired by Hermann G\u00f6ring (Munich, 1893-1946) but rejected; possibly given to 'Dr. Meyer' (Berlin)",
+                    "change_in_ownership": "Unknown",
+                    "change_in_location": "Unknown",
+                    "change_in_custody": "Unknown"
                 },
                 {
                     "source": {
-                        "name": "Dr. Meyer",
-                        "location": "Berlin",
-                        "birth_date": "Unknown",
-                        "death_date": "Unknown",
-                        "type": "Unknown"
-                    },
-                    "target": {
-                        "name": "Unknown Intermediary Owner Post-War",
-                        "location": "Unknown",
-                        "birth_date": "Unknown",
-                        "death_date": "Unknown",
-                        "type": "Unknown"
-                    },
-                    "start_time": "Unknown",
-                    "end_time": "Unknown",
-                    "location": "Unknown",
-                    "confidence": "Possible",
-                    "method": "Unknown"
-                },
-                {
-                    "source": {
-                        "name": "Unknown Intermediary Owner Post-War",
+                        "name": "Unknown",
                         "location": "Unknown",
                         "birth_date": "Unknown",
                         "death_date": "Unknown",
@@ -286,10 +301,13 @@
                         "type": "Collector"
                     },
                     "start_time": "Unknown",
-                    "end_time": "1973-03",
+                    "end_time": "Before March 1973",
                     "location": "Europe",
                     "confidence": "Certain",
-                    "method": "Unknown"
+                    "method": "Unknown",
+                    "change_in_ownership": true,
+                    "change_in_location": "Unknown",
+                    "change_in_custody": true
                 },
                 {
                     "source": {
@@ -300,25 +318,28 @@
                         "type": "Collector"
                     },
                     "target": {
-                        "name": "Kunsthandel A.G. and Helmut R\u00fcdiger Seling",
-                        "location": "Unknown",
+                        "name": "Kunsthandel A.G.",
+                        "location": "Lucerne",
                         "birth_date": "Unknown",
                         "death_date": "Unknown",
-                        "type": "Group"
+                        "type": "Dealer"
                     },
-                    "start_time": "1973-03",
-                    "end_time": "1973-03-12",
-                    "location": "Unknown",
+                    "start_time": "March 1973",
+                    "end_time": "March 1973",
+                    "location": "Lucerne",
                     "confidence": "Certain",
-                    "method": "sold to"
+                    "method": "sold to (jointly owned with Helmut R\u00fcdiger Seling, Munich, 1921-2016)",
+                    "change_in_ownership": true,
+                    "change_in_location": true,
+                    "change_in_custody": true
                 },
                 {
                     "source": {
-                        "name": "Kunsthandel A.G. and Helmut R\u00fcdiger Seling",
-                        "location": "Unknown",
+                        "name": "Kunsthandel A.G.",
+                        "location": "Lucerne",
                         "birth_date": "Unknown",
                         "death_date": "Unknown",
-                        "type": "Group"
+                        "type": "Dealer"
                     },
                     "target": {
                         "name": "Julius B\u00f6hler",
@@ -327,19 +348,22 @@
                         "death_date": "Unknown",
                         "type": "Dealer"
                     },
-                    "start_time": "1973-03-12",
-                    "end_time": "1973-09",
+                    "start_time": "March 12, 1973",
+                    "end_time": "Before September 1973",
                     "location": "Munich",
                     "confidence": "Certain",
-                    "method": "consigned to"
+                    "method": "consigned to",
+                    "change_in_ownership": false,
+                    "change_in_location": true,
+                    "change_in_custody": true
                 },
                 {
                     "source": {
-                        "name": "Kunsthandel A.G. and Helmut R\u00fcdiger Seling",
-                        "location": "Unknown",
+                        "name": "Kunsthandel A.G.",
+                        "location": "Lucerne",
                         "birth_date": "Unknown",
                         "death_date": "Unknown",
-                        "type": "Group"
+                        "type": "Dealer"
                     },
                     "target": {
                         "name": "Julius B\u00f6hler",
@@ -348,11 +372,14 @@
                         "death_date": "Unknown",
                         "type": "Dealer"
                     },
-                    "start_time": "1973-09",
-                    "end_time": "1974-06-07",
+                    "start_time": "September, 1973",
+                    "end_time": "September, 1973",
                     "location": "Munich",
                     "confidence": "Certain",
-                    "method": "sold to"
+                    "method": "sold to (Lagerbuch-number 7\u201373)",
+                    "change_in_ownership": true,
+                    "change_in_location": false,
+                    "change_in_custody": false
                 },
                 {
                     "source": {
@@ -363,25 +390,52 @@
                         "type": "Dealer"
                     },
                     "target": {
-                        "name": "Monika Schaefer and Dr. Herbert Schaefer",
+                        "name": "Dr. Herbert Schaefer",
                         "location": "Malaga, Spain",
-                        "birth_date": "Unknown",
-                        "death_date": "Unknown",
-                        "type": "Group"
+                        "birth_date": "1910",
+                        "death_date": "2011",
+                        "type": "Collector"
                     },
-                    "start_time": "1974-06-07",
+                    "start_time": "June 7, 1974",
+                    "end_time": "June 7, 1974",
+                    "location": "Malaga, Spain",
+                    "confidence": "Certain",
+                    "method": "sold to (jointly with Monika Schaefer, d. 2019)",
+                    "change_in_ownership": true,
+                    "change_in_location": true,
+                    "change_in_custody": true
+                },
+                {
+                    "source": {
+                        "name": "Dr. Herbert Schaefer",
+                        "location": "Malaga, Spain",
+                        "birth_date": "1910",
+                        "death_date": "2011",
+                        "type": "Collector"
+                    },
+                    "target": {
+                        "name": "Dr. Herbert Schaefer",
+                        "location": "Malaga, Spain",
+                        "birth_date": "1910",
+                        "death_date": "2011",
+                        "type": "Collector"
+                    },
+                    "start_time": "June 7, 1974",
                     "end_time": "1981",
                     "location": "Malaga, Spain",
                     "confidence": "Certain",
-                    "method": "sold to"
+                    "method": "purchased by/acquired by (from/through/in) (jointly with Monika Schaefer)",
+                    "change_in_ownership": false,
+                    "change_in_location": false,
+                    "change_in_custody": false
                 },
                 {
                     "source": {
-                        "name": "Monika Schaefer and Dr. Herbert Schaefer",
+                        "name": "Dr. Herbert Schaefer",
                         "location": "Malaga, Spain",
-                        "birth_date": "Unknown",
-                        "death_date": "Unknown",
-                        "type": "Group"
+                        "birth_date": "1910",
+                        "death_date": "2011",
+                        "type": "Collector"
                     },
                     "target": {
                         "name": "Yale University Art Gallery",
@@ -394,15 +448,42 @@
                     "end_time": "2019",
                     "location": "New Haven, Conn.",
                     "confidence": "Certain",
-                    "method": "on loan to"
+                    "method": "on loan to (from Monika and Herbert Schaefer)",
+                    "change_in_ownership": false,
+                    "change_in_location": true,
+                    "change_in_custody": true
                 },
                 {
                     "source": {
-                        "name": "Monika Schaefer and Dr. Herbert Schaefer",
+                        "name": "Monika Schaefer",
                         "location": "Malaga, Spain",
                         "birth_date": "Unknown",
+                        "death_date": "2019",
+                        "type": "Collector"
+                    },
+                    "target": {
+                        "name": "Yale University Art Gallery",
+                        "location": "New Haven, Conn.",
+                        "birth_date": "Unknown",
                         "death_date": "Unknown",
-                        "type": "Group"
+                        "type": "Institution"
+                    },
+                    "start_time": "2019",
+                    "end_time": "2019",
+                    "location": "New Haven, Conn.",
+                    "confidence": "Certain",
+                    "method": "bequeathed to",
+                    "change_in_ownership": true,
+                    "change_in_location": false,
+                    "change_in_custody": false
+                },
+                {
+                    "source": {
+                        "name": "Yale University Art Gallery",
+                        "location": "New Haven, Conn.",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Institution"
                     },
                     "target": {
                         "name": "Yale University Art Gallery",
@@ -415,7 +496,10 @@
                     "end_time": "Unknown",
                     "location": "New Haven, Conn.",
                     "confidence": "Certain",
-                    "method": "bequeathed to"
+                    "method": "bequeathed to",
+                    "change_in_ownership": false,
+                    "change_in_location": false,
+                    "change_in_custody": false
                 }
             ],
             "model": "google/gemini-2.5-pro-preview-03-25"
@@ -423,5 +507,5 @@
     ],
     "object_id": 64296,
     "errors": {},
-    "date": "2025-04-25 11:29:50"
+    "date": "2025-04-29 14:35:25"
 }

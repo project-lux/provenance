@@ -4,7 +4,13 @@
         {
             "movements": [
                 {
-                    "source": "Unknown",
+                    "source": {
+                        "name": "Unknown",
+                        "location": "Unknown",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Unknown"
+                    },
                     "target": {
                         "name": "Frederick Hill Meserve",
                         "location": "New York",
@@ -16,7 +22,10 @@
                     "end_time": "1962",
                     "location": "New York",
                     "confidence": "Certain",
-                    "method": "purchased by/acquired by (from/through/in)"
+                    "method": "purchased by/acquired by (from/through/in)",
+                    "change_in_ownership": true,
+                    "change_in_location": true,
+                    "change_in_custody": true
                 },
                 {
                     "source": {
@@ -37,7 +46,10 @@
                     "end_time": "1979",
                     "location": "Beverly, Mass.",
                     "confidence": "Certain",
-                    "method": "by descent to"
+                    "method": "by descent to",
+                    "change_in_ownership": true,
+                    "change_in_location": true,
+                    "change_in_custody": true
                 },
                 {
                     "source": {
@@ -58,7 +70,10 @@
                     "end_time": "2002",
                     "location": "Chappaqua, N.Y.",
                     "confidence": "Certain",
-                    "method": "by descent to"
+                    "method": "by descent to",
+                    "change_in_ownership": true,
+                    "change_in_location": true,
+                    "change_in_custody": true
                 },
                 {
                     "source": {
@@ -71,7 +86,7 @@
                     "target": {
                         "name": "Meserve-Kunhardt Foundation",
                         "location": "Pleasantville, N.Y.",
-                        "birth_date": "2002",
+                        "birth_date": "Unknown",
                         "death_date": "Unknown",
                         "type": "Institution"
                     },
@@ -79,13 +94,40 @@
                     "end_time": "2015",
                     "location": "Pleasantville, N.Y.",
                     "confidence": "Certain",
-                    "method": "given to"
+                    "method": "transferred to",
+                    "change_in_ownership": true,
+                    "change_in_location": true,
+                    "change_in_custody": true
                 },
                 {
                     "source": {
                         "name": "Meserve-Kunhardt Foundation",
                         "location": "Pleasantville, N.Y.",
-                        "birth_date": "2002",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Institution"
+                    },
+                    "target": {
+                        "name": "State University of New York-Purchase",
+                        "location": "Purchase, NY",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Institution"
+                    },
+                    "start_time": "2009",
+                    "end_time": "2015",
+                    "location": "Purchase, NY",
+                    "confidence": "Certain",
+                    "method": "on loan to",
+                    "change_in_ownership": false,
+                    "change_in_location": true,
+                    "change_in_custody": true
+                },
+                {
+                    "source": {
+                        "name": "Meserve-Kunhardt Foundation",
+                        "location": "Pleasantville, N.Y.",
+                        "birth_date": "Unknown",
                         "death_date": "Unknown",
                         "type": "Institution"
                     },
@@ -100,7 +142,10 @@
                     "end_time": "2021",
                     "location": "New Haven, Conn.",
                     "confidence": "Certain",
-                    "method": "sold to"
+                    "method": "sold to",
+                    "change_in_ownership": true,
+                    "change_in_location": true,
+                    "change_in_custody": true
                 },
                 {
                     "source": {
@@ -112,16 +157,19 @@
                     },
                     "target": {
                         "name": "Yale University Art Gallery",
-                        "location": "New Haven, Conn.",
+                        "location": "New Haven Conn",
                         "birth_date": "Unknown",
                         "death_date": "Unknown",
                         "type": "Institution"
                     },
                     "start_time": "2021",
                     "end_time": "Unknown",
-                    "location": "New Haven, Conn.",
+                    "location": "New Haven Conn",
                     "confidence": "Certain",
-                    "method": "sold to"
+                    "method": "sold to",
+                    "change_in_ownership": true,
+                    "change_in_location": true,
+                    "change_in_custody": true
                 }
             ],
             "model": "google/gemini-2.5-pro-preview-03-25"
@@ -129,5 +177,5 @@
     ],
     "object_id": 323315,
     "errors": {},
-    "date": "2025-04-25 11:28:47"
+    "date": "2025-04-29 14:34:47"
 }

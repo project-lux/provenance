@@ -4,19 +4,28 @@
         {
             "movements": [
                 {
-                    "source": "Unknown",
+                    "source": {
+                        "name": "Unknown",
+                        "location": "Unknown",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Unknown"
+                    },
                     "target": {
                         "name": "Count Karol Lanckoro\u0144ski",
                         "location": "Vienna",
                         "birth_date": "1848",
                         "death_date": "1933",
-                        "type": "Person"
+                        "type": "Collector"
                     },
                     "start_time": "Unknown",
-                    "end_time": "by 1918",
+                    "end_time": "1918",
                     "location": "Vienna",
                     "confidence": "Certain",
-                    "method": "Unknown"
+                    "method": "purchased by/acquired by (from/through/in)",
+                    "change_in_ownership": true,
+                    "change_in_location": true,
+                    "change_in_custody": true
                 },
                 {
                     "source": {
@@ -24,20 +33,23 @@
                         "location": "Vienna",
                         "birth_date": "1848",
                         "death_date": "1933",
-                        "type": "Person"
+                        "type": "Collector"
                     },
                     "target": {
                         "name": "Count Anton Lanckoro\u0144ski",
                         "location": "Vienna",
                         "birth_date": "1893",
                         "death_date": "1956",
-                        "type": "Person"
+                        "type": "Collector"
                     },
                     "start_time": "1933",
                     "end_time": "1939",
                     "location": "Vienna",
                     "confidence": "Certain",
-                    "method": "by inheritance to"
+                    "method": "by inheritance to",
+                    "change_in_ownership": true,
+                    "change_in_location": false,
+                    "change_in_custody": true
                 },
                 {
                     "source": {
@@ -45,25 +57,28 @@
                         "location": "Vienna",
                         "birth_date": "1893",
                         "death_date": "1956",
-                        "type": "Person"
+                        "type": "Collector"
                     },
                     "target": {
                         "name": "Gestapo",
-                        "location": "Austria",
+                        "location": "Unknown",
                         "birth_date": "Unknown",
                         "death_date": "Unknown",
                         "type": "Group"
                     },
                     "start_time": "1939",
-                    "end_time": "Unknown",
+                    "end_time": "1939",
                     "location": "Vienna",
                     "confidence": "Certain",
-                    "method": "confiscated by"
+                    "method": "confiscated by",
+                    "change_in_ownership": true,
+                    "change_in_location": false,
+                    "change_in_custody": true
                 },
                 {
                     "source": {
                         "name": "Gestapo",
-                        "location": "Austria",
+                        "location": "Unknown",
                         "birth_date": "Unknown",
                         "death_date": "Unknown",
                         "type": "Group"
@@ -75,11 +90,14 @@
                         "death_date": "Unknown",
                         "type": "Building"
                     },
-                    "start_time": "After 1939",
+                    "start_time": "1939",
                     "end_time": "Unknown",
                     "location": "Warth, Austria",
                     "confidence": "Certain",
-                    "method": "transferred to"
+                    "method": "transferred to",
+                    "change_in_ownership": false,
+                    "change_in_location": true,
+                    "change_in_custody": true
                 },
                 {
                     "source": {
@@ -100,7 +118,10 @@
                     "end_time": "about 1942",
                     "location": "Fels am Wagram, Austria",
                     "confidence": "Certain",
-                    "method": "transferred to"
+                    "method": "transferred to",
+                    "change_in_ownership": false,
+                    "change_in_location": true,
+                    "change_in_custody": true
                 },
                 {
                     "source": {
@@ -113,36 +134,42 @@
                     "target": {
                         "name": "Schloss Immendorf",
                         "location": "Immendorf, Austria",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Building"
+                    },
+                    "start_time": "about 1942",
+                    "end_time": "November 2, 1942",
+                    "location": "Immendorf, Austria",
+                    "confidence": "Certain",
+                    "method": "transferred to",
+                    "change_in_ownership": false,
+                    "change_in_location": true,
+                    "change_in_custody": true
+                },
+                {
+                    "source": {
+                        "name": "Schloss Immendorf",
+                        "location": "Immendorf, Austria",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Building"
+                    },
+                    "target": {
+                        "name": "Schloss Th\u00fcrntal",
+                        "location": "Fels am Wagram, Austria",
                         "birth_date": "Unknown",
                         "death_date": "Unknown",
                         "type": "Building"
                     },
                     "start_time": "November 2, 1942",
                     "end_time": "Unknown",
-                    "location": "Immendorf, Austria",
-                    "confidence": "Certain",
-                    "method": "transferred to"
-                },
-                {
-                    "source": {
-                        "name": "Schloss Immendorf",
-                        "location": "Immendorf, Austria",
-                        "birth_date": "Unknown",
-                        "death_date": "Unknown",
-                        "type": "Building"
-                    },
-                    "target": {
-                        "name": "Schloss Th\u00fcrntal",
-                        "location": "Fels am Wagram, Austria",
-                        "birth_date": "Unknown",
-                        "death_date": "Unknown",
-                        "type": "Building"
-                    },
-                    "start_time": "After November 2, 1942",
-                    "end_time": "Unknown",
                     "location": "Fels am Wagram, Austria",
                     "confidence": "Certain",
-                    "method": "returned to"
+                    "method": "returned to",
+                    "change_in_ownership": false,
+                    "change_in_location": true,
+                    "change_in_custody": true
                 },
                 {
                     "source": {
@@ -158,33 +185,39 @@
                         "birth_date": "Unknown",
                         "death_date": "Unknown",
                         "type": "Building"
+                    },
+                    "start_time": "Unknown",
+                    "end_time": "about February 1944",
+                    "location": "Altaussee, Austria",
+                    "confidence": "Certain",
+                    "method": "transferred to",
+                    "change_in_ownership": false,
+                    "change_in_location": true,
+                    "change_in_custody": true
+                },
+                {
+                    "source": {
+                        "name": "Salt mines at Altaussee",
+                        "location": "Altaussee, Austria",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Building"
+                    },
+                    "target": {
+                        "name": "Monuments Fine Arts and Archives Section of the United States Army",
+                        "location": "Austria",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Group"
                     },
                     "start_time": "about February 1944",
                     "end_time": "Unknown",
                     "location": "Altaussee, Austria",
                     "confidence": "Certain",
-                    "method": "transferred to"
-                },
-                {
-                    "source": {
-                        "name": "Salt mines at Altaussee",
-                        "location": "Altaussee, Austria",
-                        "birth_date": "Unknown",
-                        "death_date": "Unknown",
-                        "type": "Building"
-                    },
-                    "target": {
-                        "name": "Monuments Fine Arts and Archives Section of the United States Army",
-                        "location": "Austria",
-                        "birth_date": "Unknown",
-                        "death_date": "Unknown",
-                        "type": "Group"
-                    },
-                    "start_time": "After February 1944",
-                    "end_time": "before June 24, 1945",
-                    "location": "Altaussee, Austria",
-                    "confidence": "Certain",
-                    "method": "recovered by"
+                    "method": "recovered by",
+                    "change_in_ownership": false,
+                    "change_in_location": false,
+                    "change_in_custody": true
                 },
                 {
                     "source": {
@@ -201,11 +234,14 @@
                         "death_date": "Unknown",
                         "type": "Institution"
                     },
-                    "start_time": "June 24, 1945",
-                    "end_time": "Unknown",
+                    "start_time": "Unknown",
+                    "end_time": "June 24, 1945",
                     "location": "Munich, Germany",
                     "confidence": "Certain",
-                    "method": "transferred to"
+                    "method": "transferred to",
+                    "change_in_ownership": false,
+                    "change_in_location": true,
+                    "change_in_custody": true
                 },
                 {
                     "source": {
@@ -217,42 +253,48 @@
                     },
                     "target": {
                         "name": "United States Forces, Austria",
-                        "location": "Kremsm\u00fcnster Abbey, Kremsm\u00fcnster, Austria",
+                        "location": "Austria",
                         "birth_date": "Unknown",
                         "death_date": "Unknown",
                         "type": "Group"
                     },
-                    "start_time": "October 27, 1945",
-                    "end_time": "Unknown",
+                    "start_time": "June 24, 1945",
+                    "end_time": "October 27, 1945",
                     "location": "Kremsm\u00fcnster Abbey, Kremsm\u00fcnster, Austria",
                     "confidence": "Certain",
-                    "method": "released to"
+                    "method": "released to",
+                    "change_in_ownership": false,
+                    "change_in_location": true,
+                    "change_in_custody": true
                 },
                 {
                     "source": {
                         "name": "United States Forces, Austria",
-                        "location": "Kremsm\u00fcnster Abbey, Kremsm\u00fcnster, Austria",
+                        "location": "Austria",
                         "birth_date": "Unknown",
                         "death_date": "Unknown",
                         "type": "Group"
                     },
                     "target": {
                         "name": "Bundesdenkmalamt",
-                        "location": "Schloss Ebenzweier, Altm\u00fcnster, Austria",
+                        "location": "Austria",
                         "birth_date": "Unknown",
                         "death_date": "Unknown",
                         "type": "Institution"
                     },
-                    "start_time": "After October 27, 1945",
+                    "start_time": "October 27, 1945",
                     "end_time": "by December 15, 1946",
                     "location": "Schloss Ebenzweier, Altm\u00fcnster, Austria",
                     "confidence": "Certain",
-                    "method": "transferred to"
+                    "method": "transferred to",
+                    "change_in_ownership": false,
+                    "change_in_location": true,
+                    "change_in_custody": true
                 },
                 {
                     "source": {
                         "name": "Bundesdenkmalamt",
-                        "location": "Schloss Ebenzweier, Altm\u00fcnster, Austria",
+                        "location": "Austria",
                         "birth_date": "Unknown",
                         "death_date": "Unknown",
                         "type": "Institution"
@@ -262,34 +304,40 @@
                         "location": "Geneva",
                         "birth_date": "1893",
                         "death_date": "1956",
-                        "type": "Person"
+                        "type": "Collector"
+                    },
+                    "start_time": "by December 15, 1946",
+                    "end_time": "October 6, 1947",
+                    "location": "Schloss Hohenems, Austria",
+                    "confidence": "Certain",
+                    "method": "restituted to",
+                    "change_in_ownership": true,
+                    "change_in_location": true,
+                    "change_in_custody": true
+                },
+                {
+                    "source": {
+                        "name": "Count Anton Lanckoro\u0144ski",
+                        "location": "Geneva",
+                        "birth_date": "1893",
+                        "death_date": "1956",
+                        "type": "Collector"
+                    },
+                    "target": {
+                        "name": "Schloss Hohenems",
+                        "location": "Hohenems, Austria",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Building"
                     },
                     "start_time": "October 6, 1947",
-                    "end_time": "October 6, 1947",
-                    "location": "Geneva",
-                    "confidence": "Certain",
-                    "method": "restituted to"
-                },
-                {
-                    "source": {
-                        "name": "Count Anton Lanckoro\u0144ski",
-                        "location": "Geneva",
-                        "birth_date": "1893",
-                        "death_date": "1956",
-                        "type": "Person"
-                    },
-                    "target": {
-                        "name": "Schloss Hohenems",
-                        "location": "Hohenems, Austria",
-                        "birth_date": "Unknown",
-                        "death_date": "Unknown",
-                        "type": "Building"
-                    },
-                    "start_time": "October 1947",
                     "end_time": "1951",
-                    "location": "Hohenems, Austria",
+                    "location": "Schloss Hohenems, Austria",
                     "confidence": "Certain",
-                    "method": "deposited at"
+                    "method": "deposited at",
+                    "change_in_ownership": false,
+                    "change_in_location": false,
+                    "change_in_custody": false
                 },
                 {
                     "source": {
@@ -304,13 +352,16 @@
                         "location": "Geneva",
                         "birth_date": "1893",
                         "death_date": "1956",
-                        "type": "Person"
+                        "type": "Collector"
                     },
                     "start_time": "1951",
                     "end_time": "1956",
-                    "location": "Geneva",
+                    "location": "Geneva, Switzerland",
                     "confidence": "Certain",
-                    "method": "transferred to"
+                    "method": "transferred to",
+                    "change_in_ownership": false,
+                    "change_in_location": true,
+                    "change_in_custody": true
                 },
                 {
                     "source": {
@@ -318,20 +369,23 @@
                         "location": "Geneva",
                         "birth_date": "1893",
                         "death_date": "1956",
-                        "type": "Person"
+                        "type": "Collector"
                     },
                     "target": {
                         "name": "Countess Karolina Lanckoro\u0144ska",
                         "location": "Fribourg, Switzerland and Rome",
                         "birth_date": "1898",
                         "death_date": "2002",
-                        "type": "Person"
+                        "type": "Collector"
                     },
                     "start_time": "1956",
                     "end_time": "1980",
                     "location": "Fribourg, Switzerland and Rome",
                     "confidence": "Certain",
-                    "method": "by inheritance to"
+                    "method": "by inheritance to",
+                    "change_in_ownership": true,
+                    "change_in_location": true,
+                    "change_in_custody": true
                 },
                 {
                     "source": {
@@ -339,7 +393,7 @@
                         "location": "Fribourg, Switzerland and Rome",
                         "birth_date": "1898",
                         "death_date": "2002",
-                        "type": "Person"
+                        "type": "Collector"
                     },
                     "target": {
                         "name": "Heim Gallery",
@@ -349,10 +403,13 @@
                         "type": "Dealer"
                     },
                     "start_time": "1980",
-                    "end_time": "Unknown",
+                    "end_time": "1980",
                     "location": "London",
                     "confidence": "Certain",
-                    "method": "sold to"
+                    "method": "sold to",
+                    "change_in_ownership": true,
+                    "change_in_location": true,
+                    "change_in_custody": true
                 },
                 {
                     "source": {
@@ -363,59 +420,68 @@
                         "type": "Dealer"
                     },
                     "target": {
-                        "name": "Dr. Herbert Schaefer",
+                        "name": "Dr. Herbert and Mrs. Monika Schaefer",
                         "location": "Malaga, Spain",
                         "birth_date": "1910",
-                        "death_date": "2011",
-                        "type": "Person"
+                        "death_date": "2019",
+                        "type": "Collector"
                     },
-                    "start_time": "After 1980",
-                    "end_time": "by 1981",
+                    "start_time": "1980",
+                    "end_time": "1981",
                     "location": "Malaga, Spain",
                     "confidence": "Certain",
-                    "method": "purchased by/acquired by (from/through/in)"
+                    "method": "purchased by/acquired by (from/through/in)",
+                    "change_in_ownership": true,
+                    "change_in_location": true,
+                    "change_in_custody": true
                 },
                 {
                     "source": {
-                        "name": "Dr. Herbert Schaefer",
+                        "name": "Dr. Herbert and Mrs. Monika Schaefer",
                         "location": "Malaga, Spain",
                         "birth_date": "1910",
-                        "death_date": "2011",
-                        "type": "Person"
+                        "death_date": "2019",
+                        "type": "Collector"
                     },
                     "target": {
                         "name": "Yale University Art Gallery",
-                        "location": "New Haven, Conn.",
+                        "location": "New Haven, Conn., USA",
                         "birth_date": "Unknown",
                         "death_date": "Unknown",
                         "type": "Institution"
                     },
                     "start_time": "1981",
                     "end_time": "2019",
-                    "location": "New Haven, Conn.",
+                    "location": "New Haven, Conn., USA",
                     "confidence": "Certain",
-                    "method": "on loan to"
+                    "method": "on loan to",
+                    "change_in_ownership": false,
+                    "change_in_location": true,
+                    "change_in_custody": true
                 },
                 {
                     "source": {
-                        "name": "Mrs. Monika Schaefer",
+                        "name": "Dr. Herbert and Mrs. Monika Schaefer",
                         "location": "Malaga, Spain",
-                        "birth_date": "Unknown",
+                        "birth_date": "1910",
                         "death_date": "2019",
-                        "type": "Person"
+                        "type": "Collector"
                     },
                     "target": {
                         "name": "Yale University Art Gallery",
-                        "location": "New Haven, Conn.",
+                        "location": "New Haven, Conn., USA",
                         "birth_date": "Unknown",
                         "death_date": "Unknown",
                         "type": "Institution"
                     },
                     "start_time": "2019",
-                    "end_time": "Present",
-                    "location": "New Haven, Conn.",
+                    "end_time": "Unknown",
+                    "location": "New Haven, Conn., USA",
                     "confidence": "Certain",
-                    "method": "bequeathed to"
+                    "method": "bequeathed to",
+                    "change_in_ownership": true,
+                    "change_in_location": false,
+                    "change_in_custody": false
                 }
             ],
             "model": "google/gemini-2.5-pro-preview-03-25"
@@ -423,5 +489,5 @@
     ],
     "object_id": 64354,
     "errors": {},
-    "date": "2025-04-25 11:28:43"
+    "date": "2025-04-29 14:35:07"
 }

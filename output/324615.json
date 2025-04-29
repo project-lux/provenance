@@ -4,25 +4,22 @@
         {
             "movements": [
                 {
-                    "source": {
-                        "name": "Unknown",
-                        "location": "Unknown",
-                        "birth_date": "Unknown",
-                        "death_date": "Unknown",
-                        "type": "Unknown"
-                    },
+                    "source": "Unknown",
                     "target": {
                         "name": "Alexander Turney Stewart",
                         "location": "New York",
                         "birth_date": "1802",
                         "death_date": "1876",
-                        "type": "Person"
+                        "type": "Collector"
                     },
                     "start_time": "Unknown",
                     "end_time": "1876",
                     "location": "New York",
                     "confidence": "Certain",
-                    "method": "purchased by/acquired by (from/through/in)"
+                    "method": "purchased by/acquired by (from/through/in)",
+                    "change_in_ownership": "Unknown",
+                    "change_in_location": "Unknown",
+                    "change_in_custody": "Unknown"
                 },
                 {
                     "source": {
@@ -30,49 +27,55 @@
                         "location": "New York",
                         "birth_date": "1802",
                         "death_date": "1876",
-                        "type": "Person"
+                        "type": "Collector"
                     },
                     "target": {
                         "name": "Cornelia Mitchell Clinch Stewart",
                         "location": "New York",
                         "birth_date": "1802",
                         "death_date": "1886",
-                        "type": "Person"
+                        "type": "Collector"
                     },
                     "start_time": "1876",
                     "end_time": "1886",
                     "location": "New York",
                     "confidence": "Certain",
-                    "method": "by inheritance to"
+                    "method": "by inheritance to",
+                    "change_in_ownership": true,
+                    "change_in_location": false,
+                    "change_in_custody": true
                 },
                 {
                     "source": {
-                        "name": "Cornelia Mitchell Clinch Stewart",
+                        "name": "Executors of Cornelia Stewart's Estate",
+                        "location": "Unknown",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Group"
+                    },
+                    "target": {
+                        "name": "American Art Association",
                         "location": "New York",
-                        "birth_date": "1802",
-                        "death_date": "1886",
-                        "type": "Person"
-                    },
-                    "target": {
-                        "name": "Unknown",
-                        "location": "Unknown",
                         "birth_date": "Unknown",
                         "death_date": "Unknown",
-                        "type": "Unknown"
+                        "type": "Institution"
                     },
-                    "start_time": "March 23-25, 1887",
-                    "end_time": "March 23-25, 1887",
-                    "location": "American Art Association, New York",
+                    "start_time": "1886",
+                    "end_time": "1887-03-23",
+                    "location": "New York",
                     "confidence": "Certain",
-                    "method": "sale"
+                    "method": "consigned to",
+                    "change_in_ownership": false,
+                    "change_in_location": true,
+                    "change_in_custody": true
                 },
                 {
                     "source": {
-                        "name": "Unknown",
-                        "location": "Unknown",
+                        "name": "American Art Association",
+                        "location": "New York",
                         "birth_date": "Unknown",
                         "death_date": "Unknown",
-                        "type": "Unknown"
+                        "type": "Institution"
                     },
                     "target": {
                         "name": "Unknown",
@@ -81,32 +84,38 @@
                         "death_date": "Unknown",
                         "type": "Unknown"
                     },
-                    "start_time": "March 23-25, 1887",
-                    "end_time": "Unknown",
-                    "location": "Unknown",
-                    "confidence": "Possible",
-                    "method": "Unknown"
+                    "start_time": "1887-03-23",
+                    "end_time": "1887-03-25",
+                    "location": "New York",
+                    "confidence": "Certain",
+                    "method": "sale",
+                    "change_in_ownership": true,
+                    "change_in_location": "Unknown",
+                    "change_in_custody": true
                 },
                 {
                     "source": {
                         "name": "Unknown",
-                        "location": "Saratoga Springs area",
+                        "location": "Unknown",
                         "birth_date": "Unknown",
                         "death_date": "Unknown",
-                        "type": "Person"
+                        "type": "Unknown"
                     },
                     "target": {
                         "name": "Charles Magnell",
                         "location": "Saratoga Springs, N.Y.",
                         "birth_date": "1932",
                         "death_date": "1996",
-                        "type": "Person"
+                        "type": "Collector"
                     },
-                    "start_time": "Unknown",
+                    "start_time": "1887-03-25",
                     "end_time": "1987",
                     "location": "Saratoga Springs, N.Y.",
-                    "confidence": "Possible",
-                    "method": "purchased by/acquired by (from/through/in)"
+                    "confidence": "Certain",
+                    "method": "purchased by/acquired by (from/through/in)",
+                    "change_in_ownership": true,
+                    "change_in_location": true,
+                    "change_in_custody": true
                 },
                 {
                     "source": {
@@ -114,20 +123,23 @@
                         "location": "Saratoga Springs, N.Y.",
                         "birth_date": "1932",
                         "death_date": "1996",
-                        "type": "Person"
+                        "type": "Collector"
                     },
                     "target": {
                         "name": "Meg Caldwell",
                         "location": "New York",
                         "birth_date": "Unknown",
                         "death_date": "Unknown",
-                        "type": "Person"
+                        "type": "Collector"
                     },
                     "start_time": "1987",
                     "end_time": "1987",
                     "location": "New York",
                     "confidence": "Certain",
-                    "method": "sold to"
+                    "method": "sold to",
+                    "change_in_ownership": true,
+                    "change_in_location": true,
+                    "change_in_custody": true
                 },
                 {
                     "source": {
@@ -135,20 +147,47 @@
                         "location": "New York",
                         "birth_date": "Unknown",
                         "death_date": "Unknown",
-                        "type": "Person"
+                        "type": "Collector"
+                    },
+                    "target": {
+                        "name": "Doyle",
+                        "location": "New York",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Institution"
+                    },
+                    "start_time": "Unknown",
+                    "end_time": "2023-05-02",
+                    "location": "New York",
+                    "confidence": "Certain",
+                    "method": "consigned to",
+                    "change_in_ownership": false,
+                    "change_in_location": true,
+                    "change_in_custody": true
+                },
+                {
+                    "source": {
+                        "name": "Doyle",
+                        "location": "New York",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Institution"
                     },
                     "target": {
                         "name": "Stewart Rosenblum",
                         "location": "New York",
                         "birth_date": "Unknown",
                         "death_date": "Unknown",
-                        "type": "Person"
+                        "type": "Collector"
                     },
-                    "start_time": "May 2, 2023",
-                    "end_time": "May 2, 2023",
-                    "location": "Doyle, New York",
+                    "start_time": "2023-05-02",
+                    "end_time": "2023-05-02",
+                    "location": "New York",
                     "confidence": "Certain",
-                    "method": "sale"
+                    "method": "sale",
+                    "change_in_ownership": true,
+                    "change_in_location": false,
+                    "change_in_custody": true
                 },
                 {
                     "source": {
@@ -156,7 +195,7 @@
                         "location": "New York",
                         "birth_date": "Unknown",
                         "death_date": "Unknown",
-                        "type": "Person"
+                        "type": "Collector"
                     },
                     "target": {
                         "name": "Yale University Art Gallery",
@@ -169,7 +208,10 @@
                     "end_time": "2023",
                     "location": "New Haven, Conn.",
                     "confidence": "Certain",
-                    "method": "given to"
+                    "method": "given to",
+                    "change_in_ownership": true,
+                    "change_in_location": true,
+                    "change_in_custody": true
                 }
             ],
             "model": "google/gemini-2.5-pro-preview-03-25"
@@ -177,5 +219,5 @@
     ],
     "object_id": 324615,
     "errors": {},
-    "date": "2025-04-25 11:29:04"
+    "date": "2025-04-29 14:35:10"
 }

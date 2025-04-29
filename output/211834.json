@@ -12,42 +12,24 @@
                         "type": "Unknown"
                     },
                     "target": {
-                        "name": "Unknown",
+                        "name": "Unknown German Dealer",
                         "location": "Germany",
                         "birth_date": "Unknown",
                         "death_date": "Unknown",
                         "type": "Dealer"
                     },
                     "start_time": "Unknown",
-                    "end_time": "Unknown",
+                    "end_time": "1992",
                     "location": "Germany",
                     "confidence": "Possible",
-                    "method": "Unknown"
+                    "method": "Unknown",
+                    "change_in_ownership": "Unknown",
+                    "change_in_location": "Unknown",
+                    "change_in_custody": "Unknown"
                 },
                 {
                     "source": {
-                        "name": "Unknown",
-                        "location": "Germany",
-                        "birth_date": "Unknown",
-                        "death_date": "Unknown",
-                        "type": "Dealer"
-                    },
-                    "target": {
-                        "name": "Unknown",
-                        "location": "Germany",
-                        "birth_date": "Unknown",
-                        "death_date": "Unknown",
-                        "type": "Dealer"
-                    },
-                    "start_time": "Unknown",
-                    "end_time": "1991/1992",
-                    "location": "Germany",
-                    "confidence": "Certain",
-                    "method": "with"
-                },
-                {
-                    "source": {
-                        "name": "Unknown",
+                        "name": "Unknown German Dealer",
                         "location": "Germany",
                         "birth_date": "Unknown",
                         "death_date": "Unknown",
@@ -60,32 +42,14 @@
                         "death_date": "Unknown",
                         "type": "Dealer"
                     },
-                    "start_time": "1991/1992",
-                    "end_time": "1991/1992",
+                    "start_time": "1991",
+                    "end_time": "1992",
                     "location": "London",
                     "confidence": "Certain",
-                    "method": "sold to"
-                },
-                {
-                    "source": {
-                        "name": "Spink and Son",
-                        "location": "London",
-                        "birth_date": "Unknown",
-                        "death_date": "Unknown",
-                        "type": "Dealer"
-                    },
-                    "target": {
-                        "name": "Spink and Son",
-                        "location": "London",
-                        "birth_date": "Unknown",
-                        "death_date": "Unknown",
-                        "type": "Dealer"
-                    },
-                    "start_time": "1991/1992",
-                    "end_time": "1991/1992",
-                    "location": "London",
-                    "confidence": "Certain",
-                    "method": "with"
+                    "method": "purchased by/acquired by (from/through/in)",
+                    "change_in_ownership": true,
+                    "change_in_location": true,
+                    "change_in_custody": true
                 },
                 {
                     "source": {
@@ -102,32 +66,38 @@
                         "death_date": "Unknown",
                         "type": "Group"
                     },
-                    "start_time": "1991/1992",
-                    "end_time": "1991/1992",
-                    "location": "London",
-                    "confidence": "Certain",
-                    "method": "sold to"
-                },
-                {
-                    "source": {
-                        "name": "Deirdre Pirie and Robert S. Pirie",
-                        "location": "Unknown",
-                        "birth_date": "Unknown",
-                        "death_date": "Unknown",
-                        "type": "Group"
-                    },
-                    "target": {
-                        "name": "Deirdre Pirie and Robert S. Pirie",
-                        "location": "Unknown",
-                        "birth_date": "Unknown",
-                        "death_date": "Unknown",
-                        "type": "Group"
-                    },
-                    "start_time": "1991/1992",
-                    "end_time": "2000-03-22",
+                    "start_time": "1991",
+                    "end_time": "1992",
                     "location": "Unknown",
                     "confidence": "Certain",
-                    "method": "with"
+                    "method": "sold to",
+                    "change_in_ownership": true,
+                    "change_in_location": true,
+                    "change_in_custody": true
+                },
+                {
+                    "source": {
+                        "name": "Deirdre Pirie and Robert S. Pirie",
+                        "location": "Unknown",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Group"
+                    },
+                    "target": {
+                        "name": "Christie's",
+                        "location": "New York",
+                        "birth_date": "Unknown",
+                        "death_date": "Unknown",
+                        "type": "Institution"
+                    },
+                    "start_time": "Unknown",
+                    "end_time": "2000-03-22",
+                    "location": "New York",
+                    "confidence": "Certain",
+                    "method": "consigned to",
+                    "change_in_ownership": false,
+                    "change_in_location": true,
+                    "change_in_custody": true
                 },
                 {
                     "source": {
@@ -148,28 +118,10 @@
                     "end_time": "2000-03-22",
                     "location": "New York",
                     "confidence": "Certain",
-                    "method": "Sold through"
-                },
-                {
-                    "source": {
-                        "name": "Ann R. Kinney and Gilbert H. Kinney",
-                        "location": "New York",
-                        "birth_date": "Unknown",
-                        "death_date": "Unknown",
-                        "type": "Group"
-                    },
-                    "target": {
-                        "name": "Ann R. Kinney and Gilbert H. Kinney",
-                        "location": "New York",
-                        "birth_date": "Unknown",
-                        "death_date": "Unknown",
-                        "type": "Group"
-                    },
-                    "start_time": "2000-03-22",
-                    "end_time": "2016",
-                    "location": "New York",
-                    "confidence": "Certain",
-                    "method": "with"
+                    "method": "Sold through",
+                    "change_in_ownership": true,
+                    "change_in_location": true,
+                    "change_in_custody": true
                 },
                 {
                     "source": {
@@ -190,7 +142,10 @@
                     "end_time": "2021",
                     "location": "New Haven, Conn.",
                     "confidence": "Certain",
-                    "method": "on loan to"
+                    "method": "on loan to",
+                    "change_in_ownership": false,
+                    "change_in_location": true,
+                    "change_in_custody": true
                 },
                 {
                     "source": {
@@ -208,31 +163,13 @@
                         "type": "Institution"
                     },
                     "start_time": "2021",
-                    "end_time": "2021",
-                    "location": "New Haven, Conn.",
-                    "confidence": "Certain",
-                    "method": "given to"
-                },
-                {
-                    "source": {
-                        "name": "Yale University Art Gallery",
-                        "location": "New Haven, Conn.",
-                        "birth_date": "Unknown",
-                        "death_date": "Unknown",
-                        "type": "Institution"
-                    },
-                    "target": {
-                        "name": "Yale University Art Gallery",
-                        "location": "New Haven, Conn.",
-                        "birth_date": "Unknown",
-                        "death_date": "Unknown",
-                        "type": "Institution"
-                    },
-                    "start_time": "2021",
                     "end_time": "Unknown",
                     "location": "New Haven, Conn.",
                     "confidence": "Certain",
-                    "method": "with"
+                    "method": "given to",
+                    "change_in_ownership": true,
+                    "change_in_location": false,
+                    "change_in_custody": false
                 }
             ],
             "model": "google/gemini-2.5-pro-preview-03-25"
@@ -240,5 +177,5 @@
     ],
     "object_id": 211834,
     "errors": {},
-    "date": "2025-04-25 11:28:52"
+    "date": "2025-04-29 14:33:57"
 }

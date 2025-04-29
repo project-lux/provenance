@@ -5,7 +5,7 @@
             "movements": [
                 {
                     "source": {
-                        "name": "artists from the court of Sultan Pakubowono X",
+                        "name": "artists from the court of Sultan Pakubowono X of Surakarta (Solo)",
                         "location": "Surakarta (Solo), Indonesia",
                         "birth_date": "Unknown",
                         "death_date": "Unknown",
@@ -22,7 +22,10 @@
                     "end_time": "1977",
                     "location": "Surakarta (Solo), Indonesia",
                     "confidence": "Certain",
-                    "method": "Unknown"
+                    "method": "Made by artists for",
+                    "change_in_ownership": true,
+                    "change_in_location": false,
+                    "change_in_custody": true
                 },
                 {
                     "source": {
@@ -34,7 +37,7 @@
                     },
                     "target": {
                         "name": "Suhartoyo",
-                        "location": "Indonesia",
+                        "location": "Unknown",
                         "birth_date": "Unknown",
                         "death_date": "Unknown",
                         "type": "Person"
@@ -43,12 +46,15 @@
                     "end_time": "1977",
                     "location": "Surakarta (Solo), Indonesia",
                     "confidence": "Certain",
-                    "method": "given to"
+                    "method": "given to",
+                    "change_in_ownership": true,
+                    "change_in_location": true,
+                    "change_in_custody": true
                 },
                 {
                     "source": {
                         "name": "Suhartoyo",
-                        "location": "Indonesia",
+                        "location": "Unknown",
                         "birth_date": "Unknown",
                         "death_date": "Unknown",
                         "type": "Person"
@@ -61,10 +67,13 @@
                         "type": "Group"
                     },
                     "start_time": "Unknown",
-                    "end_time": "Unknown",
+                    "end_time": "2000",
                     "location": "Unknown",
                     "confidence": "Certain",
-                    "method": "by descent to"
+                    "method": "by descent to",
+                    "change_in_ownership": true,
+                    "change_in_location": "Unknown",
+                    "change_in_custody": true
                 },
                 {
                     "source": {
@@ -85,7 +94,34 @@
                     "end_time": "2000",
                     "location": "Yogyakarta, Indonesia",
                     "confidence": "Certain",
-                    "method": "sold to"
+                    "method": "sold to",
+                    "change_in_ownership": true,
+                    "change_in_location": true,
+                    "change_in_custody": true
+                },
+                {
+                    "source": {
+                        "name": "Dr. Walter Angst",
+                        "location": "Uberlingen, Germany",
+                        "birth_date": "1942",
+                        "death_date": "2014",
+                        "type": "Collector"
+                    },
+                    "target": {
+                        "name": "Dr. Walter Angst",
+                        "location": "Uberlingen, Germany",
+                        "birth_date": "1942",
+                        "death_date": "2014",
+                        "type": "Collector"
+                    },
+                    "start_time": "2000",
+                    "end_time": "2014",
+                    "location": "From Yogyakarta, Indonesia to Uberlingen, Germany",
+                    "confidence": "Certain",
+                    "method": "Unknown",
+                    "change_in_ownership": false,
+                    "change_in_location": true,
+                    "change_in_custody": false
                 },
                 {
                     "source": {
@@ -106,7 +142,10 @@
                     "end_time": "2014",
                     "location": "Uberlingen, Germany",
                     "confidence": "Certain",
-                    "method": "by descent to"
+                    "method": "by descent to",
+                    "change_in_ownership": true,
+                    "change_in_location": false,
+                    "change_in_custody": false
                 },
                 {
                     "source": {
@@ -118,16 +157,19 @@
                     },
                     "target": {
                         "name": "Yale University Art Gallery",
-                        "location": "New Haven, Conn., USA",
+                        "location": "New Haven, Conn.",
                         "birth_date": "Unknown",
                         "death_date": "Unknown",
                         "type": "Institution"
                     },
                     "start_time": "2018",
                     "end_time": "2018",
-                    "location": "Uberlingen, Germany",
+                    "location": "From Uberlingen, Germany to New Haven, Conn.",
                     "confidence": "Certain",
-                    "method": "given to"
+                    "method": "given to",
+                    "change_in_ownership": true,
+                    "change_in_location": true,
+                    "change_in_custody": true
                 }
             ],
             "model": "google/gemini-2.5-pro-preview-03-25"
@@ -135,5 +177,5 @@
     ],
     "object_id": 293392,
     "errors": {},
-    "date": "2025-04-25 11:27:30"
+    "date": "2025-04-29 14:32:57"
 }
