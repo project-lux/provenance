@@ -832,13 +832,6 @@
                 
                 // Highlight timeline
                 highlightTimeline(movementElement.dataset.index);
-                
-                // Scroll to the highlighted text (prefer target)
-                const highlightElement = provenanceText.querySelector('.target-highlight') || 
-                                         provenanceText.querySelector('.source-highlight');
-                if (highlightElement) {
-                    highlightElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
-                }
             }
             
             // Highlight timeline period
@@ -941,9 +934,6 @@
                 
                 // Highlight corresponding timeline period
                 highlightTimeline(movementElement.dataset.index);
-                
-                // Scroll to the movement card
-                movementElement.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
             }
             
             // Helper function to get all text nodes
